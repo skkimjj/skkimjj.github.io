@@ -3,7 +3,11 @@
 - 성공: 풀 리포트(예측 포함) 본문 + 공개 브리핑/네이버 페이지 링크
 - 실패: 오류 내용만 발송, 게시는 하지 않음
 설정: SMTP_USER, SMTP_PASSWORD(앱 비밀번호), MAIL_TO, SITE_URL 환경변수.
+
+주의: 설정은 모듈 임포트 시점이 아니라 발송 시점에 읽는다 —
+.env 로드가 임포트보다 늦어도 동작해야 하기 때문.
 """
+import os
 import smtplib
 import ssl
 from email.header import Header
@@ -12,7 +16,7 @@ from email.mime.text import MIMEText
 
 import markdown as md
 
-from .config import MAIL_TO, SITE_URL, SMTP_HOST, SMTP_PASSWORD, SMTP_PORT, SMTP_USER, require_env
+from .config import require_env
 
 STYLE = """
 <style>
@@ -27,23 +31,32 @@ STYLE = """
 """
 
 
+def _env(name: str, default: str = "") -> str:
+    return os.environ.get(name, default)
+
+
 def _send(subject: str, html_body: str) -> None:
     require_env("SMTP_USER", "SMTP_PASSWORD", "MAIL_TO")
+    user = _env("SMTP_USER")
+    password = _env("SMTP_PASSWORD")
+    to = _env("MAIL_TO")
+
     msg = MIMEMultipart("alternative")
     msg["Subject"] = Header(subject, "utf-8")
-    msg["From"] = SMTP_USER
-    msg["To"] = MAIL_TO
+    msg["From"] = user
+    msg["To"] = to
     msg.attach(MIMEText(f"<html><head>{STYLE}</head><body>{html_body}</body></html>", "html", "utf-8"))
 
     ctx = ssl.create_default_context()
-    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=ctx) as server:
-        server.login(SMTP_USER, SMTP_PASSWORD)
-        server.sendmail(SMTP_USER, [MAIL_TO], msg.as_string())
+    with smtplib.SMTP_SSL(_env("SMTP_HOST", "smtp.gmail.com"), int(_env("SMTP_PORT", "465")), context=ctx) as server:
+        server.login(user, password)
+        server.sendmail(user, [to], msg.as_string())
 
 
 def send_briefing_email(date_str: str, full_report: str, blog_url_path: str, naver_url_path: str) -> None:
-    blog_url = f"{SITE_URL}{blog_url_path}" if SITE_URL else f"(사이트 미설정){blog_url_path}"
-    naver_url = f"{SITE_URL}{naver_url_path}" if SITE_URL else f"(사이트 미설정){naver_url_path}"
+    site = _env("SITE_URL").rstrip("/")
+    blog_url = f"{site}{blog_url_path}" if site else f"(사이트 미설정){blog_url_path}"
+    naver_url = f"{site}{naver_url_path}" if site else f"(사이트 미설정){naver_url_path}"
     links = (
         '<div class="links">'
         f'<b>📋 네이버 복붙용 비밀 페이지:</b> <a href="{naver_url}">{naver_url}</a><br>'
