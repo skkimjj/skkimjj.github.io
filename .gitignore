@@ -1,0 +1,19 @@
+# 비공개 풀 리포트 — 공개 레포에 절대 커밋 금지 (이메일로만 전달)
+reports/
+
+# 로컬 시크릿
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / Astro
+node_modules/
+site/dist/
+site/.astro/
+
+# OS
+.DS_Store
