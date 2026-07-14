@@ -16,7 +16,7 @@ description: >
 인자에 `dry-run`이 포함되면: 파일 생성과 빌드 확인까지만 하고 커밋·푸시·이메일을 생략한다.
 
 작업 파일은 스크래치패드 디렉토리에 `briefing-work/` 폴더를 만들어 사용한다.
-아래에서 `PY` = `pipeline/.venv/bin/python` (레포 루트 기준).
+아래에서 `PY` = `PYTHONPATH=pipeline pipeline/.venv/bin/python` (레포 루트에서 실행).
 
 ## Step 0. 휴장일 체크
 
