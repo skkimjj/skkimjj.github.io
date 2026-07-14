@@ -6,6 +6,10 @@ interface Props {
 }
 const { title, description, noindex = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
+const ogImage = new URL(
+  `${home}og-default.png`,
+  Astro.site ?? 'http://localhost:4321',
+).href;
 ---
 
 <!doctype html>
@@ -16,11 +20,22 @@ const home = import.meta.env.BASE_URL;
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="개장 전 브리핑" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
   </head>
   <body>
     <header class="site-header">
-      <a href={home} class="site-title">개장 전 브리핑</a>
+      <div class="site-title-row">
+        <a href={home} class="site-title">개장 전 브리핑</a>
+        <nav class="site-nav">
+          <a href={`${home}about/`}>소개</a>
+        </nav>
+      </div>
       <p class="site-tagline">매일 아침, 시장 데이터 팩트 정리</p>
     </header>
     <main>
@@ -44,6 +59,20 @@ const home = import.meta.env.BASE_URL;
     --accent: #0f4bd8;
     --bg: #ffffff;
     --bg-soft: #f7f8fa;
+    --mark-bg: #ffe89a;
+    --strong: #b43c3c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e7eaf1;
+      --muted: #98a2b3;
+      --line: #2a3140;
+      --accent: #7aa5ff;
+      --bg: #10141c;
+      --bg-soft: #1a2029;
+      --mark-bg: #7a641a;
+      --strong: #ff8b8b;
+    }
   }
   * {
     box-sizing: border-box;
@@ -65,11 +94,24 @@ const home = import.meta.env.BASE_URL;
     padding: 2.5rem 1.25rem 1.5rem;
     border-bottom: 1px solid var(--line);
   }
+  .site-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
   .site-title {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--text);
     text-decoration: none;
+  }
+  .site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .site-nav a:hover {
+    color: var(--accent);
   }
   .site-tagline {
     margin: 0.25rem 0 0;
@@ -130,12 +172,12 @@ const home = import.meta.env.BASE_URL;
   }
   /* 핵심 문장·수치 하이라이트 */
   mark {
-    background: linear-gradient(transparent 55%, #ffe89a 55%);
+    background: linear-gradient(transparent 55%, var(--mark-bg) 55%);
     color: inherit;
     padding: 0 0.15em;
     font-weight: 600;
   }
   article strong {
-    color: #b43c3c;
+    color: var(--strong);
   }
 </style>

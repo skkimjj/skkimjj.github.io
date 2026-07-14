@@ -39,4 +39,9 @@ const { Content } = await render(entry);
     border-bottom: 1px dashed var(--line);
     padding-bottom: 1rem;
   }
+  /* 네이버 편집기는 그라데이션을 못 가져가므로 단색 배경으로 (복붙 호환) */
+  .naver-body :global(mark) {
+    background: #fff3a6;
+    background-image: none;
+  }
 </style>
