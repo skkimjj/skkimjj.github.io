@@ -6,10 +6,9 @@ interface Props {
 }
 const { title, description, noindex = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
-const ogImage = new URL(
-  `${home}og-default.png`,
-  Astro.site ?? 'http://localhost:4321',
-).href;
+const site = Astro.site ?? new URL('http://localhost:4321');
+const ogImage = new URL(`${home}og-default.png`, site).href;
+const canonical = new URL(Astro.url.pathname, site).href;
 ---
 
 <!doctype html>
@@ -20,7 +19,15 @@ const ogImage = new URL(
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="개장 전 브리핑"
+      href={`${home}rss.xml`}
+    />
     <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:image" content={ogImage} />

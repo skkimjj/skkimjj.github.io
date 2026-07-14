@@ -15,9 +15,24 @@ const fmt = new Intl.DateTimeFormat('ko-KR', {
   day: 'numeric',
   weekday: 'short',
 });
+
+// 구글이 '기사'로 인식하도록 하는 구조화 데이터 (JSON-LD)
+const site = Astro.site ?? new URL('http://localhost:4321');
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description ?? '',
+  datePublished: post.data.date.toISOString(),
+  inLanguage: 'ko-KR',
+  url: new URL(Astro.url.pathname, site).href,
+  author: { '@type': 'Organization', name: '개장 전 브리핑' },
+  publisher: { '@type': 'Organization', name: '개장 전 브리핑' },
+});
 ---
 
 <Base title={post.data.title} description={post.data.description}>
+  <script type="application/ld+json" set:html={jsonLd} />
   <article>
     <h1>{post.data.title}</h1>
     <time datetime={post.data.date.toISOString()} class="post-date">
