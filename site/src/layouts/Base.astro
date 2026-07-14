@@ -1,0 +1,130 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+}
+const { title, description, noindex = false } = Astro.props;
+const home = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href={home} class="site-title">개장 전 브리핑</a>
+      <p class="site-tagline">매일 아침, 시장 데이터 팩트 정리</p>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며, 특정
+        종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은 투자자
+        본인에게 있습니다.
+      </p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --text: #1a1d24;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #0f4bd8;
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family:
+      'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', system-ui,
+      sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+  .site-header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .site-tagline {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem;
+  }
+  .site-footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  a {
+    color: var(--accent);
+  }
+  h1 {
+    font-size: 1.55rem;
+    line-height: 1.4;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--line);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+  }
+  th,
+  td {
+    border: 1px solid var(--line);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+  th {
+    background: var(--bg-soft);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  blockquote {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-soft);
+    color: var(--muted);
+  }
+</style>
