@@ -50,6 +50,7 @@ const home = import.meta.env.BASE_URL;
   }
   body {
     margin: 0;
+    border-top: 4px solid #d64545;
     font-family:
       'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', system-ui,
       sans-serif;
@@ -126,5 +127,15 @@ const home = import.meta.env.BASE_URL;
     border-left: 3px solid var(--accent);
     background: var(--bg-soft);
     color: var(--muted);
+  }
+  /* 핵심 문장·수치 하이라이트 */
+  mark {
+    background: linear-gradient(transparent 55%, #ffe89a 55%);
+    color: inherit;
+    padding: 0 0.15em;
+    font-weight: 600;
+  }
+  article strong {
+    color: #b43c3c;
   }
 </style>
