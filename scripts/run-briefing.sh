@@ -11,9 +11,16 @@ LOG="$LOG_DIR/briefing-$(date +%Y-%m-%d).log"
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 cd "$REPO"
 
+# 푸시 인증을 개인 계정(skkimjj)으로 고정 (self-healing, 매 실행 재적용).
+# gh 활성 계정이 회사(Kyle-Seungkyum-Kim)여도 이 레포는 항상 skkimjj 토큰으로 푸시.
+# 상속된 osxkeychain(회사 토큰) 헬퍼를 로컬에서 리셋한 뒤 skkimjj 전용 헬퍼만 남긴다.
+git config --local --replace-all credential.helper ""
+git config --local --add credential.helper '!f() { echo username=skkimjj; echo "password=$(gh auth token --user skkimjj)"; }; f'
+
 echo "=== 브리핑 자동 실행 시작: $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG"
 
 "$HOME/.local/bin/claude" -p "/briefing" \
+  --model opus \
   --permission-mode bypassPermissions \
   >> "$LOG" 2>&1
 STATUS=$?
