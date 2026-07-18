@@ -1,0 +1,12 @@
+{
+  "_comment": "공부방 글의 네이버 발행 URL 매핑. 사용자가 네이버에 발행 후 URL을 알려주면 여기 누적 기록한다. 다음 공부방 글의 네이버 버전을 만들 때 관련 과거 글 링크를 이 매핑에서 찾아 삽입한다. key = learn 컬렉션의 slug.",
+  "urls": {
+    "etf-basics": {
+      "title": "ETF란 무엇인가 — 주식도 펀드도 아닌, 초보에게 가장 쉬운 시작",
+      "series": "ETF 완전정복",
+      "seriesOrder": 1,
+      "naver_url": "https://blog.naver.com/hdglace/224350308437",
+      "published": "2026-07-18"
+    }
+  }
+}
