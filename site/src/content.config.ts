@@ -22,4 +22,17 @@ const naver = defineCollection({
   }),
 });
 
-export const collections = { briefings, naver };
+// 투자 공부방 — 주말·공휴일 발행 교육 콘텐츠 (상록수 SEO). 태그로 갈래 구분.
+const learn = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/learn' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    series: z.string().optional(), // 예: "ETF 완전정복" — 이전/다음 링크 묶음
+    seriesOrder: z.number().optional(), // 시리즈 내 순서(오름차순)
+  }),
+});
+
+export const collections = { briefings, naver, learn };

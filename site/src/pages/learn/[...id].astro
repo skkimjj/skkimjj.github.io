@@ -1,0 +1,160 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('learn');
+  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const home = import.meta.env.BASE_URL;
+const fmt = new Intl.DateTimeFormat('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// 같은 시리즈에서 이전/다음 글 찾기 (seriesOrder 오름차순)
+const all = await getCollection('learn');
+const siblings = post.data.series
+  ? all
+      .filter((p) => p.data.series === post.data.series)
+      .sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0))
+  : [];
+const idx = siblings.findIndex((p) => p.id === post.id);
+const prev = idx > 0 ? siblings[idx - 1] : null;
+const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
+
+const site = Astro.site ?? new URL('http://localhost:4321');
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description ?? '',
+  datePublished: post.data.date.toISOString(),
+  inLanguage: 'ko-KR',
+  url: new URL(Astro.url.pathname, site).href,
+  author: { '@type': 'Organization', name: '개장 전 브리핑' },
+  publisher: { '@type': 'Organization', name: '개장 전 브리핑' },
+});
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <script type="application/ld+json" set:html={jsonLd} />
+  <article>
+    <p class="eyebrow">
+      📚 투자 공부방{post.data.series && ` · ${post.data.series}`}
+    </p>
+    <h1>{post.data.title}</h1>
+    <div class="post-meta">
+      <time datetime={post.data.date.toISOString()}>
+        {fmt.format(post.data.date)}
+      </time>
+      {
+        post.data.tags.length > 0 && (
+          <span class="tags">
+            {post.data.tags.map((t) => (
+              <span class="tag">#{t}</span>
+            ))}
+          </span>
+        )
+      }
+    </div>
+    <Content />
+
+    {
+      (prev || next) && (
+        <nav class="series-nav">
+          {prev && (
+            <a href={`${home}learn/${prev.id}/`} class="series-link prev">
+              <span class="dir">← 이전 글</span>
+              <span class="t">{prev.data.title}</span>
+            </a>
+          )}
+          {next && (
+            <a href={`${home}learn/${next.id}/`} class="series-link next">
+              <span class="dir">다음 글 →</span>
+              <span class="t">{next.data.title}</span>
+            </a>
+          )}
+        </nav>
+      )
+    }
+
+    <p class="back-link"><a href={`${home}learn/`}>← 투자 공부방 전체 글</a></p>
+  </article>
+</Base>
+
+<style>
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 0 0 0.4rem;
+  }
+  .post-meta {
+    margin-bottom: 2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.1rem 0.55rem;
+    font-size: 0.75rem;
+  }
+  .series-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2.5rem 0 1rem;
+  }
+  .series-link {
+    flex: 1 1 45%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--bg-soft);
+  }
+  .series-link:hover {
+    border-color: var(--accent);
+  }
+  .series-link.next {
+    text-align: right;
+  }
+  .series-link .dir {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .series-link .t {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .back-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .back-link a {
+    text-decoration: none;
+  }
+</style>

@@ -44,6 +44,7 @@ const canonical = new URL(Astro.url.pathname, site).href;
       <div class="site-title-row">
         <a href={home} class="site-title">개장 전 브리핑</a>
         <nav class="site-nav">
+          <a href={`${home}learn/`}>공부방</a>
           <a href={`${home}about/`}>소개</a>
         </nav>
       </div>
@@ -115,6 +116,10 @@ const canonical = new URL(Astro.url.pathname, site).href;
     font-weight: 800;
     color: var(--text);
     text-decoration: none;
+  }
+  .site-nav {
+    display: flex;
+    gap: 1rem;
   }
   .site-nav a {
     color: var(--muted);
@@ -190,5 +195,79 @@ const canonical = new URL(Astro.url.pathname, site).href;
   }
   article strong {
     color: var(--strong);
+  }
+  /* 공부방 그래프 (라이브러리 없이 HTML+CSS, 다크모드 자동) */
+  .chart {
+    margin: 1.5rem 0;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg-soft);
+  }
+  .chart figcaption {
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  .bars {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    height: 210px;
+  }
+  .bar-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .bar-track {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+  .bar {
+    position: relative;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    background: var(--accent);
+    opacity: 0.3;
+  }
+  .bar-col.hi .bar {
+    opacity: 1;
+  }
+  .bar-val {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+  .bar-label {
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .bar-col.hi .bar-val {
+    color: var(--accent);
+  }
+  .bar-col.hi .bar-label {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .chart small {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-align: center;
   }
 </style>
