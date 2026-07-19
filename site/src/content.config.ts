@@ -35,4 +35,18 @@ const learn = defineCollection({
   }),
 });
 
-export const collections = { briefings, naver, learn };
+// 공부방 초안 — 발행 전 검수용. 전용 폴더로 격리해 공개 컬렉션에 절대 섞이지 않는다.
+// /draft/ 라우트에서만 렌더되며 noindex + sitemap 제외. 발행 시 learn/·naver/로 이동.
+const drafts = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/drafts' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    series: z.string().optional(),
+    seriesOrder: z.number().optional(),
+  }),
+});
+
+export const collections = { briefings, naver, learn, drafts };

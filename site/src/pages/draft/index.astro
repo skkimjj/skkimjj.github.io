@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const posts = (await getCollection('drafts')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const home = import.meta.env.BASE_URL;
+---
+
+<Base title="공부방 초안 목록" noindex={true}>
+  <div class="draft-banner">✍️ 발행 전 초안 목록입니다. 검색·공개 목록에 노출되지 않습니다.</div>
+  {posts.length === 0 && <p>대기 중인 초안이 없습니다.</p>}
+  <ul class="post-list">
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`${home}draft/${post.id}/`}>{post.data.title}</a>
+          <span class="slug">{post.id}</span>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
+
+<style>
+  .draft-banner {
+    background: #fff7e6;
+    border: 1px solid #f0d9a8;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    color: #7a5b00;
+    margin-bottom: 1.5rem;
+  }
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .post-list a {
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .slug {
+    display: block;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+</style>

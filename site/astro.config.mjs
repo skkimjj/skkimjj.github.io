@@ -9,8 +9,8 @@ export default defineConfig({
   base: process.env.ASTRO_BASE ?? '/',
   integrations: [
     sitemap({
-      // 네이버 복붙용 비밀 페이지는 사이트맵에서 제외 (검색 노출 방지)
-      filter: (page) => !page.includes('/naver/'),
+      // 네이버 복붙용 비밀 페이지·발행 전 초안은 사이트맵에서 제외 (검색 노출 방지)
+      filter: (page) => !page.includes('/naver/') && !page.includes('/draft/'),
     }),
   ],
 });

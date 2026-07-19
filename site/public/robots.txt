@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /naver/
+Disallow: /draft/
 
 Sitemap: https://skkimjj.github.io/sitemap-index.xml
