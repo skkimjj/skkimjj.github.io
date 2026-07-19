@@ -23,6 +23,21 @@ const { Content } = await render(entry);
   </article>
 </Base>
 
+<script>
+  // 네이버 편집기는 CSS class가 아니라 인라인 style만 복붙에 반영한다.
+  // 붉은 강조(strong)와 형광펜(mark)에 인라인 style을 주입해 복붙 시 색이 따라가게 한다.
+  const body = document.querySelector('.naver-body');
+  if (body) {
+    body.querySelectorAll('strong').forEach((el) => {
+      (el as HTMLElement).style.color = '#c0392b';
+    });
+    body.querySelectorAll('mark').forEach((el) => {
+      (el as HTMLElement).style.backgroundColor = '#fff3a6';
+      (el as HTMLElement).style.color = 'inherit';
+    });
+  }
+</script>
+
 <style>
   .copy-hint {
     background: #fff7e6;
