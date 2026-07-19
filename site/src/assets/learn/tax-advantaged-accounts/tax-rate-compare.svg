@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">같은 이익, 계좌에 따라 다른 세율 (낮을수록 유리)</text>
+
+  <!-- baseline -->
+  <line x1="50" y1="300" x2="670" y2="300" stroke="#e5e7eb"/>
+
+  <!-- 일반계좌 이자·배당: 15.4 -->
+  <rect x="110" y="100" width="64" height="200" rx="3" fill="#0f4bd8"/>
+  <text x="142" y="93" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">15.4%</text>
+  <text x="142" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">일반계좌</text>
+  <text x="142" y="338" text-anchor="middle" font-size="11" fill="#6b7280">이자·배당</text>
+
+  <!-- ISA 초과분: 9.9 -->
+  <rect x="260" y="171" width="64" height="129" rx="3" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="292" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">9.9%</text>
+  <text x="292" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">ISA</text>
+  <text x="292" y="338" text-anchor="middle" font-size="11" fill="#6b7280">초과분</text>
+
+  <!-- 연금수령 55~69세: 5.5 -->
+  <rect x="410" y="229" width="64" height="71" rx="3" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="442" y="222" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5.5%</text>
+  <text x="442" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">연금수령</text>
+  <text x="442" y="338" text-anchor="middle" font-size="11" fill="#6b7280">55~69세</text>
+
+  <!-- 연금수령 80세~: 3.3 -->
+  <rect x="560" y="257" width="64" height="43" rx="3" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="592" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3.3%</text>
+  <text x="592" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">연금수령</text>
+  <text x="592" y="338" text-anchor="middle" font-size="11" fill="#6b7280">80세~</text>
+
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#6b7280">단위: % · 일반계좌 배당소득세 15.4% / ISA 분리과세 9.9% / 연금소득세 3.3~5.5% · 2026년 7월 기준</text>
+</svg>
