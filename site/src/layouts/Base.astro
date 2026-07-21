@@ -9,6 +9,12 @@ const home = import.meta.env.BASE_URL;
 const site = Astro.site ?? new URL('http://localhost:4321');
 const ogImage = new URL(`${home}og-default.png`, site).href;
 const canonical = new URL(Astro.url.pathname, site).href;
+// Google Analytics 4 측정 ID. 배포 워크플로(deploy-site.yml)에서 PUBLIC_GA4_ID로
+// 주입한다. 값이 없으면(로컬 빌드 등) 추적 스크립트를 넣지 않는다.
+// noindex 페이지(네이버 복붙용·발행 전 초안)에는 절대 넣지 않는다 —
+// 네이버로 복사되는 HTML에 추적 코드가 섞이면 안 되기 때문.
+const gaId = import.meta.env.PUBLIC_GA4_ID;
+const enableAnalytics = !noindex && !!gaId;
 ---
 
 <!doctype html>
@@ -38,6 +44,22 @@ const canonical = new URL(Astro.url.pathname, site).href;
     <meta property="og:site_name" content="개장 전 브리핑" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
+    {
+      enableAnalytics && (
+        <script define:vars={{ gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', gaId);
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+          document.head.appendChild(s);
+        </script>
+      )
+    }
   </head>
   <body>
     <header class="site-header">
@@ -58,6 +80,11 @@ const canonical = new URL(Astro.url.pathname, site).href;
         본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며, 특정
         종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은 투자자
         본인에게 있습니다.
+      </p>
+      <p class="footer-links">
+        <a href={`${home}about/`}>소개</a>
+        <span aria-hidden="true">·</span>
+        <a href={`${home}privacy/`}>개인정보처리방침</a>
       </p>
     </footer>
   </body>
@@ -146,6 +173,19 @@ const canonical = new URL(Astro.url.pathname, site).href;
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.8rem;
+  }
+  .footer-links {
+    margin-top: 1rem;
+  }
+  .footer-links a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+  .footer-links span {
+    margin: 0 0.5rem;
   }
   a {
     color: var(--accent);

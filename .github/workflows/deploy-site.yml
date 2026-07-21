@@ -25,6 +25,9 @@ jobs:
       # 레포 Settings > Variables 에서 설정 (예: https://<계정>.github.io, /<레포이름>)
       ASTRO_SITE: ${{ vars.ASTRO_SITE }}
       ASTRO_BASE: ${{ vars.ASTRO_BASE }}
+      # Google Analytics 4 측정 ID (G-XXXXXXXXXX). 비어 있으면 추적 스크립트 미삽입.
+      # 값 설정: gh variable set PUBLIC_GA4_ID --body "G-XXXXXXXXXX"
+      PUBLIC_GA4_ID: ${{ vars.PUBLIC_GA4_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
