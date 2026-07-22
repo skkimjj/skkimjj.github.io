@@ -79,18 +79,25 @@ const enableAnalytics = !noindex && !!gaId;
     <main>
       <slot />
     </main>
-    <footer class="site-footer">
-      <p>
-        본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며, 특정
-        종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은 투자자
-        본인에게 있습니다.
-      </p>
-      <p class="footer-links">
-        <a href={`${home}about/`}>소개</a>
-        <span aria-hidden="true">·</span>
-        <a href={`${home}privacy/`}>개인정보처리방침</a>
-      </p>
-    </footer>
+    {
+      /* noindex(네이버 복붙용·발행 전 초안) 페이지에는 사이트 푸터를 넣지 않는다.
+         전체선택 복붙 시 소개·개인정보처리방침 링크와 (네이버 본문에 이미 있는)
+         면책 문구가 딸려가는 것을 막기 위함. 공개 페이지에만 렌더링. */
+      !noindex && (
+        <footer class="site-footer">
+          <p>
+            본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며, 특정
+            종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은 투자자
+            본인에게 있습니다.
+          </p>
+          <p class="footer-links">
+            <a href={`${home}about/`}>소개</a>
+            <span aria-hidden="true">·</span>
+            <a href={`${home}privacy/`}>개인정보처리방침</a>
+          </p>
+        </footer>
+      )
+    }
   </body>
 </html>
 
