@@ -25,11 +25,17 @@ const { Content } = await render(entry);
 
 <script>
   // 네이버 편집기는 CSS class가 아니라 인라인 style만 복붙에 반영한다.
-  // 붉은 강조(strong)와 형광펜(mark)에 인라인 style을 주입해 복붙 시 색이 따라가게 한다.
+  // ⚠️ 네이버는 붙여넣기 때 <strong>/<b> 같은 의미 태그의 인라인 color를 벗겨낸다
+  // (형광펜=background-color는 유지). 그래서 붉은 강조는 <strong>에 색을 주는 대신
+  // <strong>을 색 입힌 <span>으로 치환한다 — 스팬의 인라인 color는 편집기가 유지하는 편.
   const body = document.querySelector('.naver-body');
   if (body) {
-    body.querySelectorAll('strong').forEach((el) => {
-      (el as HTMLElement).style.color = '#c0392b';
+    body.querySelectorAll('strong, b').forEach((el) => {
+      const span = document.createElement('span');
+      span.style.color = '#c0392b';
+      span.style.fontWeight = '700';
+      while (el.firstChild) span.appendChild(el.firstChild);
+      el.replaceWith(span);
     });
     body.querySelectorAll('mark').forEach((el) => {
       (el as HTMLElement).style.backgroundColor = '#fff3a6';
