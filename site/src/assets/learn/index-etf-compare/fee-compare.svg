@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">지수 ETF 총보수 비교 (연 %, 낮을수록 비용 적음)</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 7월 24일 기준 · 각 운용사 공시</text>
+
+  <!-- baseline -->
+  <line x1="40" y1="300" x2="680" y2="300" stroke="#e5e7eb"/>
+
+  <!-- KODEX 200: 0.1500% -> 200px -->
+  <rect x="72" y="100" width="72" height="200" rx="3" fill="#0f4bd8"/>
+  <text x="108" y="93" text-anchor="middle" font-size="14" font-weight="700" fill="#0f4bd8">0.1500%</text>
+  <text x="108" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">KODEX 200</text>
+  <text x="108" y="338" text-anchor="middle" font-size="11" fill="#6b7280">코스피200</text>
+
+  <!-- TIGER 200: 0.0500% -> 67px -->
+  <rect x="200" y="233" width="72" height="67" rx="3" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="236" y="226" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">0.0500%</text>
+  <text x="236" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">TIGER 200</text>
+  <text x="236" y="338" text-anchor="middle" font-size="11" fill="#6b7280">코스피200</text>
+
+  <!-- RISE 200: 0.0170% -> 23px -->
+  <rect x="328" y="277" width="72" height="23" rx="3" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="364" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">0.0170%</text>
+  <text x="364" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">RISE 200</text>
+  <text x="364" y="338" text-anchor="middle" font-size="11" fill="#6b7280">코스피200</text>
+
+  <!-- TIGER 미국S&P500: 0.0068% -> 9px -->
+  <rect x="456" y="291" width="72" height="9" rx="2" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="492" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">0.0068%</text>
+  <text x="492" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">TIGER 미국S&amp;P500</text>
+  <text x="492" y="338" text-anchor="middle" font-size="11" fill="#6b7280">S&amp;P500</text>
+
+  <!-- KODEX 미국S&P500: 0.0062% -> 8px -->
+  <rect x="584" y="292" width="72" height="8" rx="2" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="620" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">0.0062%</text>
+  <text x="620" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">KODEX 미국S&amp;P500</text>
+  <text x="620" y="338" text-anchor="middle" font-size="11" fill="#6b7280">S&amp;P500</text>
+
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#9aa0aa">※ 총보수 외에 기타비용이 별도로 발생합니다 (합성총보수 기준은 다름)</text>
+</svg>
