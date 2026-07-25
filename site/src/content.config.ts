@@ -22,7 +22,7 @@ const naver = defineCollection({
   }),
 });
 
-// 투자 공부방 — 주말·공휴일 발행 교육 콘텐츠 (상록수 SEO). 태그로 갈래 구분.
+// 투자 공부방 — 화·목·토·일 발행 교육 콘텐츠 (상록수 SEO). 태그로 갈래 구분.
 const learn = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: './src/content/learn' }),
   schema: z.object({
