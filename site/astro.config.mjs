@@ -21,10 +21,20 @@ export default defineConfig({
       remarkPlugins: [[remarkGfm, { singleTilde: false }]],
     }),
   },
+  // 브리핑 목록은 홈(/)이고 `/briefing/` 인덱스 라우트는 없다. 그런데 개별 브리핑이
+  // `/briefing/<날짜>-briefing/`이라 본문에서 목록을 가리킬 때 `/briefing/`을 쓰는 실수가
+  // 반복됐다(2026-07-26 발행분 2편에서 죽은 링크 발견). 404 대신 홈으로 보낸다.
+  redirects: {
+    '/briefing': '/',
+  },
   integrations: [
     sitemap({
-      // 네이버 복붙용 비밀 페이지·발행 전 초안은 사이트맵에서 제외 (검색 노출 방지)
-      filter: (page) => !page.includes('/naver/') && !page.includes('/draft/'),
+      // 네이버 복붙용 비밀 페이지·발행 전 초안은 사이트맵에서 제외 (검색 노출 방지).
+      // `/briefing/` 리다이렉트 페이지도 제외 — 실제 콘텐츠가 아니다.
+      filter: (page) =>
+        !page.includes('/naver/') &&
+        !page.includes('/draft/') &&
+        !page.endsWith('/briefing/'),
     }),
   ],
 });
