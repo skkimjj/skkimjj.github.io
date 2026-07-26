@@ -63,7 +63,7 @@ date: 2026-07-26
 | TIGER 미국나스닥100 | 나스닥100 | 0.0068% | 11조 1,985억 |
 | KODEX 미국나스닥100 | 나스닥100 | 0.0062% | 8조 7,709억 |
 
-![지수 ETF 총보수 비교 — 상품별로 최대 24배까지 차이](../../../assets/learn/index-etf-compare/fee-compare.svg)
+![지수 ETF 총보수 비교 — 상품별로 최대 24배까지 차이](../../assets/learn/index-etf-compare/fee-compare.svg)
 
 읽을 포인트 세 가지입니다.
 
@@ -79,7 +79,7 @@ date: 2026-07-26
 
 【📉 같은 한 달, 이만큼 달랐습니다】
 
-![최근 1개월 수익률 — 코스피200 −22.91%, 나스닥100 −7.78%, 미국 대표지수 −4.29%](../../../assets/learn/index-etf-compare/onemonth-return.svg)
+![최근 1개월 수익률 — 코스피200 −22.91%, 나스닥100 −7.78%, 미국 대표지수 −4.29%](../../assets/learn/index-etf-compare/onemonth-return.svg)
 
 같은 한 달인데 <mark>낙폭이 5배 넘게 벌어졌습니다.</mark> 2026년 7월 한국 시장은 하루 −6%대 급락과 +4%대 급등이 교차하는 극단적 변동 구간이었고(**VKOSPI**(Volatility Index of KOSPI200, 코스피200 변동성지수) 80선), 코스피200의 절반을 차지하는 반도체 두 종목의 등락이 지수에 그대로 실렸습니다.
 
