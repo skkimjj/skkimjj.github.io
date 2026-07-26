@@ -98,8 +98,8 @@ seriesOrder: 2
 
 지수마다 담는 게 다르면 움직임도 달라집니다. 2026년 7월 24일 기준 **최근 1개월 수익률을** 보면 차이가 분명합니다.
 
-<figure class="chart">
-  <figcaption>최근 1개월 하락률 — 지수마다 낙폭이 달랐다</figcaption>
+<figure class="chart down">
+  <figcaption>최근 1개월 수익률 — 기준선 0 아래로, 지수마다 다른 낙폭</figcaption>
   <div class="bars">
     <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−22.9</span></div></div><span class="bar-label">코스피200</span></div>
     <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30.6%"><span class="bar-val">−7.8</span></div></div><span class="bar-label">나스닥100</span></div>

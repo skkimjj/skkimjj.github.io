@@ -314,6 +314,40 @@ const enableAnalytics = !noindex && !!gaId;
     color: var(--accent);
     font-weight: 700;
   }
+  /* 음수(하락) 그래프 — figure에 class="chart down"을 주면 막대가 기준선(0)에서
+     아래로 자란다. 수치는 음수인데 막대가 위로 뻗어 상승처럼 읽히는 오해를 막는다.
+     (2026-07-26 신설. 네이버용 SVG는 원래 아래로 그려왔으므로 이제 웹/네이버 표현이 일치한다.) */
+  .chart.down .bars {
+    position: relative;
+    border-top: 2px dashed var(--line);
+  }
+  .chart.down .bars::before {
+    /* 기준선 라벨. absolute라 flex 아이템이 되지 않는다(열로 끼어들지 않음). */
+    content: '0';
+    position: absolute;
+    top: -1.2rem;
+    right: 0;
+    font-size: 0.68rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .chart.down .bar-track {
+    align-items: flex-start;
+  }
+  .chart.down .bar {
+    border-radius: 0 0 4px 4px;
+    background: var(--strong);
+  }
+  .chart.down .bar-val {
+    top: 100%;
+    bottom: auto;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+  .chart.down .bar-col.hi .bar-val,
+  .chart.down .bar-col.hi .bar-label {
+    color: var(--strong);
+  }
   .chart small {
     display: block;
     margin-top: 1rem;
