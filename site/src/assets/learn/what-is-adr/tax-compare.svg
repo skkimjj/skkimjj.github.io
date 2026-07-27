@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">매매차익 1,000만원 가정 — 세금 뒤 남는 금액</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">같은 회사 주식이라도 어느 시장에서 사는지에 따라 갈립니다 (2026년 7월 세법 기준)</text>
+
+  <!-- baseline (0원) -->
+  <line x1="52" y1="300" x2="668" y2="300" stroke="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 국내 본주 : 1,000만원 -->
+  <rect x="185" y="100" width="110" height="200" rx="3" fill="#1f5fa8"/>
+  <text x="240" y="90" text-anchor="middle" font-size="17" font-weight="700" fill="#1f5fa8">1,000만원</text>
+  <text x="240" y="326" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">국내 본주 (000660)</text>
+  <text x="240" y="346" text-anchor="middle" font-size="12" fill="#6b7280">소액주주 매매차익 비과세</text>
+
+  <!-- 미국 ADR : 835만원 -->
+  <rect x="425" y="133" width="110" height="167" rx="3" fill="#7ea6d4"/>
+  <text x="480" y="123" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">835만원</text>
+  <text x="480" y="326" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">미국 ADR (SKHY)</text>
+  <text x="480" y="346" text-anchor="middle" font-size="12" fill="#6b7280">양도소득세 165만원 차감</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">ADR = (1,000만원 − 250만원 기본공제) × 22% = 165만원 · 매매수수료·환전비용·환차손익, 국내 증권거래세 0.20%는 제외</text>
+</svg>
