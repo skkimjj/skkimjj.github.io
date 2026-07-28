@@ -28,6 +28,13 @@
       "seriesOrder": 2,
       "naver_url": "https://blog.naver.com/hdglace/224358137869",
       "published": "2026-07-26"
+    },
+    "what-is-adr": {
+      "title": "ADR이란 무엇인가 — 한국 주식이 미국에서 거래되는 법",
+      "series": "개념 한 조각",
+      "seriesOrder": 2,
+      "naver_url": "https://blog.naver.com/hdglace/224360141124",
+      "published": "2026-07-28"
     }
   }
 }
