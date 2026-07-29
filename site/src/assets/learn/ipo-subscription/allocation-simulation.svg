@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">증거금별 예상 배정 주식 수 — 레메디 청약 기준</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">증거금을 100배 늘려도 배정은 7배밖에 늘지 않습니다 (균등배정 몫이 고정이라서)</text>
+
+  <!-- baseline (0주) -->
+  <line x1="52" y1="300" x2="668" y2="300" stroke="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 10.4만원 : 0.48주 -->
+  <rect x="99" y="271" width="90" height="29" rx="3" fill="#1f5fa8"/>
+  <text x="144" y="262" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">0.48주</text>
+  <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">10.4만원</text>
+  <text x="144" y="342" text-anchor="middle" font-size="11" fill="#6b7280">최소 10주</text>
+
+  <!-- 1,000만원 : 0.76주 -->
+  <rect x="246" y="254" width="90" height="46" rx="3" fill="#7ea6d4"/>
+  <text x="291" y="245" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">0.76주</text>
+  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1,000만원</text>
+
+  <!-- 3,000만원 : 1.32주 -->
+  <rect x="394" y="220" width="90" height="80" rx="3" fill="#7ea6d4"/>
+  <text x="439" y="211" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1.32주</text>
+  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3,000만원</text>
+
+  <!-- 1억원 : 3.30주 -->
+  <rect x="541" y="100" width="90" height="200" rx="3" fill="#7ea6d4"/>
+  <text x="586" y="91" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.30주</text>
+  <text x="586" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1억원</text>
+
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#9aa0aa">균등 기대치 0.47주(150,000주 ÷ 316,557건) + 비례(청약수량 ÷ 3,413) · 공모가 20,700원·증거금률 50% 가정</text>
+  <text x="360" y="384" text-anchor="middle" font-size="11" fill="#9aa0aa">청약한도·수수료 제외 · 실제 배정은 정수 단위이며 소수점 잔량은 추첨 · 2026년 7월 1~2일 청약 실적 기준 자체 계산</text>
+</svg>
