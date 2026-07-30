@@ -263,9 +263,10 @@ const enableAnalytics = !noindex && !!gaId;
   }
   .bars {
     display: flex;
-    align-items: stretch;
+    /* flex-start = 모든 열의 트랙 상단을 맞춘다. 트랙 높이가 고정이므로
+       라벨이 몇 줄이든 막대 하단이 한 줄로 정렬된다. */
+    align-items: flex-start;
     gap: 0.5rem;
-    height: 210px;
   }
   .bar-col {
     flex: 1;
@@ -274,7 +275,10 @@ const enableAnalytics = !noindex && !!gaId;
     min-width: 0;
   }
   .bar-track {
-    flex: 1;
+    /* ⚠️ 높이 고정 필수. flex:1로 두면 라벨 줄 수(<br> 유무)에 따라 트랙 높이가
+       달라져 막대 하단이 열마다 어긋난다(2026-07-30 사용자 지적).
+       라벨이 2줄인 열만 막대가 위로 올라가 보이던 원인. */
+    height: 210px;
     display: flex;
     align-items: flex-end;
   }
