@@ -18,16 +18,25 @@ const fmt = new Intl.DateTimeFormat('ko-KR', {
 
 // 구글이 '기사'로 인식하도록 하는 구조화 데이터 (JSON-LD)
 const site = Astro.site ?? new URL('http://localhost:4321');
+const canonical = new URL(Astro.url.pathname, site).href;
+const image = new URL(`${import.meta.env.BASE_URL}og-default.png`, site).href;
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: post.data.title,
   description: post.data.description ?? '',
   datePublished: post.data.date.toISOString(),
+  dateModified: (post.data.updated ?? post.data.date).toISOString(),
   inLanguage: 'ko-KR',
-  url: new URL(Astro.url.pathname, site).href,
+  url: canonical,
+  image,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   author: { '@type': 'Organization', name: '개장 전 브리핑' },
-  publisher: { '@type': 'Organization', name: '개장 전 브리핑' },
+  publisher: {
+    '@type': 'Organization',
+    name: '개장 전 브리핑',
+    logo: { '@type': 'ImageObject', url: image },
+  },
 });
 ---
 

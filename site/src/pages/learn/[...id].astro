@@ -28,16 +28,29 @@ const prev = idx > 0 ? siblings[idx - 1] : null;
 const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
 
 const site = Astro.site ?? new URL('http://localhost:4321');
+const canonical = new URL(Astro.url.pathname, site).href;
+// 구조화 데이터 이미지: 1200×630 대표 이미지. 검색결과에서 썸네일이 붙는 형태로
+// 노출될 자격은 image가 있어야 생긴다(없으면 텍스트 링크만).
+const image = new URL(`${home}og-default.png`, site).href;
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: post.data.title,
   description: post.data.description ?? '',
   datePublished: post.data.date.toISOString(),
+  // 발행 후 정정하면 updated를 채운다. 없으면 발행일과 같다고 알린다 —
+  // dateModified가 아예 없으면 글을 고쳐도 구글이 갱신을 인지하기 어렵다.
+  dateModified: (post.data.updated ?? post.data.date).toISOString(),
   inLanguage: 'ko-KR',
-  url: new URL(Astro.url.pathname, site).href,
+  url: canonical,
+  image,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   author: { '@type': 'Organization', name: '개장 전 브리핑' },
-  publisher: { '@type': 'Organization', name: '개장 전 브리핑' },
+  publisher: {
+    '@type': 'Organization',
+    name: '개장 전 브리핑',
+    logo: { '@type': 'ImageObject', url: image },
+  },
 });
 ---
 
