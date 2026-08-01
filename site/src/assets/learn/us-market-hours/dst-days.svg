@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 — 미국 증시가 한국시간 22:30에 열리는 날</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">1년의 약 65%가 서머타임 기간입니다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 서머타임 : 238일 -->
+  <path d="M170 300 V93 A3 3 0 0 1 173 90 H307 A3 3 0 0 1 310 93 V300 Z" fill="#1f5fa8"/>
+  <text x="240" y="78" text-anchor="middle" font-size="17" font-weight="700" fill="#1f5fa8">238일</text>
+  <text x="240" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">서머타임</text>
+  <text x="240" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">3/8~11/1 · 22:30 개장</text>
+
+  <!-- 표준시 : 127일 -->
+  <path d="M410 300 V191 A3 3 0 0 1 413 188 H547 A3 3 0 0 1 550 191 V300 Z" fill="#7ea6d4"/>
+  <text x="480" y="176" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">127일</text>
+  <text x="480" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">표준시</text>
+  <text x="480" y="342" text-anchor="middle" font-size="11" fill="#6b7280">나머지 · 23:30 개장</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">막대 값 = 2026년 달력일 수(총 365일) · 미국 서머타임 2026년 3월 8일~11월 1일 기준</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">에너지정책법(2005) 규정 일정을 근거로 한 자체 계산 · 2026년 8월 확인</text>
+</svg>

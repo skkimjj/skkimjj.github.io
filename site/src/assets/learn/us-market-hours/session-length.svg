@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">미국 증시 세션별 길이 — 시간외가 정규장보다 깁니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">하루 16시간 중 정규장은 6.5시간뿐입니다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 프리마켓 : 5.5시간 -->
+  <path d="M99 300 V181 A3 3 0 0 1 102 178 H204 A3 3 0 0 1 207 181 V300 Z" fill="#7ea6d4"/>
+  <text x="153" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">5.5시간</text>
+  <text x="153" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">프리마켓</text>
+  <text x="153" y="342" text-anchor="middle" font-size="10" fill="#6b7280">04:00~09:30 ET</text>
+
+  <!-- 정규장 : 6.5시간 -->
+  <path d="M249 300 V159 A3 3 0 0 1 252 156 H354 A3 3 0 0 1 357 159 V300 Z" fill="#7ea6d4"/>
+  <text x="303" y="144" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">6.5시간</text>
+  <text x="303" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">정규장</text>
+  <text x="303" y="342" text-anchor="middle" font-size="10" fill="#6b7280">09:30~16:00 ET</text>
+
+  <!-- 애프터마켓 : 4시간 -->
+  <path d="M399 300 V215 A3 3 0 0 1 402 212 H504 A3 3 0 0 1 507 215 V300 Z" fill="#7ea6d4"/>
+  <text x="453" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4시간</text>
+  <text x="453" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">애프터마켓</text>
+  <text x="453" y="342" text-anchor="middle" font-size="10" fill="#6b7280">16:00~20:00 ET</text>
+
+  <!-- 시간외 합계 : 9.5시간 -->
+  <path d="M549 300 V93 A3 3 0 0 1 552 90 H654 A3 3 0 0 1 657 93 V300 Z" fill="#1f5fa8"/>
+  <text x="603" y="78" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">9.5시간</text>
+  <text x="603" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">시간외 합계</text>
+  <text x="603" y="342" text-anchor="middle" font-size="10" fill="#1f5fa8">프리 + 애프터</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">막대 값 = 세션 길이(시간) · 미국 동부시간(ET) 기준 세션 구간을 근거로 한 자체 계산</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">2026년 8월 기준 · 증권사가 실제 지원하는 시간은 이보다 짧을 수 있습니다</text>
+</svg>
