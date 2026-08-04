@@ -68,7 +68,12 @@ const section = path.startsWith(`${home}learn`)
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="개장 전 브리핑" />
     <meta name="twitter:card" content="summary_large_image" />
+    {/* svg만 선언하면 크롬이 /favicon.ico를 별도로 가져가 그쪽을 쓴다. 실제로
+        옛 마크가 탭에 남는 원인이었다(2026-08-04). ico를 명시적으로 선언하고
+        파일도 같은 마크로 맞춰 둔다. */}
     <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
+    <link rel="icon" type="image/x-icon" sizes="48x48" href={`${home}favicon.ico`} />
+    <link rel="apple-touch-icon" href={`${home}apple-touch-icon.png`} />
     {
       enableAnalytics && (
         <script define:vars={{ gaId }}>
