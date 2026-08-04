@@ -15,6 +15,20 @@ const canonical = new URL(Astro.url.pathname, site).href;
 // 네이버로 복사되는 HTML에 추적 코드가 섞이면 안 되기 때문.
 const gaId = import.meta.env.PUBLIC_GA4_ID;
 const enableAnalytics = !noindex && !!gaId;
+
+// 헤더 장 상태 표시용 휴장일. 원본은 비공개 레포 data/krx-holidays.json이고,
+// 매년 갱신할 때 site/src/data/market-holidays.json도 함께 고쳐야 한다.
+import holidays from '../data/market-holidays.json';
+
+// 현재 위치 표시(aria-current). 브리핑 개별 글도 '오늘 브리핑' 탭으로 묶는다.
+const path = Astro.url.pathname;
+const section = path.startsWith(`${home}learn`)
+  ? 'learn'
+  : path.startsWith(`${home}about`)
+    ? 'about'
+    : path.startsWith(`${home}contact`)
+      ? 'contact'
+      : 'briefing';
 ---
 
 <!doctype html>
@@ -73,16 +87,96 @@ const enableAnalytics = !noindex && !!gaId;
     }
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-title-row">
-        <a href={home} class="site-title">개장 전 브리핑</a>
-        <nav class="site-nav">
-          <a href={`${home}learn/`}>공부방</a>
-          <a href={`${home}about/`}>소개</a>
-        </nav>
+    <header class="board">
+      <div class="board-top">
+        <a href={home} class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 128 128">
+              <line
+                x1="64"
+                y1="16"
+                x2="64"
+                y2="112"
+                stroke="#d64545"
+                stroke-width="9"
+                stroke-linecap="round"></line>
+              <rect x="42" y="40" width="44" height="52" rx="6" fill="#d64545"
+              ></rect>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <b>개장 전 브리핑</b>
+            <span class="tagline">매일 아침, 시장 데이터 팩트 정리</span>
+          </span>
+        </a>
+        {/* 장 상태·시각은 정적 빌드로 알 수 없다. 스크립트가 채우기 전에는
+            숨겨 두어 틀린 값이 잠깐 보이는 일을 막는다. */}
+        <p class="status" id="market-status" hidden>
+          <span class="live"><i aria-hidden="true"></i><span data-state></span></span>
+          <span data-clock></span>
+        </p>
       </div>
-      <p class="site-tagline">매일 아침, 시장 데이터 팩트 정리</p>
+      <nav class="board-nav" aria-label="주요 메뉴">
+        <a href={home} aria-current={section === 'briefing' ? 'page' : undefined}>
+          오늘 브리핑
+        </a>
+        <a
+          href={`${home}learn/`}
+          aria-current={section === 'learn' ? 'page' : undefined}>
+          투자 공부방
+        </a>
+        <a
+          href={`${home}about/`}
+          aria-current={section === 'about' ? 'page' : undefined}>
+          소개
+        </a>
+        <a
+          href={`${home}contact/`}
+          aria-current={section === 'contact' ? 'page' : undefined}>
+          연락처
+        </a>
+      </nav>
     </header>
+    <script define:vars={{ holidays: holidays.dates }} is:inline>
+      (function () {
+        var el = document.getElementById('market-status');
+        if (!el) return;
+        function render() {
+          // KST 기준 '지금'. 사용자의 시간대와 무관하게 한국 장을 판정한다.
+          var kst = new Date(Date.now() + 9 * 36e5);
+          var p = function (n) {
+            return String(n).padStart(2, '0');
+          };
+          var ymd =
+            kst.getUTCFullYear() +
+            '-' +
+            p(kst.getUTCMonth() + 1) +
+            '-' +
+            p(kst.getUTCDate());
+          var dow = kst.getUTCDay();
+          var mins = kst.getUTCHours() * 60 + kst.getUTCMinutes();
+          var state;
+          if (dow === 0 || dow === 6 || holidays.indexOf(ymd) !== -1)
+            state = '휴장';
+          else if (mins < 9 * 60) state = '개장 전';
+          else if (mins < 15 * 60 + 30) state = '장중';
+          else state = '장 마감';
+          el.querySelector('[data-state]').textContent = state;
+          el.querySelector('[data-clock]').textContent =
+            ymd.replace(/-/g, '.') +
+            ' (' +
+            '일월화수목금토'[dow] +
+            ') ' +
+            p(kst.getUTCHours()) +
+            ':' +
+            p(kst.getUTCMinutes()) +
+            ' KST';
+          el.hidden = false;
+        }
+        render();
+        setInterval(render, 30000);
+      })();
+    </script>
     <main>
       <slot />
     </main>
@@ -92,18 +186,18 @@ const enableAnalytics = !noindex && !!gaId;
          면책 문구가 딸려가는 것을 막기 위함. 공개 페이지에만 렌더링. */
       !noindex && (
         <footer class="site-footer">
-          <p>
-            본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며, 특정
-            종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은 투자자
-            본인에게 있습니다.
-          </p>
-          <p class="footer-links">
-            <a href={`${home}about/`}>소개</a>
-            <span aria-hidden="true">·</span>
-            <a href={`${home}contact/`}>연락처</a>
-            <span aria-hidden="true">·</span>
-            <a href={`${home}privacy/`}>개인정보처리방침</a>
-          </p>
+          <div class="footer-inner">
+            <p class="footer-links">
+              <a href={`${home}about/`}>소개</a>
+              <a href={`${home}contact/`}>연락처</a>
+              <a href={`${home}privacy/`}>개인정보처리방침</a>
+            </p>
+            <p>
+              본 사이트의 글은 공개된 시장 데이터를 정리한 정보성 콘텐츠이며,
+              특정 종목·상품의 매매 권유가 아닙니다. 모든 투자 판단과 책임은
+              투자자 본인에게 있습니다.
+            </p>
+          </div>
         </footer>
       )
     }
@@ -120,6 +214,13 @@ const enableAnalytics = !noindex && !!gaId;
     --bg-soft: #f7f8fa;
     --mark-bg: #ffe89a;
     --strong: #b43c3c;
+    /* 시세판(헤더·푸터) — 라이트/다크 양쪽에서 어두운 띠를 유지한다.
+       본문 흰 여백과 대비를 만들어 글이 또렷해 보이게 하는 것이 이 디자인의 요지. */
+    --board: #141a24;
+    --board-fg: #eef1f6;
+    --board-muted: #9aa7ba;
+    --board-line: #2b3444;
+    --signal: #d64545;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -131,6 +232,11 @@ const enableAnalytics = !noindex && !!gaId;
       --bg-soft: #1a2029;
       --mark-bg: #7a641a;
       --strong: #ff8b8b;
+      --board: #070a10;
+      --board-fg: #e7eaf1;
+      --board-muted: #8794a8;
+      --board-line: #232b3a;
+      --signal: #e05a5a;
     }
   }
   * {
@@ -138,7 +244,6 @@ const enableAnalytics = !noindex && !!gaId;
   }
   body {
     margin: 0;
-    border-top: 4px solid #d64545;
     font-family:
       'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', system-ui,
       sans-serif;
@@ -147,39 +252,125 @@ const enableAnalytics = !noindex && !!gaId;
     line-height: 1.7;
     word-break: keep-all;
   }
-  .site-header {
+  /* ── 시세판 헤더 ───────────────────────────────────────────────
+     본문 폭(720px)은 그대로 두고 띠만 화면 전체로 흘린다. 안쪽 정렬은
+     .board-top / .board-nav 가 각각 720px로 맞춘다. */
+  .board {
+    background: var(--board);
+    border-bottom: 3px solid var(--signal);
+  }
+  .board-top,
+  .board-nav,
+  .footer-inner {
     max-width: 720px;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--line);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
-  .site-title-row {
+  .board-top {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
+    gap: 0.75rem 1rem;
+    flex-wrap: wrap;
+    padding-top: 0.9rem;
+    padding-bottom: 0.75rem;
   }
-  .site-title {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--text);
-    text-decoration: none;
-  }
-  .site-nav {
+  .brand {
     display: flex;
-    gap: 1rem;
-  }
-  .site-nav a {
-    color: var(--muted);
+    align-items: center;
+    gap: 0.6rem;
     text-decoration: none;
-    font-size: 0.9rem;
+    color: var(--board-fg);
   }
-  .site-nav a:hover {
-    color: var(--accent);
+  .brand .mark {
+    width: 26px;
+    height: 26px;
+    flex: none;
+    border-radius: 22%;
+    background: rgba(255, 255, 255, 0.06);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
   }
-  .site-tagline {
-    margin: 0.25rem 0 0;
-    color: var(--muted);
-    font-size: 0.9rem;
+  .brand .mark svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand b {
+    display: block;
+    font-size: 1.12rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .brand .tagline {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--board-muted);
+    line-height: 1.4;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    color: var(--board-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .status .live {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(214, 69, 69, 0.16);
+    color: #ff9a9a;
+    border: 1px solid rgba(214, 69, 69, 0.45);
+    border-radius: 4px;
+    padding: 0.05rem 0.4rem;
+    font-weight: 700;
+  }
+  .status .live i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    display: block;
+  }
+  .board-nav {
+    display: flex;
+    gap: 0.2rem;
+    border-top: 1px solid var(--board-line);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .board-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .board-nav a {
+    color: var(--board-muted);
+    text-decoration: none;
+    font-size: 0.86rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0.6rem 0.85rem;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+  }
+  .board-nav a:hover {
+    color: var(--board-fg);
+  }
+  .board-nav a[aria-current] {
+    color: #fff;
+    border-bottom-color: var(--signal);
+  }
+  .board a:focus-visible,
+  .site-footer a:focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 2px;
+    border-radius: 3px;
   }
   main {
     max-width: 720px;
@@ -187,25 +378,32 @@ const enableAnalytics = !noindex && !!gaId;
     padding: 1.5rem 1.25rem 3rem;
   }
   .site-footer {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 1.5rem 1.25rem 3rem;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.8rem;
+    background: var(--board);
+    color: var(--board-muted);
+    font-size: 0.79rem;
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+  }
+  .footer-inner p {
+    margin: 0;
   }
   .footer-links {
-    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
   }
   .footer-links a {
-    color: var(--muted);
+    color: var(--board-fg);
     text-decoration: none;
+    font-weight: 600;
   }
   .footer-links a:hover {
-    color: var(--accent);
-  }
-  .footer-links span {
-    margin: 0 0.5rem;
+    color: var(--signal);
   }
   a {
     color: var(--accent);
