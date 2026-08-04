@@ -26,9 +26,16 @@ const enableAnalytics = !noindex && !!gaId;
       name="google-site-verification"
       content="esZkEQ6blxan9Ku46Le4lU3UylTTfA1wNADedJYYK08"
     />
+    {/* 네이버 소유확인 태그 2개 — 위: 옛 주소(skkimjj.github.io), 아래: gaejang.com(2026-08-04 전환).
+        서치어드바이저는 사이트(주소)별로 다른 토큰을 발급하므로 둘 다 남긴다. 옛 주소 속성을
+        정리하기 전에 위 태그를 지우면 그쪽 소유확인이 풀린다. */}
     <meta
       name="naver-site-verification"
       content="6369cfcf77519190937260a204c3581aeef2e051"
+    />
+    <meta
+      name="naver-site-verification"
+      content="5f95529cbf9290a31078ee93298faaa94508213c"
     />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
