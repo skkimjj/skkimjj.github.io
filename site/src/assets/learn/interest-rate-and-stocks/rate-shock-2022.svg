@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 412" width="720" height="412" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="410" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">금리가 1년에 4.25%p 오른 해, 지수별 낙폭</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2022년 연간 등락률 · 성장주 비중이 큰 지수가 더 많이 빠졌습니다</text>
+
+  <!-- zero line (0%) — 막대 위쪽에만 놓아 막대 상단을 침범하지 않게 한다 -->
+  <rect x="52" y="94" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="98" text-anchor="end" font-size="11" fill="#9aa0aa">0%</text>
+
+  <!-- 막대는 기준선에서 아래로 자라고, 아래쪽만 둥글게(r=3) 한다 -->
+  <!-- 다우존스 −8.8% -->
+  <path d="M98 95 V145 A3 3 0 0 0 101 148 H191 A3 3 0 0 0 194 145 V95 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="146" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">−8.8%</text>
+  <text x="146" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">다우존스</text>
+  <text x="146" y="360" text-anchor="middle" font-size="11" fill="#6b7280">전통 대형주 중심</text>
+
+  <!-- S&P 500 −19.4% -->
+  <path d="M240 95 V209 A3 3 0 0 0 243 212 H333 A3 3 0 0 0 336 209 V95 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="288" y="232" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">−19.4%</text>
+  <text x="288" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">S&#38;P 500</text>
+  <text x="288" y="360" text-anchor="middle" font-size="11" fill="#6b7280">미국 대형주 500</text>
+
+  <!-- 코스피 −24.9% -->
+  <path d="M382 95 V242 A3 3 0 0 0 385 245 H475 A3 3 0 0 0 478 242 V95 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="430" y="265" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">−24.9%</text>
+  <text x="430" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피</text>
+  <text x="430" y="360" text-anchor="middle" font-size="11" fill="#6b7280">환율·수출 요인 동반</text>
+
+  <!-- 나스닥 −33.1% -->
+  <path d="M524 95 V292 A3 3 0 0 0 527 295 H617 A3 3 0 0 0 620 292 V95 Z" fill="#c0392b"/>
+  <text x="572" y="315" text-anchor="middle" font-size="16" font-weight="700" fill="#c0392b">−33.1%</text>
+  <text x="572" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">나스닥</text>
+  <text x="572" y="360" text-anchor="middle" font-size="11" fill="#c0392b">기술·성장주 비중 최대</text>
+
+  <text x="360" y="384" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 2022년 연간 등락률 · 미 연준은 2022년 7차례에 걸쳐 기준금리를 0~0.25%에서 4.25~4.50%로 올렸습니다</text>
+  <text x="360" y="400" text-anchor="middle" font-size="11" fill="#9aa0aa">과거의 한 사례이며 같은 일이 반복된다는 뜻은 아닙니다 · 지수 간 우열을 판단하는 자료가 아닙니다</text>
+</svg>

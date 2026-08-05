@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">지금의 금리 지형 — 기준금리보다 시장금리가 높다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 8월 5일 기준 · 한국은행 · 채권시장 종가</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 한국 기준금리 2.75% -->
+  <path d="M98 300 V184 A3 3 0 0 1 101 181 H191 A3 3 0 0 1 194 184 V300 Z" fill="#7ea6d4"/>
+  <text x="146" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2.75%</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">한국 기준금리</text>
+  <text x="146" y="342" text-anchor="middle" font-size="11" fill="#6b7280">7월 16일 인상</text>
+
+  <!-- 국고채 3년 3.669% -->
+  <path d="M240 300 V144 A3 3 0 0 1 243 141 H333 A3 3 0 0 1 336 144 V300 Z" fill="#1f5fa8"/>
+  <text x="288" y="126" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">3.669%</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">국고채 3년</text>
+  <text x="288" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">기준금리 +0.92%p</text>
+
+  <!-- 국고채 10년 4.150% -->
+  <path d="M382 300 V123 A3 3 0 0 1 385 120 H475 A3 3 0 0 1 478 123 V300 Z" fill="#7ea6d4"/>
+  <text x="430" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4.150%</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">국고채 10년</text>
+  <text x="430" y="342" text-anchor="middle" font-size="11" fill="#6b7280">만기 길수록 높다</text>
+
+  <!-- 미 국채 10년 4.615% -->
+  <path d="M524 300 V103 A3 3 0 0 1 527 100 H617 A3 3 0 0 1 620 103 V300 Z" fill="#7ea6d4"/>
+  <text x="572" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4.615%</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">미 국채 10년</text>
+  <text x="572" y="342" text-anchor="middle" font-size="11" fill="#6b7280">미 기준금리 3.50~3.75%</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 연 % · 기준금리는 한국은행(2026년 7월 16일 결정), 국고채는 2026년 8월 5일 종가</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">금리 방향을 예측하는 자료가 아니라 특정 시점의 수준을 나란히 놓은 것입니다</text>
+</svg>
