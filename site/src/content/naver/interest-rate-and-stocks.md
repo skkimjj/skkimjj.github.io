@@ -29,7 +29,7 @@ date: 2026-08-06
 
 주가에 실제로 닿는 건 그 신호를 받아 움직이는 <mark>시장금리</mark>입니다. 대표가 **국고채 금리**(정부 발행 채권의 유통 수익률)죠.
 
-![지금의 금리 지형](../../../assets/learn/interest-rate-and-stocks/rate-landscape.svg)
+![지금의 금리 지형](../../assets/learn/interest-rate-and-stocks/rate-landscape.svg)
 
 여기서 두 가지가 보입니다.
 
@@ -53,7 +53,7 @@ date: 2026-08-06
 
 할인율만 바꿔서 계산해 봤습니다.
 
-![할인율에 따른 현재가치](../../../assets/learn/interest-rate-and-stocks/discount-rate.svg)
+![할인율에 따른 현재가치](../../assets/learn/interest-rate-and-stocks/discount-rate.svg)
 
 **미래에 받을 금액은 100만원으로 똑같습니다.** 바뀐 건 할인율뿐인데 오늘의 값어치가 74.4만원 → 42.2만원으로 <mark>거의 반토막</mark>입니다.
 
@@ -78,7 +78,7 @@ date: 2026-08-06
 
 이게 가장 극적으로 드러난 해가 **2022년**입니다. 미 연준이 그해 7차례에 걸쳐 기준금리를 0~0.25%에서 4.25~4.50%로, <mark>1년 만에 4.25%포인트</mark> 올렸습니다.
 
-![2022년 지수별 낙폭](../../../assets/learn/interest-rate-and-stocks/rate-shock-2022.svg)
+![2022년 지수별 낙폭](../../assets/learn/interest-rate-and-stocks/rate-shock-2022.svg)
 
 전통 대형주 중심 다우가 −8.8%였던 해에, 기술·성장주 비중이 가장 큰 나스닥은 −33.1%였습니다. <mark>같은 금리 인상 앞에서 낙폭이 약 4배</mark> 차이 난 겁니다. 코스피(−24.9%)는 여기에 환율·수출 요인까지 겹쳤습니다.
 
