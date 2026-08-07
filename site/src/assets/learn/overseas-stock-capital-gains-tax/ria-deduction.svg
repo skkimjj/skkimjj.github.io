@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">RIA 양도소득 공제율 — 매도 결제일이 늦을수록 줄어든다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 한시 제도 · 2026년 8월 8일 기준 현재는 50% 구간</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 1~5월 : 100% -->
+  <path d="M130 300 V103 A3 3 0 0 1 133 100 H247 A3 3 0 0 1 250 103 V300 Z" fill="#7ea6d4"/>
+  <text x="190" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">100%</text>
+  <text x="190" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1~5월 매도</text>
+  <text x="190" y="342" text-anchor="middle" font-size="11" fill="#6b7280">종료</text>
+
+  <!-- 6~7월 : 80% -->
+  <path d="M300 300 V143 A3 3 0 0 1 303 140 H417 A3 3 0 0 1 420 143 V300 Z" fill="#7ea6d4"/>
+  <text x="360" y="125" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">80%</text>
+  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">6~7월 매도</text>
+  <text x="360" y="342" text-anchor="middle" font-size="11" fill="#6b7280">종료</text>
+
+  <!-- 8~12월 : 50% -->
+  <path d="M470 300 V203 A3 3 0 0 1 473 200 H587 A3 3 0 0 1 590 203 V300 Z" fill="#1f5fa8"/>
+  <text x="530" y="185" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">50%</text>
+  <text x="530" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">8~12월 매도</text>
+  <text x="530" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">현재 구간</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 해외주식 매도 결제일 기준 양도소득 공제율 · 삼성증권·미래에셋증권·KB 안내 자료 교차확인</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">1인당 5,000만원 납입한도 · 1년 의무보유 · 2026년 12월 31일 매도 결제분까지</text>
+</svg>

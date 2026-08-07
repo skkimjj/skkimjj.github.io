@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">양도소득세 확정신고 안내, 4명 중 3명이 해외주식</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 5월 국세청 안내 대상 약 22만명의 구성 · 2026년 5월 4일 보도 기준</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 국외주식 18.2만명 -->
+  <path d="M98 300 V103 A3 3 0 0 1 101 100 H191 A3 3 0 0 1 194 103 V300 Z" fill="#1f5fa8"/>
+  <text x="146" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">18.2만명</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">국외주식</text>
+  <text x="146" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">전체의 약 83%</text>
+
+  <!-- 국내주식 1.6만명 -->
+  <path d="M240 300 V285 A3 3 0 0 1 243 282 H333 A3 3 0 0 1 336 285 V300 Z" fill="#7ea6d4"/>
+  <text x="288" y="267" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1.6만명</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">국내주식</text>
+  <text x="288" y="342" text-anchor="middle" font-size="11" fill="#6b7280">대주주·비상장 등</text>
+
+  <!-- 파생상품 1.1만명 -->
+  <path d="M382 300 V291 A3 3 0 0 1 385 288 H475 A3 3 0 0 1 478 291 V300 Z" fill="#7ea6d4"/>
+  <text x="430" y="273" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1.1만명</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">파생상품</text>
+
+  <!-- 부동산 1.0만명 -->
+  <path d="M524 300 V292 A3 3 0 0 1 527 289 H617 A3 3 0 0 1 620 292 V300 Z" fill="#7ea6d4"/>
+  <text x="572" y="274" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1.0만명</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">부동산</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 명 · 국세청이 2025년 귀속 양도소득세 확정신고 안내문을 발송한 인원</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">일반 투자자의 국내 상장주식 장내 매매차익은 애초에 양도소득세 대상이 아닙니다</text>
+</svg>
