@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 국내 ETF 순자산총액 — 한 달 만에 100조원 이상 감소</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">쏠림은 오를 때만이 아니라 내릴 때도 함께 움직인다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 5월 27일 501.8조 -->
+  <path d="M140 300 V115 A3 3 0 0 1 143 112 H257 A3 3 0 0 1 260 115 V300 Z" fill="#7ea6d4"/>
+  <text x="200" y="97" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">501.8조원</text>
+  <text x="200" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5월 27일</text>
+  <text x="200" y="341" text-anchor="middle" font-size="11" fill="#6b7280">첫 500조 돌파</text>
+
+  <!-- 6월 22일 533조 (최고치) -->
+  <path d="M300 300 V103 A3 3 0 0 1 303 100 H417 A3 3 0 0 1 420 103 V300 Z" fill="#1f5fa8"/>
+  <text x="360" y="85" text-anchor="middle" font-size="17" font-weight="700" fill="#1f5fa8">533조원</text>
+  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">6월 22일</text>
+  <text x="360" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">최고치</text>
+
+  <!-- 7월 29일 400조원대 -->
+  <path d="M460 300 V153 A3 3 0 0 1 463 150 H577 A3 3 0 0 1 580 153 V300 Z" fill="#7ea6d4"/>
+  <text x="520" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">400조원대</text>
+  <text x="520" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">7월 29일</text>
+  <text x="520" y="341" text-anchor="middle" font-size="11" fill="#6b7280">100조원 이상 감소</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 조원 · 5월 27일 501조 8,199억원(2026년 5월 31일 보도) · 6월 22일·7월 29일(2026년 7월 29일 보도)</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">7월 29일 값은 보도상 '400조원대'로만 제시돼 막대는 개략치입니다</text>
+</svg>

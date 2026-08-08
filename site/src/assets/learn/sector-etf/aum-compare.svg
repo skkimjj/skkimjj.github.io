@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">같은 운용사 4개 상품의 순자산총액 — 같은 '섹터·테마'인데</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 8월 7일 기준 · 반도체 쪽에 자금이 몰려 있는 모양</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- TIGER 200 : 93,434억 -->
+  <path d="M98 300 V103 A3 3 0 0 1 101 100 H191 A3 3 0 0 1 194 103 V300 Z" fill="#7ea6d4"/>
+  <text x="146" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">93,434억</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">TIGER 200</text>
+  <text x="146" y="341" text-anchor="middle" font-size="11" fill="#6b7280">지수형(코스피200)</text>
+
+  <!-- Fn반도체TOP10 : 81,670억 -->
+  <path d="M240 300 V128 A3 3 0 0 1 243 125 H333 A3 3 0 0 1 336 128 V300 Z" fill="#1f5fa8"/>
+  <text x="288" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">81,670억</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">Fn반도체TOP10</text>
+  <text x="288" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">지수형에 육박</text>
+
+  <!-- 2차전지소재Fn : 4,810억 -->
+  <path d="M382 300 V293 A3 3 0 0 1 385 290 H475 A3 3 0 0 1 478 293 V300 Z" fill="#7ea6d4"/>
+  <text x="430" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4,810억</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2차전지소재Fn</text>
+  <text x="430" y="341" text-anchor="middle" font-size="11" fill="#6b7280">반도체의 약 1/17</text>
+
+  <!-- 바이오TOP10 : 2,958억 -->
+  <path d="M524 300 V297 A3 3 0 0 1 527 294 H617 A3 3 0 0 1 620 297 V300 Z" fill="#7ea6d4"/>
+  <text x="572" y="284" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2,958억</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">바이오TOP10</text>
+  <text x="572" y="341" text-anchor="middle" font-size="11" fill="#6b7280">반도체의 약 1/28</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 억원 · 미래에셋자산운용 각 상품 페이지 공시(순자산 기준일 2026년 8월 7일)</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">구조 차이를 보기 위해 같은 운용사 상품으로 고른 표본이며 상품의 우열을 뜻하지 않습니다</text>
+</svg>

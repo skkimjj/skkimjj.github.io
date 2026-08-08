@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 6월 점도표 — 2026년 말 정책금리 전망 분포</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">점 18개(참여자 19명 중 18명 제출) · 중간값 3.8%에 찍은 사람은 아무도 없다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 3.375% : 1명 -->
+  <path d="M90 300 V278 A3 3 0 0 1 93 275 H171 A3 3 0 0 1 174 278 V300 Z" fill="#7ea6d4"/>
+  <text x="132" y="260" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1명</text>
+  <text x="132" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3.375%</text>
+  <text x="132" y="341" text-anchor="middle" font-size="11" fill="#6b7280">인하</text>
+
+  <!-- 3.625% : 8명 -->
+  <path d="M204 300 V103 A3 3 0 0 1 207 100 H285 A3 3 0 0 1 288 103 V300 Z" fill="#1f5fa8"/>
+  <text x="246" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">8명</text>
+  <text x="246" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">3.625%</text>
+  <text x="246" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">현 수준 유지</text>
+
+  <!-- 3.875% : 3명 -->
+  <path d="M318 300 V228 A3 3 0 0 1 321 225 H399 A3 3 0 0 1 402 228 V300 Z" fill="#7ea6d4"/>
+  <text x="360" y="210" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3명</text>
+  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3.875%</text>
+  <text x="360" y="341" text-anchor="middle" font-size="11" fill="#6b7280">1회 인상</text>
+
+  <!-- 4.125% : 5명 -->
+  <path d="M432 300 V178 A3 3 0 0 1 435 175 H513 A3 3 0 0 1 516 178 V300 Z" fill="#7ea6d4"/>
+  <text x="474" y="160" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">5명</text>
+  <text x="474" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">4.125%</text>
+  <text x="474" y="341" text-anchor="middle" font-size="11" fill="#6b7280">2회 인상</text>
+
+  <!-- 4.375% : 1명 -->
+  <path d="M546 300 V278 A3 3 0 0 1 549 275 H627 A3 3 0 0 1 630 278 V300 Z" fill="#7ea6d4"/>
+  <text x="588" y="260" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1명</text>
+  <text x="588" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">4.375%</text>
+  <text x="588" y="341" text-anchor="middle" font-size="11" fill="#6b7280">3회 인상</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 명 · 연준 SEP(2026년 6월 17일 공표) Figure 2 기준</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">인상 9명 vs 현 수준·인하 9명 — 정확히 반으로 갈렸습니다(인상 횟수 환산은 자체 계산)</text>
+</svg>

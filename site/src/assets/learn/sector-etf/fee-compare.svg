@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">지수형과 섹터·테마형의 총보수 차이 — 약 8~9배</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">같은 운용사 기준 · 기타비용·매매중개수수료는 제외한 총보수</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- TIGER 200 : 0.05% -->
+  <path d="M98 300 V281 A3 3 0 0 1 101 278 H191 A3 3 0 0 1 194 281 V300 Z" fill="#7ea6d4"/>
+  <text x="146" y="266" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">0.05%</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">TIGER 200</text>
+  <text x="146" y="341" text-anchor="middle" font-size="11" fill="#6b7280">지수형</text>
+
+  <!-- Fn반도체TOP10 : 0.45% -->
+  <path d="M240 300 V103 A3 3 0 0 1 243 100 H333 A3 3 0 0 1 336 103 V300 Z" fill="#1f5fa8"/>
+  <text x="288" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">0.45%</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">Fn반도체TOP10</text>
+
+  <!-- 바이오TOP10 : 0.40% -->
+  <path d="M382 300 V125 A3 3 0 0 1 385 122 H475 A3 3 0 0 1 478 125 V300 Z" fill="#7ea6d4"/>
+  <text x="430" y="107" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">0.40%</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">바이오TOP10</text>
+
+  <!-- 2차전지소재Fn : 0.39% -->
+  <path d="M524 300 V130 A3 3 0 0 1 527 127 H617 A3 3 0 0 1 620 130 V300 Z" fill="#7ea6d4"/>
+  <text x="572" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">0.39%</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2차전지소재Fn</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 연 % · 미래에셋자산운용 각 상품 페이지 공시 총보수, 2026년 8월 8일 확인</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">100만원 1년 보유 시 500원 대 3,900~4,500원 · 상품의 우열을 뜻하지 않습니다</text>
+</svg>
