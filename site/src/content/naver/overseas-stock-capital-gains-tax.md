@@ -13,7 +13,7 @@ date: 2026-08-08
 
 숫자부터 놓고 시작하겠습니다. 2026년 5월, 국세청이 양도소득세 확정신고 안내문을 보낸 사람이 약 22만명이었는데 그 구성이 이랬습니다.
 
-![양도소득세 확정신고 안내 대상 구성](../../../assets/learn/overseas-stock-capital-gains-tax/filing-notice-mix.svg)
+![양도소득세 확정신고 안내 대상 구성](../../assets/learn/overseas-stock-capital-gains-tax/filing-notice-mix.svg)
 
 국내주식으로 안내를 받은 사람은 1만 6,000명뿐입니다. <mark>일반 투자자가 국내 상장주식을 장내에서 사고팔아 남긴 차익은 애초에 양도소득세 대상이 아니기 때문</mark>입니다.
 
@@ -46,7 +46,7 @@ date: 2026-08-08
 
 차익 규모별로 실제 세금이 얼마인지 계산해 봤습니다.
 
-![양도차익별 실제 납부세액](../../../assets/learn/overseas-stock-capital-gains-tax/tax-by-gain.svg)
+![양도차익별 실제 납부세액](../../assets/learn/overseas-stock-capital-gains-tax/tax-by-gain.svg)
 
 차익이 정확히 250만원이면 세금은 0원, 500만원이면 초과분 250만원에만 22%가 붙어 55만원입니다.
 
@@ -119,7 +119,7 @@ date: 2026-08-08
 
 공제율은 **매도 결제일이 언제냐**에 따라 계단식으로 줄어듭니다.
 
-![RIA 양도소득 공제율](../../../assets/learn/overseas-stock-capital-gains-tax/ria-deduction.svg)
+![RIA 양도소득 공제율](../../assets/learn/overseas-stock-capital-gains-tax/ria-deduction.svg)
 
 제도의 뼈대는 이렇습니다.
 
