@@ -103,12 +103,12 @@ ADR은 회사가 얼마나 깊이 관여하는지, **SEC**(Securities and Exchan
 <figure class="chart">
   <figcaption>SK하이닉스 ADR 괴리율 추이 — 전환 창구가 좁을 때의 프리미엄</figcaption>
   <div class="bars">
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">+38.5</span></div></div><span class="bar-label">07/16</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:57%"><span class="bar-val">+24.4</span></div></div><span class="bar-label">07/20</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:88.8%"><span class="bar-val">+38.0</span></div></div><span class="bar-label">07/22</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:69.2%"><span class="bar-val">+29.6</span></div></div><span class="bar-label">07/24</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:67.6%"><span class="bar-val">+28.9</span></div></div><span class="bar-label">07/27</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:36.7%"><span class="bar-val">+15.7</span></div></div><span class="bar-label">07/28</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">+38.5%</span></div></div><span class="bar-label">07/16</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:57%"><span class="bar-val">+24.4%</span></div></div><span class="bar-label">07/20</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:88.8%"><span class="bar-val">+38.0%</span></div></div><span class="bar-label">07/22</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:69.2%"><span class="bar-val">+29.6%</span></div></div><span class="bar-label">07/24</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:67.6%"><span class="bar-val">+28.9%</span></div></div><span class="bar-label">07/27</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:36.7%"><span class="bar-val">+15.7%</span></div></div><span class="bar-label">07/28</span></div>
   </div>
   <small>단위: % · 본 사이트 개장 전 브리핑의 괴리율 트래커 기준(ADR 종가 × 10 × 원/달러 환율 대비 본주 종가) · 날짜는 브리핑 발행일</small>
 </figure>
@@ -146,8 +146,8 @@ ADR 100주당 5달러는 ADR 1주당 5센트입니다. 150달러짜리 증서에
 <figure class="chart">
   <figcaption>매매차익 1,000만원 가정 — 세금 뒤 남는 금액</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">1,000</span></div></div><span class="bar-label">국내 본주</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:75.2%"><span class="bar-val">835</span></div></div><span class="bar-label">미국 ADR</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">1,000만원</span></div></div><span class="bar-label">국내 본주</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:75.2%"><span class="bar-val">835만원</span></div></div><span class="bar-label">미국 ADR</span></div>
   </div>
   <small>단위: 만원 · ADR은 (1,000만원 − 250만원 기본공제) × 22% = 165만원을 뺀 값 · 국내 본주는 소액주주 매매차익 비과세 기준(매도 시 증권거래세 0.20%는 별도) · 2026년 7월 세법 기준</small>
 </figure>

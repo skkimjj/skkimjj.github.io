@@ -115,10 +115,10 @@ seriesOrder: 2
 <figure class="chart">
   <figcaption>레메디 청약 기준 — 증거금별 예상 배정 주식 수</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:13.1%"><span class="bar-val">0.48</span></div></div><span class="bar-label">10.4만원<br>(최소 10주)</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:20.7%"><span class="bar-val">0.76</span></div></div><span class="bar-label">1,000만원</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:36.0%"><span class="bar-val">1.32</span></div></div><span class="bar-label">3,000만원</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">3.30</span></div></div><span class="bar-label">1억원</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:13.1%"><span class="bar-val">0.48주</span></div></div><span class="bar-label">10.4만원<br>(최소 10주)</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:20.7%"><span class="bar-val">0.76주</span></div></div><span class="bar-label">1,000만원</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:36.0%"><span class="bar-val">1.32주</span></div></div><span class="bar-label">3,000만원</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">3.30주</span></div></div><span class="bar-label">1억원</span></div>
   </div>
   <small>단위: 주 · 균등 기대치 0.47주(150,000주 ÷ 316,557건) + 비례(청약수량 ÷ 3,413) · 공모가 20,700원·증거금률 50% 가정, 청약한도·수수료 제외 · 실제 배정은 정수 단위이며 소수점 잔량은 추첨으로 갈립니다 · 레메디 2026년 7월 1~2일 청약 실적 기준 본 사이트 자체 계산</small>
 </figure>
@@ -154,10 +154,10 @@ seriesOrder: 2
 <figure class="chart">
   <figcaption>레메디 상장 첫날(2026년 7월 13일) 가격 — 같은 하루 안에서</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:53.8%"><span class="bar-val">20,700</span></div></div><span class="bar-label">공모가</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">34,650</span></div></div><span class="bar-label">장중 최고<br>+67.4%</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:55.1%"><span class="bar-val">21,200</span></div></div><span class="bar-label">장중 최저<br>+2.4%</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:57.1%"><span class="bar-val">22,000</span></div></div><span class="bar-label">종가<br>+6.3%</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:53.8%"><span class="bar-val">20,700원</span></div></div><span class="bar-label">공모가</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">34,650원</span></div></div><span class="bar-label">장중 최고<br>+67.4%</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:55.1%"><span class="bar-val">21,200원</span></div></div><span class="bar-label">장중 최저<br>+2.4%</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:57.1%"><span class="bar-val">22,000원</span></div></div><span class="bar-label">종가<br>+6.3%</span></div>
   </div>
   <small>단위: 원 · 등락률은 공모가 20,700원 대비 · 2026년 7월 13일 코스닥 상장일 언론 보도 기준(보도에 따라 장중 수치가 다르게 집계된 건도 있습니다)</small>
 </figure>
@@ -177,8 +177,8 @@ seriesOrder: 2
 <figure class="chart down">
   <figcaption>2026년 상반기 상장 17곳 — 6월 말 기준 공모가 대비 수익률</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:34.3%"><span class="bar-val">−14.1</span></div></div><span class="bar-label">17곳 전체<br>평균</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−37.0</span></div></div><span class="bar-label">공모가 하회<br>13곳 평균</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:34.3%"><span class="bar-val">−14.1%</span></div></div><span class="bar-label">17곳 전체<br>평균</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−37.0%</span></div></div><span class="bar-label">공모가 하회<br>13곳 평균</span></div>
   </div>
   <small>단위: % · 기준선(0)에서 아래로 뻗은 막대 = 손실 · 2026년 6월 말 종가 기준, 상반기 상장 17곳 대상 · 공모가를 웃돈 4곳의 평균은 +61% · 언론 보도(2026년 7월) 집계 기준</small>
 </figure>

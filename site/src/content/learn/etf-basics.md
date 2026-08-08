@@ -85,13 +85,13 @@ ETF의 장점을 네 가지로 추리면 이렇습니다.
 <figure class="chart">
   <figcaption>국내 ETF 순자산총액 — 6년 새 약 10배</figcaption>
   <div class="bars">
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:9.2%"><span class="bar-val">52</span></div></div><span class="bar-label">’20</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:13.1%"><span class="bar-val">74</span></div></div><span class="bar-label">’21</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:14.0%"><span class="bar-val">79</span></div></div><span class="bar-label">’22</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:21.5%"><span class="bar-val">121</span></div></div><span class="bar-label">’23</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30.9%"><span class="bar-val">174</span></div></div><span class="bar-label">’24</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:52.7%"><span class="bar-val">297</span></div></div><span class="bar-label">’25</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">507</span></div></div><span class="bar-label">’26.5</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:9.2%"><span class="bar-val">52조</span></div></div><span class="bar-label">’20</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:13.1%"><span class="bar-val">74조</span></div></div><span class="bar-label">’21</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:14.0%"><span class="bar-val">79조</span></div></div><span class="bar-label">’22</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:21.5%"><span class="bar-val">121조</span></div></div><span class="bar-label">’23</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30.9%"><span class="bar-val">174조</span></div></div><span class="bar-label">’24</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:52.7%"><span class="bar-val">297조</span></div></div><span class="bar-label">’25</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">507조</span></div></div><span class="bar-label">’26.5</span></div>
   </div>
   <small>단위: 조 원 · 연말 기준(2026년은 5월 말) · 출처: 한국거래소·금융투자협회</small>
 </figure>

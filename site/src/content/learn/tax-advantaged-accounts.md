@@ -115,10 +115,10 @@ ISA를 만들려고 하면 **세 가지 유형** 중 하나를 골라야 합니�
 <figure class="chart">
   <figcaption>ISA 가입금액 추이 — 6조원에서 65조원으로</figcaption>
   <div class="bars">
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:9%"><span class="bar-val">6</span></div></div><span class="bar-label">2020.12<br/>194만명</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:71%"><span class="bar-val">46.5</span></div></div><span class="bar-label">2025.11<br/>719만명</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">59</span></div></div><span class="bar-label">2026.2<br/>848만명</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:100%"><span class="bar-val">65.6</span></div></div><span class="bar-label">2026.4<br/>902만명</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:9%"><span class="bar-val">6조</span></div></div><span class="bar-label">2020.12<br/>194만명</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:71%"><span class="bar-val">46.5조</span></div></div><span class="bar-label">2025.11<br/>719만명</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">59조</span></div></div><span class="bar-label">2026.2<br/>848만명</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:100%"><span class="bar-val">65.6조</span></div></div><span class="bar-label">2026.4<br/>902만명</span></div>
   </div>
   <small>단위: 조원 · 각 시점 말일 기준 가입금액과 가입자 수 · 자료: 금융투자협회 ISA 다모아·국회예산정책처</small>
 </figure>
@@ -155,10 +155,10 @@ ISA를 만들려고 하면 **세 가지 유형** 중 하나를 골라야 합니�
 <figure class="chart">
   <figcaption>같은 이익, 계좌에 따라 다른 세율 (낮을수록 유리)</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">15.4</span></div></div><span class="bar-label">일반계좌<br/>이자·배당</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:58%"><span class="bar-val">9.9</span></div></div><span class="bar-label">ISA<br/>초과분</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:32%"><span class="bar-val">5.5</span></div></div><span class="bar-label">연금수령<br/>55~69세</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:19%"><span class="bar-val">3.3</span></div></div><span class="bar-label">연금수령<br/>80세~</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">15.4%</span></div></div><span class="bar-label">일반계좌<br/>이자·배당</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:58%"><span class="bar-val">9.9%</span></div></div><span class="bar-label">ISA<br/>초과분</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:32%"><span class="bar-val">5.5%</span></div></div><span class="bar-label">연금수령<br/>55~69세</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:19%"><span class="bar-val">3.3%</span></div></div><span class="bar-label">연금수령<br/>80세~</span></div>
   </div>
   <small>단위: % · 일반계좌 이자·배당소득세 15.4%, ISA 비과세 초과분 분리과세 9.9%, 연금 수령 시 연령별 연금소득세 3.3~5.5% · 2026년 7월 기준</small>
 </figure>

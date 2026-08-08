@@ -81,11 +81,11 @@ seriesOrder: 2
 <figure class="chart">
   <figcaption>총보수 비교 — 같은 지수라도, 다른 지수끼리도 차이가 크다</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">0.150</span></div></div><span class="bar-label">KODEX200</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30%"><span class="bar-val">0.050</span></div></div><span class="bar-label">TIGER200</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:10.2%"><span class="bar-val">0.017</span></div></div><span class="bar-label">RISE200</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:4.1%"><span class="bar-val">0.0068</span></div></div><span class="bar-label">TIGER S&amp;P</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:3.7%"><span class="bar-val">0.0062</span></div></div><span class="bar-label">KODEX S&amp;P</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">0.150%</span></div></div><span class="bar-label">KODEX200</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30%"><span class="bar-val">0.050%</span></div></div><span class="bar-label">TIGER200</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:10.2%"><span class="bar-val">0.017%</span></div></div><span class="bar-label">RISE200</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:4.1%"><span class="bar-val">0.0068%</span></div></div><span class="bar-label">TIGER S&amp;P</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:3.7%"><span class="bar-val">0.0062%</span></div></div><span class="bar-label">KODEX S&amp;P</span></div>
   </div>
   <small>단위: 연 % · 2026년 7월 24일 기준 · 출처: 각 운용사 공시(FunETF·RISE ETF 상품 페이지)</small>
 </figure>
@@ -101,9 +101,9 @@ seriesOrder: 2
 <figure class="chart down">
   <figcaption>최근 1개월 수익률 — 기준선 0 아래로, 지수마다 다른 낙폭</figcaption>
   <div class="bars">
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−22.9</span></div></div><span class="bar-label">코스피200</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30.6%"><span class="bar-val">−7.8</span></div></div><span class="bar-label">나스닥100</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:16.9%"><span class="bar-val">−4.3</span></div></div><span class="bar-label">S&amp;P500</span></div>
+    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−22.9%</span></div></div><span class="bar-label">코스피200</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:30.6%"><span class="bar-val">−7.8%</span></div></div><span class="bar-label">나스닥100</span></div>
+    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:16.9%"><span class="bar-val">−4.3%</span></div></div><span class="bar-label">S&amp;P500</span></div>
   </div>
   <small>단위: % · 각 지수 대표 ETF(KODEX 200·TIGER 미국나스닥100·TIGER 미국S&amp;P500)의 1개월 수익률 · 2026년 7월 24일 기준</small>
 </figure>

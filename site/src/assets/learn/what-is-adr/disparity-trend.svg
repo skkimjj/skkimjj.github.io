@@ -9,32 +9,32 @@
 
   <!-- 07/16 : +38.5 -->
   <rect x="74" y="100" width="62" height="200" rx="3" fill="#7ea6d4"/>
-  <text x="105" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+38.5</text>
+  <text x="105" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+38.5%</text>
   <text x="105" y="322" text-anchor="middle" font-size="13" fill="#4b5563">07/16</text>
 
   <!-- 07/20 : +24.4 -->
   <rect x="174" y="173" width="62" height="127" rx="3" fill="#7ea6d4"/>
-  <text x="205" y="165" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+24.4</text>
+  <text x="205" y="165" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+24.4%</text>
   <text x="205" y="322" text-anchor="middle" font-size="13" fill="#4b5563">07/20</text>
 
   <!-- 07/22 : +38.0 -->
   <rect x="274" y="103" width="62" height="197" rx="3" fill="#7ea6d4"/>
-  <text x="305" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+38.0</text>
+  <text x="305" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+38.0%</text>
   <text x="305" y="322" text-anchor="middle" font-size="13" fill="#4b5563">07/22</text>
 
   <!-- 07/24 : +29.6 -->
   <rect x="374" y="146" width="62" height="154" rx="3" fill="#7ea6d4"/>
-  <text x="405" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+29.6</text>
+  <text x="405" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+29.6%</text>
   <text x="405" y="322" text-anchor="middle" font-size="13" fill="#4b5563">07/24</text>
 
   <!-- 07/27 : +28.9 -->
   <rect x="474" y="150" width="62" height="150" rx="3" fill="#7ea6d4"/>
-  <text x="505" y="142" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+28.9</text>
+  <text x="505" y="142" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">+28.9%</text>
   <text x="505" y="322" text-anchor="middle" font-size="13" fill="#4b5563">07/27</text>
 
   <!-- 07/28 : +15.7 (최신) -->
   <rect x="574" y="218" width="62" height="82" rx="3" fill="#1f5fa8"/>
-  <text x="605" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">+15.7</text>
+  <text x="605" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">+15.7%</text>
   <text x="605" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">07/28</text>
 
   <text x="360" y="348" text-anchor="middle" font-size="11" fill="#6b7280">괴리율 = (ADR 종가 × 10 × 원/달러 환율 − 본주 종가) ÷ 본주 종가 × 100 · 날짜는 브리핑 발행일</text>
