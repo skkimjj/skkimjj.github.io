@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">국내 단일종목 레버리지 상품 시가총액 — 상장 약 50일 만에 2.7배</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 7월 16일 금융위원회 보완방안 보도자료 기준</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 5월 27일 : 4.4조원 -->
+  <path d="M180 300 V229 A3 3 0 0 1 183 226 H297 A3 3 0 0 1 300 229 V300 Z" fill="#7ea6d4"/>
+  <text x="240" y="211" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4.4조원</text>
+  <text x="240" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5월 27일</text>
+  <text x="240" y="341" text-anchor="middle" font-size="11" fill="#6b7280">첫 상장(18종)</text>
+
+  <!-- 7월 15일 : 11.9조원 -->
+  <path d="M420 300 V103 A3 3 0 0 1 423 100 H537 A3 3 0 0 1 540 103 V300 Z" fill="#1f5fa8"/>
+  <text x="480" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">11.9조원</text>
+  <text x="480" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">7월 15일</text>
+  <text x="480" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">규제 발표 직전</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 조원 · 금융위원회 보도자료(2026년 7월 16일)의 단일종목 레버리지 상품(ETF·ETN) 시가총액</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">증가에는 자금 유입과 기초자산 가격 상승이 함께 작용했습니다 · 7월 16일부터 신규 상장 잠정 중단</text>
+</svg>
