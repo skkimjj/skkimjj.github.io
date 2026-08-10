@@ -37,6 +37,10 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - run: npm ci
         working-directory: site
+      # 마크다운 렌더 규칙 테스트(볼드 함정 복구 등). 여기서 깨지면 배포하지 않는다 —
+      # 렌더가 틀어지면 발행분 전체에 한 번에 영향이 간다.
+      - run: npm test
+        working-directory: site
       - run: npm run build
         working-directory: site
       - uses: actions/upload-pages-artifact@v3

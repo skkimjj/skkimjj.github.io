@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { unified } from '@astrojs/markdown-remark';
 import remarkGfm from 'remark-gfm';
+import remarkRescueBold from './src/remark/rescue-bold.mjs';
 import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
@@ -73,9 +74,13 @@ export default defineConfig({
     // 전체에 엉뚱한 취소선이 그어졌다. → remark 처리기로 전환하고 기본 gfm을
     // 끈 뒤 remark-gfm을 singleTilde:false로 붙여, 취소선은 ~~두 개~~일 때만
     // 적용되게 한다. (표·자동링크 등 나머지 GFM은 그대로 유지)
+    //
+    // remark-rescue-bold: 한국어 조사 때문에 깨지는 `**+35.1%**로` 같은 표기를
+    // 되살린다(자세한 이유는 src/remark/rescue-bold.mjs 주석). 순서가 중요하다 —
+    // GFM(표) 다음에 둬야 표 셀 안의 본문까지 함께 복구된다.
     processor: unified({
       gfm: false,
-      remarkPlugins: [[remarkGfm, { singleTilde: false }]],
+      remarkPlugins: [[remarkGfm, { singleTilde: false }], remarkRescueBold],
     }),
   },
   // 브리핑 목록은 홈(/)이고 `/briefing/` 인덱스 라우트는 없다. 그런데 개별 브리핑이
