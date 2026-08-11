@@ -3,37 +3,42 @@
   <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 6월 SEP 정책금리 중간값 — 현 수준과 비교하면</text>
   <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 말만 현재보다 조금 높고, 그 뒤로는 완만하게 낮아지는 모양</text>
 
-  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
-  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
-  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+  <!-- 눈금선. 세로축은 0이 아니라 3.0~4.0% 구간만 잘라 그린다(y=90이 4.0%, y=290이 3.0%). -->
+  <rect x="92" y="90" width="576" height="1" fill="#e5e7eb"/>
+  <rect x="92" y="190" width="576" height="1" fill="#e5e7eb"/>
+  <rect x="92" y="290" width="576" height="1" fill="#e5e7eb"/>
+  <text x="84" y="94" text-anchor="end" font-size="12" fill="#9aa0aa">4.0%</text>
+  <text x="84" y="194" text-anchor="end" font-size="12" fill="#9aa0aa">3.5%</text>
+  <text x="84" y="294" text-anchor="end" font-size="12" fill="#9aa0aa">3.0%</text>
 
-  <!-- 현재 3.625% -->
-  <path d="M90 300 V122 A3 3 0 0 1 93 119 H171 A3 3 0 0 1 174 122 V300 Z" fill="#1f5fa8"/>
-  <text x="132" y="104" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">3.625%</text>
-  <text x="132" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">현재</text>
-  <text x="132" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">목표범위 중간</text>
+  <!-- 현 수준(3.625%) 기준선 -->
+  <path d="M112 165 H668" stroke="#9aa0aa" stroke-width="1.5" stroke-dasharray="6 5" fill="none"/>
 
-  <!-- 2026년 말 3.8% -->
-  <path d="M204 300 V113 A3 3 0 0 1 207 110 H285 A3 3 0 0 1 288 113 V300 Z" fill="#7ea6d4"/>
-  <text x="246" y="95" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.8%</text>
-  <text x="246" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2026년 말</text>
+  <!-- 중간값 경로: 현재 3.625 / 2026말 3.8 / 2027말 3.6 / 2028말 3.4 / 장기 3.1 -->
+  <polyline points="112,165 251,130 390,170 529,210 668,270" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 
-  <!-- 2027년 말 3.6% -->
-  <path d="M318 300 V123 A3 3 0 0 1 321 120 H399 A3 3 0 0 1 402 123 V300 Z" fill="#7ea6d4"/>
-  <text x="360" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.6%</text>
-  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2027년 말</text>
+  <circle cx="112" cy="165" r="7" fill="#f7f8fa" stroke="#1f5fa8" stroke-width="3"/>
+  <text x="112" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">3.625%</text>
+  <text x="112" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">현재</text>
+  <text x="112" y="339" text-anchor="middle" font-size="11" fill="#1f5fa8">목표범위 중간</text>
 
-  <!-- 2028년 말 3.4% -->
-  <path d="M432 300 V133 A3 3 0 0 1 435 130 H513 A3 3 0 0 1 516 133 V300 Z" fill="#7ea6d4"/>
-  <text x="474" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.4%</text>
-  <text x="474" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2028년 말</text>
+  <circle cx="251" cy="130" r="6" fill="#1f5fa8"/>
+  <text x="251" y="111" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.8%</text>
+  <text x="251" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2026년 말</text>
 
-  <!-- 장기 3.1% -->
-  <path d="M546 300 V148 A3 3 0 0 1 549 145 H627 A3 3 0 0 1 630 148 V300 Z" fill="#7ea6d4"/>
-  <text x="588" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.1%</text>
-  <text x="588" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">장기</text>
-  <text x="588" y="341" text-anchor="middle" font-size="11" fill="#6b7280">중립 수준</text>
+  <circle cx="390" cy="170" r="6" fill="#1f5fa8"/>
+  <text x="390" y="151" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.6%</text>
+  <text x="390" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2027년 말</text>
 
-  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 연준 SEP(2026년 6월 17일) 중간값 · 현재는 2026년 7월 29일 목표범위 3.50~3.75%의 중간값</text>
-  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">축을 0부터 그려 차이가 작게 보이는데, 그 완만함 자체가 전망의 내용입니다 · 약속이 아닙니다</text>
+  <circle cx="529" cy="210" r="6" fill="#1f5fa8"/>
+  <text x="529" y="191" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.4%</text>
+  <text x="529" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2028년 말</text>
+
+  <circle cx="668" cy="270" r="6" fill="#1f5fa8"/>
+  <text x="668" y="251" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.1%</text>
+  <text x="668" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">장기</text>
+  <text x="668" y="339" text-anchor="middle" font-size="11" fill="#6b7280">중립 수준</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 연준 SEP(2026년 6월 17일) 중간값 · 현재는 2026년 7월 29일 목표범위 3.50~3.75%의 중간값 · 점선은 현 수준(3.625%)</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">세로축을 0이 아니라 3.0~4.0%만 잘라 그려 기울기가 커 보입니다 — 전체 변동 폭은 0.7%포인트뿐입니다 · 약속이 아닙니다</text>
 </svg>

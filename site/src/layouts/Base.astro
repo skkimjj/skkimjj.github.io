@@ -564,6 +564,63 @@ const section = path.startsWith(`${home}learn`)
   .chart.down .bar-col.hi .bar-label {
     color: var(--strong);
   }
+  /* 꺾은선 그래프 — 시간에 따른 '경로'를 보여줄 때만 쓴다. 막대는 서로 다른
+     항목의 크기를 비교하는 그림이라, 같은 지표가 시점을 따라 움직이는 자료에는
+     선이 맞다(2026-08-11 사용자 지적). 좌표는 md 안에 인라인 SVG로 적고,
+     색은 여기서 CSS 변수로 준다 — 그래야 다크모드가 자동으로 따라온다. */
+  .chart .linechart {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .chart .linechart .lc-grid {
+    stroke: var(--line);
+    stroke-width: 1;
+  }
+  .chart .linechart .lc-ref {
+    stroke: var(--muted);
+    stroke-width: 1.5;
+    stroke-dasharray: 5 4;
+    opacity: 0.7;
+  }
+  .chart .linechart .lc-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  .chart .linechart .lc-dot {
+    fill: var(--accent);
+  }
+  .chart .linechart .lc-dot-now {
+    fill: var(--bg-soft);
+    stroke: var(--accent);
+    stroke-width: 2.5;
+  }
+  .chart .linechart .lc-val {
+    fill: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+    text-anchor: middle;
+    font-variant-numeric: tabular-nums;
+  }
+  .chart .linechart .lc-lbl {
+    fill: var(--muted);
+    font-size: 12px;
+    text-anchor: middle;
+  }
+  .chart .linechart .lc-axis {
+    fill: var(--muted);
+    font-size: 11px;
+    text-anchor: end;
+    font-variant-numeric: tabular-nums;
+  }
+  .chart .linechart .lc-now .lc-val,
+  .chart .linechart .lc-now .lc-lbl {
+    fill: var(--accent);
+    font-weight: 700;
+  }
   .chart small {
     display: block;
     margin-top: 1rem;
