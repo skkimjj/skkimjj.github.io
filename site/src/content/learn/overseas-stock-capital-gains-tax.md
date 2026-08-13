@@ -200,7 +200,7 @@ seriesOrder: 3
 
 ## 다음 편에서는
 
-다음 공부방 글에서는 **주식 데이터를 무료로 보는 곳**을 다룹니다. 한국거래소 정보데이터시스템, 금융투자협회, **DART**(Data Analysis, Retrieval and Transfer System, 전자공시시스템)에서 무엇을 어떤 경로로 볼 수 있는지, 유료 서비스 없이 1차 데이터를 찾는 방법을 정리하겠습니다.
+다음 공부방 글에서는 [**주식 데이터를 무료로 보는 곳**](/learn/where-to-find-market-data/)을 다룹니다. 한국거래소 정보데이터시스템, 금융투자협회, **DART**(Data Analysis, Retrieval and Transfer System, 전자공시시스템)에서 무엇을 어떤 경로로 볼 수 있는지, 유료 서비스 없이 1차 데이터를 찾는 방법을 정리하겠습니다.
 
 ---
 
