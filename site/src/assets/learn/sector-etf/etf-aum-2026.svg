@@ -19,12 +19,12 @@
   <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">6월 22일</text>
   <text x="360" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">최고치</text>
 
-  <!-- 7월 29일 400조원대 -->
-  <path d="M460 300 V153 A3 3 0 0 1 463 150 H577 A3 3 0 0 1 580 153 V300 Z" fill="#7ea6d4"/>
-  <text x="520" y="135" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">400조원대</text>
-  <text x="520" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">7월 29일</text>
+  <!-- 7월 28일 419조 -->
+  <path d="M460 300 V146 A3 3 0 0 1 463 143 H577 A3 3 0 0 1 580 146 V300 Z" fill="#7ea6d4"/>
+  <text x="520" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">419조원</text>
+  <text x="520" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">7월 28일</text>
   <text x="520" y="341" text-anchor="middle" font-size="11" fill="#6b7280">100조원 이상 감소</text>
 
-  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 조원 · 5월 27일 501조 8,199억원(2026년 5월 31일 보도) · 6월 22일·7월 29일(2026년 7월 29일 보도)</text>
-  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">7월 29일 값은 보도상 '400조원대'로만 제시돼 막대는 개략치입니다</text>
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 조원 · 5월 27일 첫 500조 돌파(2026년 5월 31일 보도)</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">6월 22일 최고치 533조원 · 7월 28일 419조원(2026년 7월 29일 보도)</text>
 </svg>
