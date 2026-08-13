@@ -3,8 +3,11 @@ interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  /** 본문 폭을 1040px로 넓힌다. 홈의 2단 배치처럼 720px로는 좁은 화면에만 쓴다.
+      머리띠·푸터 안쪽 정렬도 함께 넓어져 본문과 어긋나지 않는다. */
+  wide?: boolean;
 }
-const { title, description, noindex = false } = Astro.props;
+const { title, description, noindex = false, wide = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
 const site = Astro.site ?? new URL('http://localhost:4321');
 const ogImage = new URL(`${home}og-default.png`, site).href;
@@ -91,7 +94,7 @@ const section = path.startsWith(`${home}learn`)
       )
     }
   </head>
-  <body>
+  <body class={wide ? 'wide' : undefined}>
     <header class="board">
       <div class="board-top">
         <a href={home} class="brand">
@@ -271,6 +274,14 @@ const section = path.startsWith(`${home}learn`)
     margin: 0 auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  /* wide 페이지(홈 2단)에서는 본문·머리띠·푸터를 같은 폭으로 함께 넓힌다.
+     한쪽만 넓히면 로고와 본문 왼쪽 끝이 어긋난다. */
+  body.wide .board-top,
+  body.wide .board-nav,
+  body.wide .footer-inner,
+  body.wide main {
+    max-width: 1040px;
   }
   .board-top {
     display: flex;

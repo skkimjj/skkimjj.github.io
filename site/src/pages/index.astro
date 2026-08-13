@@ -5,37 +5,117 @@ import Base from '../layouts/Base.astro';
 const briefings = (await getCollection('briefings')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+const learn = (await getCollection('learn')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const home = import.meta.env.BASE_URL;
 const fmt = new Intl.DateTimeFormat('ko-KR', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
   weekday: 'short',
 });
+const fmtDay = new Intl.DateTimeFormat('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
 <Base
   title="개장 전 브리핑"
-  description="매일 아침 한국 증시 개장 전, 밤사이 미국 시장과 주요 지표를 팩트 중심으로 정리한 브리핑"
+  description="매일 아침 한국 증시 개장 전, 밤사이 미국 시장과 주요 지표를 팩트 중심으로 정리한 브리핑. 화·목·토·일에는 초보 눈높이의 투자 공부방 글이 올라옵니다."
+  wide
 >
-  {briefings.length === 0 && <p>아직 발행된 브리핑이 없습니다.</p>}
-  <ul class="post-list">
-    {
-      briefings.map((post) => (
-        <li>
-          <a href={`${import.meta.env.BASE_URL}briefing/${post.id}/`}>
-            {post.data.title}
-          </a>
-          <time datetime={post.data.date.toISOString()}>
-            {fmt.format(post.data.date)}
-          </time>
-          {post.data.description && <p>{post.data.description}</p>}
-        </li>
-      ))
-    }
-  </ul>
+  {/* 브리핑이 이 사이트의 이름이자 축이므로 왼쪽·먼저다.
+      좁은 화면에서는 1단으로 접히고, 그때도 브리핑이 위에 온다(DOM 순서 그대로). */}
+  <div class="home-grid">
+    <section class="col" aria-labelledby="col-briefing">
+      <div class="col-head">
+        <h2 id="col-briefing">개장 전 브리핑</h2>
+        <p class="col-sub">개장일 아침 07:25</p>
+      </div>
+
+      {briefings.length === 0 && <p>아직 발행된 브리핑이 없습니다.</p>}
+      <ul class="post-list">
+        {
+          briefings.map((post) => (
+            <li>
+              <a href={`${home}briefing/${post.id}/`}>{post.data.title}</a>
+              <time datetime={post.data.date.toISOString()}>
+                {fmt.format(post.data.date)}
+              </time>
+              {post.data.description && <p>{post.data.description}</p>}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="col col-right" aria-labelledby="col-learn">
+      <div class="col-head">
+        <h2 id="col-learn">투자 공부방</h2>
+        <p class="col-sub">화·목·토·일</p>
+      </div>
+
+      {learn.length === 0 && <p>아직 발행된 글이 없습니다.</p>}
+      <ul class="post-list">
+        {
+          learn.map((post) => (
+            <li>
+              <a href={`${home}learn/${post.id}/`}>{post.data.title}</a>
+              <time datetime={post.data.date.toISOString()}>
+                {fmtDay.format(post.data.date)}
+              </time>
+              {post.data.description && <p>{post.data.description}</p>}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="col-more">
+        <a href={`${home}learn/`}>공부방 전체 보기 →</a>
+      </p>
+    </section>
+  </div>
 </Base>
 
 <style>
+  .home-grid {
+    display: grid;
+    gap: 2.5rem;
+  }
+  /* 2단은 두 목록이 각각 읽을 만한 폭(약 460px)을 확보할 때만 켠다. */
+  @media (min-width: 900px) {
+    .home-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 3rem;
+      align-items: start;
+    }
+    .col-right {
+      border-left: 1px solid var(--line);
+      padding-left: 3rem;
+      margin-left: -3rem;
+    }
+  }
+  .col-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--line);
+  }
+  .col-head h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+  }
+  .col-sub {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
   .post-list {
     list-style: none;
     padding: 0;
@@ -63,5 +143,16 @@ const fmt = new Intl.DateTimeFormat('ko-KR', {
     margin: 0.4rem 0 0;
     color: var(--muted);
     font-size: 0.9rem;
+  }
+  .col-more {
+    margin: 1.1rem 0 0;
+    font-size: 0.9rem;
+  }
+  .col-more a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .col-more a:hover {
+    text-decoration: underline;
   }
 </style>
