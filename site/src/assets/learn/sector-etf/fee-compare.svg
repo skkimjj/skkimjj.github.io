@@ -13,10 +13,10 @@
   <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">TIGER 200</text>
   <text x="146" y="341" text-anchor="middle" font-size="11" fill="#6b7280">지수형</text>
 
-  <!-- Fn반도체TOP10 : 0.45% -->
+  <!-- 반도체TOP10 : 0.45% -->
   <path d="M240 300 V103 A3 3 0 0 1 243 100 H333 A3 3 0 0 1 336 103 V300 Z" fill="#1f5fa8"/>
   <text x="288" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">0.45%</text>
-  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">Fn반도체TOP10</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">반도체TOP10</text>
 
   <!-- 바이오TOP10 : 0.40% -->
   <path d="M382 300 V125 A3 3 0 0 1 385 122 H475 A3 3 0 0 1 478 125 V300 Z" fill="#7ea6d4"/>

@@ -13,10 +13,10 @@
   <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">TIGER 200</text>
   <text x="146" y="341" text-anchor="middle" font-size="11" fill="#6b7280">지수형(코스피200)</text>
 
-  <!-- Fn반도체TOP10 : 81,670억 -->
+  <!-- 반도체TOP10 : 81,670억 -->
   <path d="M240 300 V128 A3 3 0 0 1 243 125 H333 A3 3 0 0 1 336 128 V300 Z" fill="#1f5fa8"/>
   <text x="288" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">81,670억</text>
-  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">Fn반도체TOP10</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">반도체TOP10</text>
   <text x="288" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">지수형에 육박</text>
 
   <!-- 2차전지소재Fn : 4,810억 -->
