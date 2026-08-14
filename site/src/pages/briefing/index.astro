@@ -1,0 +1,132 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const posts = (await getCollection('briefings')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const home = import.meta.env.BASE_URL;
+
+const fmtMonth = new Intl.DateTimeFormat('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+});
+const fmtDay = new Intl.DateTimeFormat('ko-KR', {
+  month: 'long',
+  day: 'numeric',
+  weekday: 'short',
+});
+
+// 월별로 묶는다. 이미 최신순으로 정렬돼 있으므로 순서대로 훑으며 끊으면 된다.
+const groups = [];
+for (const post of posts) {
+  const label = fmtMonth.format(post.data.date);
+  if (groups.at(-1)?.label !== label) groups.push({ label, posts: [] });
+  groups.at(-1).posts.push(post);
+}
+
+const newest = posts[0]?.data.date;
+const oldest = posts.at(-1)?.data.date;
+---
+
+<Base
+  title="브리핑 아카이브 — 개장 전 브리핑"
+  description={`개장 전 브리핑 전체 목록 ${posts.length}편. 매일 아침 한국 증시 개장 전, 밤사이 미국 시장과 주요 지표를 팩트 중심으로 정리했습니다.`}
+>
+  <header class="archive-intro">
+    <p class="eyebrow">🗂 브리핑 아카이브</p>
+    <h1>지금까지의 개장 전 브리핑</h1>
+    <p class="lede">
+      {
+        newest && oldest
+          ? `${fmtMonth.format(oldest)}부터 ${fmtMonth.format(newest)}까지 ${posts.length}편. `
+          : ''
+      }개장일 아침 07:25에 발행합니다. 가장 최근 브리핑은 <a href={home}>홈</a>에서 바로 보실 수 있습니다.
+    </p>
+  </header>
+
+  {posts.length === 0 && <p>아직 발행된 브리핑이 없습니다.</p>}
+
+  {
+    groups.map((group) => (
+      <section class="month">
+        <h2>{group.label}</h2>
+        <ul class="archive-list">
+          {group.posts.map((post) => (
+            <li>
+              <time datetime={post.data.date.toISOString()}>
+                {fmtDay.format(post.data.date)}
+              </time>
+              <a href={`${home}briefing/${post.id}/`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .archive-intro {
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 0 0 0.3rem;
+  }
+  .archive-intro h1 {
+    margin: 0 0 0.6rem;
+  }
+  .lede {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .month + .month {
+    margin-top: 2rem;
+  }
+  .month h2 {
+    font-size: 0.95rem;
+    color: var(--muted);
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--line);
+  }
+  .archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .archive-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  /* 날짜를 왼쪽 고정폭으로 세워 훑어보기 쉽게 한다. 좁은 화면에서는
+     날짜를 제목 위로 올린다(고정폭을 유지하면 제목 폭이 너무 줄어든다). */
+  @media (min-width: 560px) {
+    .archive-list li {
+      display: grid;
+      grid-template-columns: 7.5rem 1fr;
+      gap: 0.75rem;
+      align-items: baseline;
+    }
+  }
+  .archive-list time {
+    color: var(--muted);
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  .archive-list a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .archive-list a:hover {
+    text-decoration: underline;
+  }
+</style>

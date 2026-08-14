@@ -2,9 +2,15 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
-const briefings = (await getCollection('briefings')).sort(
+// 브리핑은 평일 매일 쌓여 홈이 끝없이 길어지므로 최근 것만 싣고 나머지는
+// /briefing/ 아카이브가 받는다(2026-08-14 신설). 공부방은 아직 14편이고
+// 검색 유입을 걸어 둔 축이라 전편을 홈에서 직접 링크한다 — 20편을 크게
+// 넘어서면 여기도 /learn/ 로 넘길 것.
+const HOME_BRIEFINGS = 10;
+const allBriefings = (await getCollection('briefings')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+const briefings = allBriefings.slice(0, HOME_BRIEFINGS);
 const learn = (await getCollection('learn')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
@@ -50,6 +56,15 @@ const fmtDay = new Intl.DateTimeFormat('ko-KR', {
           ))
         }
       </ul>
+      {
+        allBriefings.length > briefings.length && (
+          <p class="col-more">
+            <a href={`${home}briefing/`}>
+              브리핑 전체 보기 ({allBriefings.length}편) →
+            </a>
+          </p>
+        )
+      }
     </section>
 
     <section class="col col-right" aria-labelledby="col-learn">

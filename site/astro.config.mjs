@@ -54,6 +54,7 @@ const newest = (dates) =>
   dates.length ? new Date(Math.max(...dates.map((d) => d.getTime()))) : null;
 for (const [route, dates] of [
   ['/', briefingDates],
+  ['/briefing/', briefingDates],
   ['/learn/', learnDates],
 ]) {
   const d = newest(dates);
@@ -83,20 +84,14 @@ export default defineConfig({
       remarkPlugins: [[remarkGfm, { singleTilde: false }], remarkRescueBold],
     }),
   },
-  // 브리핑 목록은 홈(/)이고 `/briefing/` 인덱스 라우트는 없다. 그런데 개별 브리핑이
-  // `/briefing/<날짜>-briefing/`이라 본문에서 목록을 가리킬 때 `/briefing/`을 쓰는 실수가
-  // 반복됐다(2026-07-26 발행분 2편에서 죽은 링크 발견). 404 대신 홈으로 보낸다.
-  redirects: {
-    '/briefing': '/',
-  },
+  // `/briefing/`은 2026-08-14부터 실제 아카이브 페이지다(그전에는 홈으로 보내는
+  // 리다이렉트였다 — 본문에서 목록을 가리킬 때 `/briefing/`을 쓰는 실수가 반복돼
+  // 404를 막으려던 임시방편). 이제 진짜 목록이 있으므로 리다이렉트를 걷어냈고,
+  // 그런 링크들은 의도한 곳에 정확히 닿는다.
   integrations: [
     sitemap({
       // 네이버 복붙용 비밀 페이지·발행 전 초안은 사이트맵에서 제외 (검색 노출 방지).
-      // `/briefing/` 리다이렉트 페이지도 제외 — 실제 콘텐츠가 아니다.
-      filter: (page) =>
-        !page.includes('/naver/') &&
-        !page.includes('/draft/') &&
-        !page.endsWith('/briefing/'),
+      filter: (page) => !page.includes('/naver/') && !page.includes('/draft/'),
       // 갱신일을 아는 URL에만 lastmod를 붙인다(위 lastmodByPath 주석 참조).
       serialize(item) {
         const d = lastmodByPath.get(new URL(item.url).pathname);
