@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">널뛰기 폭이 커지면 잠식은 제곱으로 — +2배 상품 10거래일</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">세 경우 모두 기초자산은 10거래일 뒤 제자리(0.00%) · 자체 예시 계산</text>
+
+  <!-- 0선: 막대가 이 선에서 아래로 자란다 -->
+  <line x1="60" y1="90" x2="660" y2="90" stroke="#c9ced6" stroke-dasharray="4 3"/>
+  <text x="52" y="94" text-anchor="end" font-size="11" fill="#9aa0aa">0%</text>
+
+  <!-- ±3%: −0.87% -> 20px -->
+  <path d="M128 90 V107 A3 3 0 0 0 131 110 H211 A3 3 0 0 0 214 107 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="171" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−0.87%</text>
+  <text x="171" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">하루 ±3%</text>
+  <text x="171" y="354" text-anchor="middle" font-size="11" fill="#6b7280">널뛰기 폭 작음</text>
+
+  <!-- ±5%: −2.36% -> 54px -->
+  <path d="M317 90 V141 A3 3 0 0 0 320 144 H400 A3 3 0 0 0 403 141 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="360" y="162" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−2.36%</text>
+  <text x="360" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">하루 ±5%</text>
+  <text x="360" y="354" text-anchor="middle" font-size="11" fill="#6b7280">널뛰기 폭 중간</text>
+
+  <!-- ±10%: −8.77% -> 200px -->
+  <path d="M506 90 V287 A3 3 0 0 0 509 290 H589 A3 3 0 0 0 592 287 V90 Z" fill="#c0392b"/>
+  <text x="549" y="308" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−8.77%</text>
+  <text x="549" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">하루 ±10%</text>
+  <text x="549" y="354" text-anchor="middle" font-size="11" fill="#c0392b">널뛰기 폭 큼</text>
+
+  <text x="360" y="374" text-anchor="middle" font-size="11" fill="#9aa0aa">※ 폭이 약 3.3배 커질 때 잠식은 약 10배 — 3.3의 제곱에 가깝습니다 (자체 예시 계산)</text>
+</svg>

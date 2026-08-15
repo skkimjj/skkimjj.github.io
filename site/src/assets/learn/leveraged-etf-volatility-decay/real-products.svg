@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">본주는 한 자릿수 하락, 2배 상품은 30%대 하락</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">상장일 2026년 5월 27일~7월 15일 누적 · 언론 보도(2026년 7월 17일) 집계</text>
+
+  <!-- 0선: 막대가 이 선에서 아래로 자란다 -->
+  <line x1="60" y1="90" x2="660" y2="90" stroke="#c9ced6" stroke-dasharray="4 3"/>
+  <text x="52" y="94" text-anchor="end" font-size="11" fill="#9aa0aa">0%</text>
+
+  <!-- 삼성전자 본주: −8.96% -> 53px -->
+  <path d="M92 90 V140 A3 3 0 0 0 95 143 H175 A3 3 0 0 0 178 140 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="135" y="161" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−8.96%</text>
+  <text x="135" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">삼성전자</text>
+  <text x="135" y="354" text-anchor="middle" font-size="11" fill="#6b7280">본주</text>
+
+  <!-- 삼성전자 2배 ETF 7종 평균: −30.66% -> 180px -->
+  <path d="M242 90 V267 A3 3 0 0 0 245 270 H325 A3 3 0 0 0 328 267 V90 Z" fill="#c0392b"/>
+  <text x="285" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−30.66%</text>
+  <text x="285" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">삼성전자 2배</text>
+  <text x="285" y="354" text-anchor="middle" font-size="11" fill="#c0392b">ETF 7종 평균</text>
+
+  <!-- SK하이닉스 본주: −7.18% -> 42px -->
+  <path d="M392 90 V129 A3 3 0 0 0 395 132 H475 A3 3 0 0 0 478 129 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="435" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−7.18%</text>
+  <text x="435" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">SK하이닉스</text>
+  <text x="435" y="354" text-anchor="middle" font-size="11" fill="#6b7280">본주</text>
+
+  <!-- SK하이닉스 2배 ETF 7종 평균: −34.06% -> 200px -->
+  <path d="M542 90 V287 A3 3 0 0 0 545 290 H625 A3 3 0 0 0 628 287 V90 Z" fill="#c0392b"/>
+  <text x="585" y="308" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−34.06%</text>
+  <text x="585" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">SK하이닉스 2배</text>
+  <text x="585" y="354" text-anchor="middle" font-size="11" fill="#c0392b">ETF 7종 평균</text>
+
+  <text x="360" y="374" text-anchor="middle" font-size="11" fill="#9aa0aa">※ 두 종목이 크게 등락한 고변동 국면의 값입니다. 구간이 달라지면 결과도 달라집니다.</text>
+</svg>
