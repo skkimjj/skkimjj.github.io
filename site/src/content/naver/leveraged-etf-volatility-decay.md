@@ -39,7 +39,7 @@ date: 2026-08-16
 
 이틀에 1.82%면 별것 아닌 것 같습니다. 문제는 이게 한 번으로 끝나지 않는다는 데 있습니다. 같은 널뛰기(+10% → −9.0909%)를 다섯 번, 그러니까 10거래일 반복해 보겠습니다. 기초자산은 열흘 내내 오르내리기만 하다가 정확히 제자리로 돌아옵니다.
 
-![기초자산은 제자리인데 10거래일 뒤 배율별 결과](../../../assets/learn/leveraged-etf-volatility-decay/decay-by-multiple.svg)
+![기초자산은 제자리인데 10거래일 뒤 배율별 결과](../../assets/learn/leveraged-etf-volatility-decay/decay-by-multiple.svg)
 
 기초자산 0.00%인데 <mark>2배는 −8.77%, 곱버스는 −24.46%</mark>입니다. 열흘 만에 곱버스는 원금의 4분의 1 가까이가 사라졌습니다.
 
@@ -90,7 +90,7 @@ date: 2026-08-16
 
 깎이는 크기를 정하는 나머지 한 축은 널뛰기의 폭, 즉 **변동성**입니다. 폭만 바꿔 같은 계산을 돌려 봤습니다. 세 경우 모두 기초자산은 10거래일 뒤 제자리(0%)입니다.
 
-![널뛰기 폭이 커지면 깎이는 몫은 훨씬 크게 늘어난다](../../../assets/learn/leveraged-etf-volatility-decay/decay-by-volatility.svg)
+![널뛰기 폭이 커지면 깎이는 몫은 훨씬 크게 늘어난다](../../assets/learn/leveraged-etf-volatility-decay/decay-by-volatility.svg)
 
 널뛰기 폭이 3%에서 10%로 **약 3.3배** 커지는 동안 깎인 몫은 0.87%에서 8.77%로 <mark>약 10배</mark>가 됐습니다. 폭은 3.3배인데 손실은 3.3배가 아니라, 3.3을 **두 번 곱한 만큼**(3.3 × 3.3 ≈ 11) 커진 셈이죠.
 
@@ -139,7 +139,7 @@ date: 2026-08-16
 
 어긋나기 시작하는 건 기간을 늘릴 때입니다.
 
-![본주는 한 자릿수 하락인데 2배 상품은 30%대 하락](../../../assets/learn/leveraged-etf-volatility-decay/real-products.svg)
+![본주는 한 자릿수 하락인데 2배 상품은 30%대 하락](../../assets/learn/leveraged-etf-volatility-decay/real-products.svg)
 
 **본주**(本株, 2배 상품이 따라가는 원래 주식)는 한 자릿수 하락인데 2배 상품은 30%대 하락입니다. 2배 상품이니 본주 손실의 2배쯤이어야 할 텐데, 삼성전자는 <mark>약 3.4배</mark>, SK하이닉스는 <mark>약 4.7배</mark>였습니다. 그 사이에 하루 −9%대 급락과 급반등이 오간 널뛰기 구간이 끼어 있었기 때문입니다.
 
