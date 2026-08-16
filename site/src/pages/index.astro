@@ -2,18 +2,24 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
-// 브리핑은 평일 매일 쌓여 홈이 끝없이 길어지므로 최근 것만 싣고 나머지는
-// /briefing/ 아카이브가 받는다(2026-08-14 신설). 공부방은 아직 14편이고
-// 검색 유입을 걸어 둔 축이라 전편을 홈에서 직접 링크한다 — 20편을 크게
-// 넘어서면 여기도 /learn/ 로 넘길 것.
+// 두 열 모두 상한을 둔다. 브리핑은 평일 매일, 공부방은 주 4편씩 쌓이므로
+// 어느 한쪽만 전편을 실으면 홈이 한쪽으로만 길어진다(2026-08-16 확인 시점에
+// 공부방 열이 브리핑 열의 1.25배였다). 나머지는 각각 /briefing/·/learn/
+// 아카이브가 받는다.
+//
+// 10 대 13인 이유: 브리핑은 제목이 길어(평균 88자) 항목 하나가 232px인 반면
+// 공부방은 33자·181px이라, 편수를 같게 맞추면 오히려 어긋난다. 이 조합에서
+// 두 열 높이가 2% 안쪽으로 붙는다. 항목 생김새를 바꾸면 다시 재야 한다.
 const HOME_BRIEFINGS = 10;
+const HOME_LEARN = 13;
 const allBriefings = (await getCollection('briefings')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 const briefings = allBriefings.slice(0, HOME_BRIEFINGS);
-const learn = (await getCollection('learn')).sort(
+const allLearn = (await getCollection('learn')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+const learn = allLearn.slice(0, HOME_LEARN);
 const home = import.meta.env.BASE_URL;
 const fmt = new Intl.DateTimeFormat('ko-KR', {
   year: 'numeric',
@@ -88,7 +94,7 @@ const fmtDay = new Intl.DateTimeFormat('ko-KR', {
         }
       </ul>
       <p class="col-more">
-        <a href={`${home}learn/`}>공부방 전체 보기 →</a>
+        <a href={`${home}learn/`}>공부방 전체 보기 ({allLearn.length}편) →</a>
       </p>
     </section>
   </div>
