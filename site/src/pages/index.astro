@@ -106,10 +106,14 @@ const fmtDay = new Intl.DateTimeFormat('ko-KR', {
       gap: 0 3rem;
       align-items: start;
     }
+    /* 구분선은 3rem 여백의 '한가운데'에 서야 한다. 오른쪽 열을 여백의 절반만큼
+       왼쪽으로 당겨(-1.5rem) 거기에 선을 긋고, 같은 값의 패딩으로 본문은
+       제자리에 돌려놓는다. 당김과 패딩을 3rem으로 주면 선이 여백의 왼쪽 끝,
+       즉 왼쪽 열에 바짝 붙어 치우쳐 보인다. */
     .col-right {
       border-left: 1px solid var(--line);
-      padding-left: 3rem;
-      margin-left: -3rem;
+      padding-left: 1.5rem;
+      margin-left: -1.5rem;
     }
   }
   .col-head {
