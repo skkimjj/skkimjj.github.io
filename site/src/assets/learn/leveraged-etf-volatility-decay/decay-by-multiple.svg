@@ -19,9 +19,9 @@
   <text x="360" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−1배 인버스</text>
   <text x="360" y="354" text-anchor="middle" font-size="11" fill="#6b7280">일간 −1배 추종</text>
 
-  <!-- −2배 인버스(곱버스): −24.45% -> 200px -->
+  <!-- −2배 인버스(곱버스): −24.46% -> 200px -->
   <path d="M506 90 V287 A3 3 0 0 0 509 290 H589 A3 3 0 0 0 592 287 V90 Z" fill="#c0392b"/>
-  <text x="549" y="308" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−24.45%</text>
+  <text x="549" y="308" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−24.46%</text>
   <text x="549" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">−2배 인버스(곱버스)</text>
   <text x="549" y="354" text-anchor="middle" font-size="11" fill="#c0392b">일간 −2배 추종</text>
 
