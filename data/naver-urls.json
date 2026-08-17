@@ -112,6 +112,13 @@
       "seriesOrder": 6,
       "naver_url": "https://blog.naver.com/hdglace/224380108823",
       "published": "2026-08-16"
+    },
+    "short-selling-and-circuit-breaker": {
+      "title": "공매도·사이드카·서킷브레이커 차이 — 급락장에 켜지는 장치들",
+      "series": "개념 한 조각",
+      "seriesOrder": 4,
+      "naver_url": "https://blog.naver.com/hdglace/224381139813",
+      "published": "2026-08-17"
     }
   }
 }
