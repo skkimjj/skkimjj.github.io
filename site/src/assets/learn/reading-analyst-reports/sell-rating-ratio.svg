@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">국내 리포트에서 '매도'는 사실상 나오지 않습니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">증권사가 공시한 투자등급 가운데 매도 의견이 차지하는 비율(2025년 12월 31일 기준)</text>
+
+  <!-- baseline (0%) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 국내 최고치(신영증권) : 1.3% -->
+  <path d="M99 300 V290 A3 3 0 0 1 102 287 H186 A3 3 0 0 1 189 290 V300 Z" fill="#1f5fa8"/>
+  <text x="144" y="273" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">1.3%</text>
+  <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">국내 최고치</text>
+  <text x="144" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">신영증권</text>
+
+  <!-- 제이피모간 : 12.1% -->
+  <path d="M246 300 V181 A3 3 0 0 1 249 178 H333 A3 3 0 0 1 336 181 V300 Z" fill="#7ea6d4"/>
+  <text x="291" y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">12.1%</text>
+  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">제이피모간</text>
+  <text x="291" y="342" text-anchor="middle" font-size="11" fill="#6b7280">외국계</text>
+
+  <!-- 모간스탠리 : 15.4% -->
+  <path d="M394 300 V148 A3 3 0 0 1 397 145 H481 A3 3 0 0 1 484 148 V300 Z" fill="#7ea6d4"/>
+  <text x="439" y="131" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">15.4%</text>
+  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">모간스탠리</text>
+  <text x="439" y="342" text-anchor="middle" font-size="11" fill="#6b7280">외국계</text>
+
+  <!-- 메릴린치 : 21.9% -->
+  <path d="M541 300 V83 A3 3 0 0 1 544 80 H628 A3 3 0 0 1 631 83 V300 Z" fill="#7ea6d4"/>
+  <text x="586" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">21.9%</text>
+  <text x="586" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">메릴린치</text>
+  <text x="586" y="342" text-anchor="middle" font-size="11" fill="#6b7280">외국계</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 금융투자협회 전자공시서비스 '증권사별 리포트 투자등급 비율'을 집계한 2026년 3월 보도</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">국내 증권사 31곳 중 28곳은 0.0% · 등급 정의와 분석 종목 구성이 달라 회사 간 우열로 읽을 수 없습니다</text>
+</svg>
