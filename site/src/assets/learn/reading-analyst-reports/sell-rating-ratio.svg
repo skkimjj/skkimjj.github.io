@@ -14,16 +14,16 @@
   <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">국내 최고치</text>
   <text x="144" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">신영증권</text>
 
-  <!-- 제이피모간 : 12.1% -->
+  <!-- 제이피모건 : 12.1% -->
   <path d="M246 300 V181 A3 3 0 0 1 249 178 H333 A3 3 0 0 1 336 181 V300 Z" fill="#7ea6d4"/>
   <text x="291" y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">12.1%</text>
-  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">제이피모간</text>
+  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">제이피모건</text>
   <text x="291" y="342" text-anchor="middle" font-size="11" fill="#6b7280">외국계</text>
 
-  <!-- 모간스탠리 : 15.4% -->
+  <!-- 모건스탠리 : 15.4% -->
   <path d="M394 300 V148 A3 3 0 0 1 397 145 H481 A3 3 0 0 1 484 148 V300 Z" fill="#7ea6d4"/>
   <text x="439" y="131" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">15.4%</text>
-  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">모간스탠리</text>
+  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">모건스탠리</text>
   <text x="439" y="342" text-anchor="middle" font-size="11" fill="#6b7280">외국계</text>
 
   <!-- 메릴린치 : 21.9% -->
