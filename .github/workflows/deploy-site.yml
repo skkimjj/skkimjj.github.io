@@ -28,6 +28,9 @@ jobs:
       # Google Analytics 4 측정 ID (G-XXXXXXXXXX). 비어 있으면 추적 스크립트 미삽입.
       # 값 설정: gh variable set PUBLIC_GA4_ID --body "G-XXXXXXXXXX"
       PUBLIC_GA4_ID: ${{ vars.PUBLIC_GA4_ID }}
+      # 애드센스 게시자 ID. 값 설정: gh variable set PUBLIC_ADSENSE_ID --body "ca-pub-XXXXXXXXXXXXXXXX"
+      # 설정되면 공개 페이지 <head>에 광고 스크립트가 들어가고 /ads.txt가 생성된다.
+      PUBLIC_ADSENSE_ID: ${{ vars.PUBLIC_ADSENSE_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

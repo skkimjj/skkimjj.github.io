@@ -18,6 +18,12 @@ const canonical = new URL(Astro.url.pathname, site).href;
 // 네이버로 복사되는 HTML에 추적 코드가 섞이면 안 되기 때문.
 const gaId = import.meta.env.PUBLIC_GA4_ID;
 const enableAnalytics = !noindex && !!gaId;
+// 애드센스 게시자 ID(ca-pub-...). 배포 워크플로에서 PUBLIC_ADSENSE_ID로 주입한다.
+// 값이 없으면 광고 스크립트를 넣지 않는다(로컬 빌드·승인 전).
+// GA4와 같은 이유로 noindex 페이지(네이버 복붙용·발행 전 초안)에는 넣지 않는다 —
+// 네이버로 복사되는 HTML에 광고 스크립트가 섞이면 안 된다.
+const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID;
+const enableAds = !noindex && !!adsenseId;
 
 // 헤더 장 상태 표시용 휴장일. 원본은 비공개 레포 data/krx-holidays.json이고,
 // 매년 갱신할 때 site/src/data/market-holidays.json도 함께 고쳐야 한다.
@@ -77,6 +83,15 @@ const section = path.startsWith(`${home}learn`)
     <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
     <link rel="icon" type="image/x-icon" sizes="48x48" href={`${home}favicon.ico`} />
     <link rel="apple-touch-icon" href={`${home}apple-touch-icon.png`} />
+    {
+      enableAds && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+          crossorigin="anonymous"
+        />
+      )
+    }
     {
       enableAnalytics && (
         <script define:vars={{ gaId }}>
