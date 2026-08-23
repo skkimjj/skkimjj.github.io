@@ -1,0 +1,42 @@
+---
+// 네이버 붙여넣기 호환 변환 — /naver/ 복붙 페이지와 /draft/naver/ 초안 페이지가 공유한다.
+// (2026-08-23 분리: 초안 페이지에는 이 처리가 없어 붉은 강조가 통째로 사라지고
+//  본문이 커서 서식을 상속해 전부 굵게 붙는 문제가 있었다.)
+interface Props {
+  selector?: string;
+}
+const { selector = '.naver-body' } = Astro.props;
+---
+
+<script is:inline define:vars={{ selector }}>
+  // 네이버 편집기는 CSS class가 아니라 인라인 style만 복붙에 반영한다.
+  // ⚠️ 네이버는 붙여넣기 때 <strong>/<b> 같은 의미 태그의 인라인 color를 벗겨낸다
+  // (형광펜=background-color는 유지). 그래서 붉은 강조는 <strong>에 색을 주는 대신
+  // <strong>을 색 입힌 <span>으로 치환한다 — 스팬의 인라인 color는 편집기가 유지하는 편.
+  const body = document.querySelector(selector);
+  if (body) {
+    body.querySelectorAll('strong, b').forEach((el) => {
+      const span = document.createElement('span');
+      span.style.color = '#c0392b';
+      span.style.fontWeight = '700';
+      while (el.firstChild) span.appendChild(el.firstChild);
+      el.replaceWith(span);
+    });
+    body.querySelectorAll('mark').forEach((el) => {
+      el.style.backgroundColor = '#fff3a6';
+      el.style.color = 'inherit';
+    });
+    // ⚠️ 굵게가 아닌 부분에도 굵기를 '명시'해 둔다 (2026-08-23).
+    // 굵은 부분에만 font-weight:700을 박으면 나머지 텍스트에는 굵기 정보가 없다.
+    // 네이버 편집기는 그런 조각을 붙여넣을 때 **커서가 있던 자리의 서식을 상속**시킨다 —
+    // 이미 발행된 글을 수정하려고 굵은 줄에 커서를 두고 붙이면 본문 전체가 굵게 들어간다.
+    // 블록마다 400을 박아 두면 상속될 여지가 없다. 표 헤더처럼 원래 굵은 블록은 유지.
+    body.style.fontWeight = '400';
+    body
+      .querySelectorAll('p, li, td, th, blockquote, h1, h2, h3, h4, h5, h6, div')
+      .forEach((el) => {
+        const w = window.getComputedStyle(el).fontWeight;
+        el.style.fontWeight = Number(w) >= 600 ? '700' : '400';
+      });
+  }
+</script>
