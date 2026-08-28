@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">PBR 1배 미만 종목 비중 — 3개월 만에 14.13%포인트 늘었습니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">코스피·코스닥 2,517개 종목 중 PBR이 1배 미만인 종목의 비중(2026년)</text>
+
+  <!-- baseline (0%) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 4월 말 : 46.26% -->
+  <path d="M99 300 V135 A3 3 0 0 1 102 132 H186 A3 3 0 0 1 189 135 V300 Z" fill="#7ea6d4"/>
+  <text x="144" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">46.26%</text>
+  <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">4월 말</text>
+
+  <!-- 5월 말 : 52.22% -->
+  <path d="M246 300 V113 A3 3 0 0 1 249 110 H333 A3 3 0 0 1 336 113 V300 Z" fill="#7ea6d4"/>
+  <text x="291" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">52.22%</text>
+  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5월 말</text>
+
+  <!-- 6월 말 : 58.75% -->
+  <path d="M394 300 V89 A3 3 0 0 1 397 86 H481 A3 3 0 0 1 484 89 V300 Z" fill="#7ea6d4"/>
+  <text x="439" y="72" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">58.75%</text>
+  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">6월 말</text>
+
+  <!-- 7월 27일 : 60.39% -->
+  <path d="M541 300 V83 A3 3 0 0 1 544 80 H628 A3 3 0 0 1 631 83 V300 Z" fill="#1f5fa8"/>
+  <text x="586" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">60.39%</text>
+  <text x="586" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">7월 27일</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 우선주·스팩·거래정지 종목 제외 · 한국거래소 집계를 인용한 2026년 7월 28일 보도</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">시장 평균 PBR과 달리, 종목 수로 세면 절반을 넘습니다</text>
+</svg>
