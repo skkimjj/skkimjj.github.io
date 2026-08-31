@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">기초 주식이 −50%가 됐을 때 상품 가치는 얼마나 빠지나</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">채권 가격은 변하지 않는다고 가정하고 주식 비중만 곱한 자체 예시 계산</text>
+
+  <!-- 0선: 막대가 이 선에서 아래로 자란다 -->
+  <line x1="60" y1="90" x2="660" y2="90" stroke="#c9ced6" stroke-dasharray="4 3"/>
+  <text x="52" y="94" text-anchor="end" font-size="11" fill="#9aa0aa">0%</text>
+
+  <!-- 그 주식을 직접 산 경우 : −50% -->
+  <path d="M105 90 V287 A3 3 0 0 0 108 290 H212 A3 3 0 0 0 215 287 V90 Z" fill="#c0392b"/>
+  <text x="160" y="310" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">−50%</text>
+  <text x="160" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">그 주식을 직접 산 경우</text>
+  <text x="160" y="356" text-anchor="middle" font-size="11" fill="#c0392b">주식 100%</text>
+
+  <!-- 채권혼합50 : −25% -->
+  <path d="M305 90 V187 A3 3 0 0 0 308 190 H412 A3 3 0 0 0 415 187 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="360" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−25%</text>
+  <text x="360" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">채권혼합50</text>
+  <text x="360" y="356" text-anchor="middle" font-size="11" fill="#6b7280">주식 50%(2종목·지수형)</text>
+
+  <!-- 단일종목 채권혼합 : −15% -->
+  <path d="M505 90 V147 A3 3 0 0 0 508 150 H612 A3 3 0 0 0 615 147 V90 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="560" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">−15%</text>
+  <text x="560" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">단일종목 채권혼합</text>
+  <text x="560" y="356" text-anchor="middle" font-size="11" fill="#6b7280">주식 30%</text>
+
+  <text x="360" y="374" text-anchor="middle" font-size="11" fill="#9aa0aa">※ 본 사이트 자체 예시 계산이며 특정 상품의 실제 수익률이 아닙니다 · 실제로는 채권 가격 변동·일간 비중 조정·보수가 함께 반영됩니다</text>
+</svg>
