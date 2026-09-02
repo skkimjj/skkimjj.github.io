@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">수주 공시에는 '매출액 대비' 문턱이 있습니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">단일판매·공급계약 체결을 신고해야 하는 최소 비율(분모 = 최근 사업연도 매출액)</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- 코스피 대규모법인 : 2.5% -->
+  <path d="M125 300 V250 A3 3 0 0 1 128 247 H212 A3 3 0 0 1 215 250 V300 Z" fill="#7ea6d4"/>
+  <text x="170" y="233" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2.5%</text>
+  <text x="170" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피 대규모법인</text>
+  <text x="170" y="342" text-anchor="middle" font-size="11" fill="#6b7280">연결 자산총액 2조원 이상</text>
+
+  <!-- 코스피 일반 : 5% -->
+  <path d="M315 300 V198 A3 3 0 0 1 318 195 H402 A3 3 0 0 1 405 198 V300 Z" fill="#7ea6d4"/>
+  <text x="360" y="181" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">5%</text>
+  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피 일반</text>
+  <text x="360" y="342" text-anchor="middle" font-size="11" fill="#6b7280">공시규정 제7조제1항제1호다목</text>
+
+  <!-- 코스닥 : 10% -->
+  <path d="M505 300 V93 A3 3 0 0 1 508 90 H592 A3 3 0 0 1 595 93 V300 Z" fill="#1f5fa8"/>
+  <text x="550" y="76" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">10%</text>
+  <text x="550" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">코스닥</text>
+  <text x="550" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">＋ 계약금액 3억원 이상</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 유가증권시장 공시규정 제7조제1항제1호다목, 코스닥시장 공시규정 제6조제1항제1호다목·시행세칙</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">코스닥은 비율을 넘어도 계약금액이 3억원 미만이면 신고 의무가 없습니다 (거래소 업무해설서, 2026년 9월 확인)</text>
+</svg>
