@@ -1,187 +1,194 @@
 {
-  "_comment": "공부방 글의 네이버 발행 URL 매핑. 사용자가 네이버에 발행 후 URL을 알려주면 여기 누적 기록한다. 다음 공부방 글의 네이버 버전을 만들 때 관련 과거 글 링크를 이 매핑에서 찾아 삽입한다. key = learn 컬렉션의 slug.",
-  "urls": {
-    "etf-basics": {
-      "title": "ETF란 무엇인가 — 주식도 펀드도 아닌, 초보에게 가장 쉬운 시작",
-      "series": "ETF 완전정복",
-      "seriesOrder": 1,
-      "naver_url": "https://blog.naver.com/hdglace/224350308437",
-      "published": "2026-07-18"
-    },
-    "what-is-disparity": {
-      "title": "괴리율이란 무엇인가 — ETF·ADR 가격이 '진짜 값'과 다른 이유",
-      "series": "개념 한 조각",
-      "seriesOrder": 1,
-      "naver_url": "https://blog.naver.com/hdglace/224351030720",
-      "published": "2026-07-19"
-    },
-    "tax-advantaged-accounts": {
-      "title": "연금저축·IRP·ISA — 세금 아끼며 ETF 투자하는 절세 계좌 3종",
-      "series": "제도·실전",
-      "seriesOrder": 1,
-      "naver_url": "https://blog.naver.com/hdglace/224357252306",
-      "published": "2026-07-25"
-    },
-    "index-etf-compare": {
-      "title": "코스피200·S&P500·나스닥100 ETF 비교 — 지수를 통째로 산다는 것",
-      "series": "ETF 완전정복",
-      "seriesOrder": 2,
-      "naver_url": "https://blog.naver.com/hdglace/224358137869",
-      "published": "2026-07-26"
-    },
-    "what-is-adr": {
-      "title": "ADR이란 무엇인가 — 한국 주식이 미국에서 거래되는 법",
-      "series": "개념 한 조각",
-      "seriesOrder": 2,
-      "naver_url": "https://blog.naver.com/hdglace/224360141124",
-      "published": "2026-07-28"
-    },
-    "ipo-subscription": {
-      "title": "공모주 청약 방법 — 균등배정·비례배정 차이와 실제 절차",
-      "series": "제도·실전",
-      "seriesOrder": 2,
-      "naver_url": "https://blog.naver.com/hdglace/224362500752",
-      "published": "2026-07-30"
-    },
-    "reading-order-book": {
-      "title": "호가창 보는 법 — 매수·매도 잔량과 호가 단위가 뜻하는 것",
-      "series": "실전 도구",
-      "seriesOrder": 1,
-      "naver_url": "https://blog.naver.com/hdglace/224364657994",
-      "published": "2026-08-01"
-    },
-    "us-market-hours": {
-      "title": "미국 증시 시간 — 서머타임·프리마켓·애프터마켓 한국시간 총정리",
-      "series": "시장 읽기",
-      "seriesOrder": 1,
-      "naver_url": "https://blog.naver.com/hdglace/224365483110",
-      "published": "2026-08-02"
-    },
-    "etf-cost-and-tax": {
-      "title": "ETF 총보수와 세금 — 실제로 내 수익에서 얼마가 빠지나",
-      "series": "ETF 완전정복",
-      "seriesOrder": 3,
-      "naver_url": "https://blog.naver.com/hdglace/224367512124",
-      "published": "2026-08-04"
-    },
-    "interest-rate-and-stocks": {
-      "title": "금리가 오르면 주가가 내리는 이유 — 할인율과 유동성",
-      "series": "개념 한 조각",
-      "seriesOrder": 3,
-      "naver_url": "https://blog.naver.com/hdglace/224369929249",
-      "published": "2026-08-06"
-    },
-    "overseas-stock-capital-gains-tax": {
-      "title": "해외주식 양도소득세 신고 방법 — 250만원 공제와 5월 확정신고",
-      "series": "제도·실전",
-      "seriesOrder": 3,
-      "naver_url": "https://blog.naver.com/hdglace/224371858037",
-      "published": "2026-08-08"
-    },
-    "where-to-find-market-data": {
-      "title": "주식 데이터 무료로 보는 곳 — KRX·금투협·DART 활용법",
-      "series": "실전 도구",
-      "seriesOrder": 2,
-      "naver_url": "https://blog.naver.com/hdglace/224372833633",
-      "published": "2026-08-09"
-    },
-    "fomc-basics": {
-      "title": "FOMC란 무엇인가 — 점도표·성명문에서 봐야 할 것",
-      "series": "시장 읽기",
-      "seriesOrder": 2,
-      "naver_url": "https://blog.naver.com/hdglace/224375094005",
-      "published": "2026-08-11"
-    },
-    "sector-etf": {
-      "title": "섹터·테마 ETF 고르는 기준",
-      "series": "ETF 완전정복",
-      "seriesOrder": 4,
-      "naver_url": "https://blog.naver.com/hdglace/224377126808",
-      "published": "2026-08-13"
-    },
-    "leveraged-inverse-etf-mechanics": {
-      "title": "단일종목 레버리지 ETF 원리 — 2배·인버스는 어떻게 만들어지나",
-      "series": "ETF 완전정복",
-      "seriesOrder": 5,
-      "naver_url": "https://blog.naver.com/hdglace/224379450793",
-      "published": "2026-08-15"
-    },
-    "leveraged-etf-volatility-decay": {
-      "title": "레버리지 ETF 음의 복리 — 지수가 제자리인데 왜 손실이 나나",
-      "series": "ETF 완전정복",
-      "seriesOrder": 6,
-      "naver_url": "https://blog.naver.com/hdglace/224380108823",
-      "published": "2026-08-16"
-    },
-    "short-selling-and-circuit-breaker": {
-      "title": "공매도·사이드카·서킷브레이커 차이 — 급락장에 켜지는 장치들",
-      "series": "개념 한 조각",
-      "seriesOrder": 4,
-      "naver_url": "https://blog.naver.com/hdglace/224381139813",
-      "published": "2026-08-17"
-    },
-    "leveraged-etn-vs-etf": {
-      "title": "레버리지 ETN과 ETF 차이 — 같은 2배인데 위험이 다른 이유",
-      "series": "ETF 완전정복",
-      "seriesOrder": 7,
-      "naver_url": "https://blog.naver.com/hdglace/224381929727",
-      "published": "2026-08-18"
-    },
-    "dividend-record-date": {
-      "title": "배당기준일·배당락일 계산법 — 언제까지 사야 배당을 받나",
-      "series": "제도·실전",
-      "seriesOrder": 4,
-      "naver_url": "https://blog.naver.com/hdglace/224384496256",
-      "published": "2026-08-20"
-    },
-    "reading-analyst-reports": {
-      "title": "증권사 리포트 읽는 법 — 목표주가·투자의견을 어떻게 볼까",
-      "series": "실전 도구",
-      "seriesOrder": 3,
-      "naver_url": "https://blog.naver.com/hdglace/224386423493",
-      "published": "2026-08-22"
-    },
-    "opening-closing-auction": {
-      "title": "동시호가 뜻과 시간 — 장 시작·마감 단일가에 주문이 체결되는 방식",
-      "series": "실전 도구",
-      "seriesOrder": 4,
-      "naver_url": "https://blog.naver.com/hdglace/224387372100",
-      "published": "2026-08-23"
-    },
-    "earnings-season-calendar": {
-      "title": "실적 시즌이란 — 미국·한국 실적 발표 일정 읽는 법",
-      "series": "시장 읽기",
-      "seriesOrder": 3,
-      "naver_url": "https://blog.naver.com/hdglace/224389308601",
-      "published": "2026-08-25"
-    },
-    "order-types": {
-      "title": "지정가·시장가 차이 — 주문 유형 5가지와 주문 실수 막는 법",
-      "series": "실전 도구",
-      "seriesOrder": 8,
-      "naver_url": "https://blog.naver.com/hdglace/224391794715",
-      "published": "2026-08-27"
-    },
-    "per-pbr-basics": {
-      "title": "PER·PBR 뜻과 계산법 — 주식이 싼지 비싼지 가장 먼저 보는 두 지표",
-      "series": "개념 한 조각",
-      "seriesOrder": 6,
-      "naver_url": "https://blog.naver.com/hdglace/224394070576",
-      "published": "2026-08-29"
-    },
-    "short-selling-data": {
-      "title": "공매도 데이터 보는 법 — 종합포털에서 잔고·거래·상위 종목 조회하기",
-      "series": "실전 도구",
-      "seriesOrder": 5,
-      "naver_url": "https://blog.naver.com/hdglace/224394779749",
-      "published": "2026-08-30"
-    },
-    "single-stock-etf": {
-      "title": "단일종목 ETF란 — 주식 30%·채권 70% 구조와 퇴직연금 활용",
-      "series": "ETF 완전정복",
-      "seriesOrder": 8,
-      "naver_url": "https://blog.naver.com/hdglace/224397300262",
-      "published": "2026-09-01"
-    }
+ "_comment": "공부방 글의 네이버 발행 URL 매핑. 사용자가 네이버에 발행 후 URL을 알려주면 여기 누적 기록한다. 다음 공부방 글의 네이버 버전을 만들 때 관련 과거 글 링크를 이 매핑에서 찾아 삽입한다. key = learn 컬렉션의 slug.",
+ "urls": {
+  "etf-basics": {
+   "title": "ETF란 무엇인가 — 주식도 펀드도 아닌, 초보에게 가장 쉬운 시작",
+   "series": "ETF 완전정복",
+   "seriesOrder": 1,
+   "naver_url": "https://blog.naver.com/hdglace/224350308437",
+   "published": "2026-07-18"
+  },
+  "what-is-disparity": {
+   "title": "괴리율이란 무엇인가 — ETF·ADR 가격이 '진짜 값'과 다른 이유",
+   "series": "개념 한 조각",
+   "seriesOrder": 1,
+   "naver_url": "https://blog.naver.com/hdglace/224351030720",
+   "published": "2026-07-19"
+  },
+  "tax-advantaged-accounts": {
+   "title": "연금저축·IRP·ISA — 세금 아끼며 ETF 투자하는 절세 계좌 3종",
+   "series": "제도·실전",
+   "seriesOrder": 1,
+   "naver_url": "https://blog.naver.com/hdglace/224357252306",
+   "published": "2026-07-25"
+  },
+  "index-etf-compare": {
+   "title": "코스피200·S&P500·나스닥100 ETF 비교 — 지수를 통째로 산다는 것",
+   "series": "ETF 완전정복",
+   "seriesOrder": 2,
+   "naver_url": "https://blog.naver.com/hdglace/224358137869",
+   "published": "2026-07-26"
+  },
+  "what-is-adr": {
+   "title": "ADR이란 무엇인가 — 한국 주식이 미국에서 거래되는 법",
+   "series": "개념 한 조각",
+   "seriesOrder": 2,
+   "naver_url": "https://blog.naver.com/hdglace/224360141124",
+   "published": "2026-07-28"
+  },
+  "ipo-subscription": {
+   "title": "공모주 청약 방법 — 균등배정·비례배정 차이와 실제 절차",
+   "series": "제도·실전",
+   "seriesOrder": 2,
+   "naver_url": "https://blog.naver.com/hdglace/224362500752",
+   "published": "2026-07-30"
+  },
+  "reading-order-book": {
+   "title": "호가창 보는 법 — 매수·매도 잔량과 호가 단위가 뜻하는 것",
+   "series": "실전 도구",
+   "seriesOrder": 1,
+   "naver_url": "https://blog.naver.com/hdglace/224364657994",
+   "published": "2026-08-01"
+  },
+  "us-market-hours": {
+   "title": "미국 증시 시간 — 서머타임·프리마켓·애프터마켓 한국시간 총정리",
+   "series": "시장 읽기",
+   "seriesOrder": 1,
+   "naver_url": "https://blog.naver.com/hdglace/224365483110",
+   "published": "2026-08-02"
+  },
+  "etf-cost-and-tax": {
+   "title": "ETF 총보수와 세금 — 실제로 내 수익에서 얼마가 빠지나",
+   "series": "ETF 완전정복",
+   "seriesOrder": 3,
+   "naver_url": "https://blog.naver.com/hdglace/224367512124",
+   "published": "2026-08-04"
+  },
+  "interest-rate-and-stocks": {
+   "title": "금리가 오르면 주가가 내리는 이유 — 할인율과 유동성",
+   "series": "개념 한 조각",
+   "seriesOrder": 3,
+   "naver_url": "https://blog.naver.com/hdglace/224369929249",
+   "published": "2026-08-06"
+  },
+  "overseas-stock-capital-gains-tax": {
+   "title": "해외주식 양도소득세 신고 방법 — 250만원 공제와 5월 확정신고",
+   "series": "제도·실전",
+   "seriesOrder": 3,
+   "naver_url": "https://blog.naver.com/hdglace/224371858037",
+   "published": "2026-08-08"
+  },
+  "where-to-find-market-data": {
+   "title": "주식 데이터 무료로 보는 곳 — KRX·금투협·DART 활용법",
+   "series": "실전 도구",
+   "seriesOrder": 2,
+   "naver_url": "https://blog.naver.com/hdglace/224372833633",
+   "published": "2026-08-09"
+  },
+  "fomc-basics": {
+   "title": "FOMC란 무엇인가 — 점도표·성명문에서 봐야 할 것",
+   "series": "시장 읽기",
+   "seriesOrder": 2,
+   "naver_url": "https://blog.naver.com/hdglace/224375094005",
+   "published": "2026-08-11"
+  },
+  "sector-etf": {
+   "title": "섹터·테마 ETF 고르는 기준",
+   "series": "ETF 완전정복",
+   "seriesOrder": 4,
+   "naver_url": "https://blog.naver.com/hdglace/224377126808",
+   "published": "2026-08-13"
+  },
+  "leveraged-inverse-etf-mechanics": {
+   "title": "단일종목 레버리지 ETF 원리 — 2배·인버스는 어떻게 만들어지나",
+   "series": "ETF 완전정복",
+   "seriesOrder": 5,
+   "naver_url": "https://blog.naver.com/hdglace/224379450793",
+   "published": "2026-08-15"
+  },
+  "leveraged-etf-volatility-decay": {
+   "title": "레버리지 ETF 음의 복리 — 지수가 제자리인데 왜 손실이 나나",
+   "series": "ETF 완전정복",
+   "seriesOrder": 6,
+   "naver_url": "https://blog.naver.com/hdglace/224380108823",
+   "published": "2026-08-16"
+  },
+  "short-selling-and-circuit-breaker": {
+   "title": "공매도·사이드카·서킷브레이커 차이 — 급락장에 켜지는 장치들",
+   "series": "개념 한 조각",
+   "seriesOrder": 4,
+   "naver_url": "https://blog.naver.com/hdglace/224381139813",
+   "published": "2026-08-17"
+  },
+  "leveraged-etn-vs-etf": {
+   "title": "레버리지 ETN과 ETF 차이 — 같은 2배인데 위험이 다른 이유",
+   "series": "ETF 완전정복",
+   "seriesOrder": 7,
+   "naver_url": "https://blog.naver.com/hdglace/224381929727",
+   "published": "2026-08-18"
+  },
+  "dividend-record-date": {
+   "title": "배당기준일·배당락일 계산법 — 언제까지 사야 배당을 받나",
+   "series": "제도·실전",
+   "seriesOrder": 4,
+   "naver_url": "https://blog.naver.com/hdglace/224384496256",
+   "published": "2026-08-20"
+  },
+  "reading-analyst-reports": {
+   "title": "증권사 리포트 읽는 법 — 목표주가·투자의견을 어떻게 볼까",
+   "series": "실전 도구",
+   "seriesOrder": 3,
+   "naver_url": "https://blog.naver.com/hdglace/224386423493",
+   "published": "2026-08-22"
+  },
+  "opening-closing-auction": {
+   "title": "동시호가 뜻과 시간 — 장 시작·마감 단일가에 주문이 체결되는 방식",
+   "series": "실전 도구",
+   "seriesOrder": 4,
+   "naver_url": "https://blog.naver.com/hdglace/224387372100",
+   "published": "2026-08-23"
+  },
+  "earnings-season-calendar": {
+   "title": "실적 시즌이란 — 미국·한국 실적 발표 일정 읽는 법",
+   "series": "시장 읽기",
+   "seriesOrder": 3,
+   "naver_url": "https://blog.naver.com/hdglace/224389308601",
+   "published": "2026-08-25"
+  },
+  "order-types": {
+   "title": "지정가·시장가 차이 — 주문 유형 5가지와 주문 실수 막는 법",
+   "series": "실전 도구",
+   "seriesOrder": 8,
+   "naver_url": "https://blog.naver.com/hdglace/224391794715",
+   "published": "2026-08-27"
+  },
+  "per-pbr-basics": {
+   "title": "PER·PBR 뜻과 계산법 — 주식이 싼지 비싼지 가장 먼저 보는 두 지표",
+   "series": "개념 한 조각",
+   "seriesOrder": 6,
+   "naver_url": "https://blog.naver.com/hdglace/224394070576",
+   "published": "2026-08-29"
+  },
+  "short-selling-data": {
+   "title": "공매도 데이터 보는 법 — 종합포털에서 잔고·거래·상위 종목 조회하기",
+   "series": "실전 도구",
+   "seriesOrder": 5,
+   "naver_url": "https://blog.naver.com/hdglace/224394779749",
+   "published": "2026-08-30"
+  },
+  "single-stock-etf": {
+   "title": "단일종목 ETF란 — 주식 30%·채권 70% 구조와 퇴직연금 활용",
+   "series": "ETF 완전정복",
+   "seriesOrder": 8,
+   "naver_url": "https://blog.naver.com/hdglace/224397300262",
+   "published": "2026-09-01"
+  },
+  "dart-disclosure": {
+   "title": "DART 공시 보는 법 — 초보가 꼭 확인해야 할 공시 5가지",
+   "series": "제도·실전",
+   "seriesOrder": 6,
+   "naver_url": "https://blog.naver.com/hdglace/224399426557",
+   "published": "2026-09-03"
   }
+ }
 }
