@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 412" width="720" height="412" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="410" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 8월 코스피 외국인 순매도 — 어디를 팔았나</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">한 달 누적 · 순매도 총액 10조1,756억원 · 두 종목이 약 85%</text>
+
+  <!-- 0선 — 막대 위쪽에만 놓아 막대 상단을 침범하지 않게 한다 -->
+  <rect x="52" y="94" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="98" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 0선에서 아래로 자라고, 아래쪽만 둥글게(r=3) 한다 -->
+  <!-- SK하이닉스 −6조3,991억원 -->
+  <path d="M120 95 V292 A3 3 0 0 0 123 295 H227 A3 3 0 0 0 230 292 V95 Z" fill="#c0392b"/>
+  <text x="175" y="318" text-anchor="middle" font-size="16" font-weight="700" fill="#c0392b">−6조3,991억원</text>
+  <text x="175" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">SK하이닉스</text>
+  <text x="175" y="366" text-anchor="middle" font-size="11" fill="#6b7280">순매도의 약 63%</text>
+
+  <!-- 삼성전자(보통주+우선주) −2조2,682억원 -->
+  <path d="M305 95 V163 A3 3 0 0 0 308 166 H412 A3 3 0 0 0 415 163 V95 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="360" y="189" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">−2조2,682억원</text>
+  <text x="360" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">삼성전자</text>
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#6b7280">보통주+우선주</text>
+
+  <!-- 나머지 전 종목 합계 −1조5,083억원 -->
+  <path d="M490 95 V139 A3 3 0 0 0 493 142 H597 A3 3 0 0 0 600 139 V95 Z" fill="#c0392b" fill-opacity="0.45"/>
+  <text x="545" y="165" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">−1조5,083억원</text>
+  <text x="545" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">나머지 전 종목</text>
+  <text x="545" y="366" text-anchor="middle" font-size="11" fill="#6b7280">총액에서 두 종목을 뺀 값</text>
+
+  <text x="360" y="390" text-anchor="middle" font-size="11" fill="#9aa0aa">자료: EBN 2026년 9월 1일 보도(한국거래소 집계 기준) · 단위: 억원·조원</text>
+  <text x="360" y="404" text-anchor="middle" font-size="11" fill="#9aa0aa">특정 종목의 우열이나 향후 주가에 대한 판단이 아닙니다</text>
+</svg>

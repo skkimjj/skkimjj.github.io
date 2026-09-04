@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">코스피 거래대금 비중 — 가장 많이 거래하는 쪽은 개인</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 8월 25일 기준 · 거래대금 기준 비중</text>
+
+  <!-- 기준선 — 막대 아래에만 놓는다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+
+  <!-- 막대는 기준선에서 위로 자라고, 위쪽만 둥글게(r=3) 한다 -->
+  <!-- 개인 39% -->
+  <path d="M120 300 V103 A3 3 0 0 1 123 100 H227 A3 3 0 0 1 230 103 V300 Z" fill="#0f4bd8"/>
+  <text x="175" y="91" text-anchor="middle" font-size="17" font-weight="700" fill="#0f4bd8">39%</text>
+  <text x="175" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">개인</text>
+  <text x="175" y="340" text-anchor="middle" font-size="11" fill="#6b7280">뉴스에 가장 적게 등장</text>
+
+  <!-- 기관 35% -->
+  <path d="M305 300 V123 A3 3 0 0 1 308 120 H412 A3 3 0 0 1 415 123 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="360" y="111" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">35%</text>
+  <text x="360" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">기관</text>
+  <text x="360" y="340" text-anchor="middle" font-size="11" fill="#6b7280">7개 세부 구분의 합계</text>
+
+  <!-- 외국인 24% -->
+  <path d="M490 300 V180 A3 3 0 0 1 493 177 H597 A3 3 0 0 1 600 180 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="545" y="168" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">24%</text>
+  <text x="545" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">외국인</text>
+  <text x="545" y="340" text-anchor="middle" font-size="11" fill="#6b7280">수급 기사의 주인공</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">자료: 헤럴드경제 2026년 8월 26일 보도(한국거래소 자료 인용) · 단위: %</text>
+  <text x="360" y="384" text-anchor="middle" font-size="11" fill="#9aa0aa">합이 100%가 되지 않는 것은 기타법인 등 나머지 구분이 있기 때문입니다 · 비중은 계속 바뀝니다</text>
+</svg>
