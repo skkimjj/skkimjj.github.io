@@ -189,6 +189,13 @@
    "seriesOrder": 6,
    "naver_url": "https://blog.naver.com/hdglace/224399426557",
    "published": "2026-09-03"
+  },
+  "price-limit-and-base-price": {
+   "title": "가격제한폭 30% — 상한가·하한가는 매일 어떻게 계산되나",
+   "series": "개념 한 조각",
+   "seriesOrder": 10,
+   "naver_url": "https://blog.naver.com/hdglace/224401345295",
+   "published": "2026-09-04"
   }
  }
 }
