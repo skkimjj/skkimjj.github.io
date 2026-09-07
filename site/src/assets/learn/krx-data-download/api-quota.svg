@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">Open API 하루 한도 10,000회를 날짜로 환산하면</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">호출 1회 = 기준일자 하루치 전 종목</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 1년치 : 244회 -->
+  <rect x="98" y="295" width="96" height="5" fill="#7ea6d4"/>
+  <text x="146" y="283" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">244회</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1년치</text>
+
+  <!-- 5년치 : 1,220회 -->
+  <path d="M240 300 V277 A3 3 0 0 1 243 274 H333 A3 3 0 0 1 336 277 V300 Z" fill="#7ea6d4"/>
+  <text x="288" y="262" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1,220회</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5년치</text>
+
+  <!-- 2010년 이후 전체 : 약 4,070회 -->
+  <path d="M382 300 V217 A3 3 0 0 1 385 214 H475 A3 3 0 0 1 478 217 V300 Z" fill="#1f5fa8"/>
+  <text x="430" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">약 4,070회</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">2010년 이후</text>
+  <text x="430" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">전체</text>
+
+  <!-- 하루 한도 : 10,000회 -->
+  <path d="M524 300 V93 A3 3 0 0 1 527 90 H617 A3 3 0 0 1 620 93 V300 Z" fill="#c3d4e8"/>
+  <text x="572" y="76" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">10,000회</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">하루 한도</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 호출 횟수 · 한도 10,000회는 KRX OPEN API 이용약관 제8조 제4항 · 2010년 이후 전체를 처음 받는 작업이 하루 한도의 절반에도 못 미친다</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">날짜 환산은 2026년 개장일 244일을 연 기준으로 삼은 어림 계산(16년 × 244일 + 2026년 168일 = 4,072회) · 실제 개장일 수는 연도마다 다릅니다</text>
+</svg>

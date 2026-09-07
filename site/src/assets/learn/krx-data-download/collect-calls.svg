@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">1년치 일별 시세를 모으는 데 필요한 조회 횟수</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">종목 수가 아니라 '어느 축으로 받느냐'가 횟수를 정한다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 종목 1개 : 1회 (최소 높이로 그림) -->
+  <rect x="98" y="296" width="96" height="4" fill="#7ea6d4"/>
+  <text x="146" y="284" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1회</text>
+  <text x="146" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">종목 1개</text>
+  <text x="146" y="341" text-anchor="middle" font-size="11" fill="#6b7280">종목축</text>
+
+  <!-- 종목 10개 : 10회 -->
+  <rect x="240" y="291" width="96" height="9" fill="#7ea6d4"/>
+  <text x="288" y="279" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">10회</text>
+  <text x="288" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">종목 10개</text>
+  <text x="288" y="341" text-anchor="middle" font-size="11" fill="#6b7280">종목축</text>
+
+  <!-- 종목 100개 : 100회 -->
+  <path d="M382 300 V217 A3 3 0 0 1 385 214 H475 A3 3 0 0 1 478 217 V300 Z" fill="#7ea6d4"/>
+  <text x="430" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">100회</text>
+  <text x="430" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">종목 100개</text>
+  <text x="430" y="341" text-anchor="middle" font-size="11" fill="#6b7280">종목축</text>
+
+  <!-- 전 종목 : 244회 -->
+  <path d="M524 300 V93 A3 3 0 0 1 527 90 H617 A3 3 0 0 1 620 93 V300 Z" fill="#1f5fa8"/>
+  <text x="572" y="76" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">244회</text>
+  <text x="572" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">전 종목</text>
+  <text x="572" y="341" text-anchor="middle" font-size="11" fill="#1f5fa8">날짜축</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 조회·다운로드 횟수 · 2026년 개장일 244일을 기준으로 한 자체 계산 · 관심 종목이 244개를 넘으면 날짜축이 유리해진다</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">종목축=「개별종목 시세 추이」로 종목마다 한 번 · 날짜축=「전종목 시세」로 개장일마다 한 번 · 「1회」 막대는 눈에 보이도록 최소 높이로 그렸습니다</text>
+</svg>
