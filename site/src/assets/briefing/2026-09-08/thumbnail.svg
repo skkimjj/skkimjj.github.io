@@ -5,19 +5,19 @@
   
   <text x="80" y="280" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#e6eaf2">S&amp;P 500</text>
   <text x="520" y="280" font-family="'SF Mono',Menlo,monospace" font-size="40" fill="#e6eaf2">7,718.60</text>
-  <text x="900" y="280" font-family="'SF Mono',Menlo,monospace" font-size="40" font-weight="700" fill="#3b6fd4">-0.38%</text>
+  <text x="900" y="280" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#8b95a5">휴장</text>
 
   <text x="80" y="350" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#e6eaf2">Nasdaq</text>
   <text x="520" y="350" font-family="'SF Mono',Menlo,monospace" font-size="40" fill="#e6eaf2">26,506.99</text>
-  <text x="900" y="350" font-family="'SF Mono',Menlo,monospace" font-size="40" font-weight="700" fill="#3b6fd4">-0.29%</text>
+  <text x="900" y="350" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#8b95a5">휴장</text>
 
   <text x="80" y="420" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#e6eaf2">Dow</text>
   <text x="520" y="420" font-family="'SF Mono',Menlo,monospace" font-size="40" fill="#e6eaf2">53,414.25</text>
-  <text x="900" y="420" font-family="'SF Mono',Menlo,monospace" font-size="40" font-weight="700" fill="#3b6fd4">-0.51%</text>
+  <text x="900" y="420" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#8b95a5">휴장</text>
 
   <text x="80" y="490" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#e6eaf2">SOX</text>
   <text x="520" y="490" font-family="'SF Mono',Menlo,monospace" font-size="40" fill="#e6eaf2">11,735.30</text>
-  <text x="900" y="490" font-family="'SF Mono',Menlo,monospace" font-size="40" font-weight="700" fill="#d64545">+3.38%</text>
+  <text x="900" y="490" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="40" font-weight="700" fill="#8b95a5">휴장</text>
 
-  <text x="80" y="580" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" fill="#5b6778">밤사이 미국 시장 마감 기준 · 정보성 콘텐츠</text>
+  <text x="80" y="580" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" fill="#5b6778">미국 증시 휴장 · 표기 수치는 직전 거래일 종가 · 정보성 콘텐츠</text>
 </svg>
