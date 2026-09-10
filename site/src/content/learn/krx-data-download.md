@@ -1,6 +1,7 @@
 ---
 title: "과거 주가 데이터 받는 법 — KRX 엑셀·CSV 다운로드와 Open API"
 date: 2026-09-08
+updated: 2026-09-10
 description: "KRX Data Marketplace(옛 정보데이터시스템)에서 일별 시세를 엑셀·CSV로 내려받는 경로, 화면별 조회 조건과 「수정주가 적용」, Open API 신청 2단계와 하루 10,000회 한도를 2026년 9월 기준으로 정리했습니다."
 tags: [과거주가데이터, KRX데이터다운로드, KRX정보데이터시스템, KRXOpenAPI, 주식엑셀다운로드, 일별시세CSV, 수정주가적용, 주가데이터무료]
 series: "실전 도구"
