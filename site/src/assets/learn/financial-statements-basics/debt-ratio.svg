@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">부채비율은 하나의 기준선으로 재기 어렵습니다</text>
+  <text x="360" y="55" text-anchor="middle" font-size="12" fill="#6b7280">2025년 기준 · 부채총계 ÷ 자본총계 × 100</text>
+
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <path d="M84 300 V263 A4 4 0 0 1 88 259 H170 A4 4 0 0 1 174 263 V300 Z" fill="#1f5fa8"/>
+  <text x="129" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1f5fa8">29.9%</text>
+  <text x="129" y="326" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1d24">삼성전자</text>
+  <text x="129" y="345" text-anchor="middle" font-size="11.5" fill="#6b7280">2025년 말 연결</text>
+
+  <path d="M238 300 V183 A4 4 0 0 1 242 179 H324 A4 4 0 0 1 328 183 V300 Z" fill="#7ea6d4"/>
+  <text x="283" y="169" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">88.5%</text>
+  <text x="283" y="326" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1d24">대기업 평균</text>
+  <text x="283" y="345" text-anchor="middle" font-size="11.5" fill="#6b7280">전년 93.2%</text>
+
+  <path d="M392 300 V170 A4 4 0 0 1 396 166 H478 A4 4 0 0 1 482 170 V300 Z" fill="#7ea6d4"/>
+  <text x="437" y="156" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">98.3%</text>
+  <text x="437" y="326" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1d24">전산업 평균</text>
+  <text x="437" y="345" text-anchor="middle" font-size="11.5" fill="#6b7280">전년 103.4%</text>
+
+  <path d="M546 300 V104 A4 4 0 0 1 550 100 H632 A4 4 0 0 1 636 104 V300 Z" fill="#7ea6d4"/>
+  <text x="591" y="90" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1d24">146.4%</text>
+  <text x="591" y="326" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1d24">중소기업 평균</text>
+  <text x="591" y="345" text-anchor="middle" font-size="11.5" fill="#6b7280">전년 152.3%</text>
+
+  <text x="360" y="372" text-anchor="middle" font-size="11" fill="#9aa0aa">⚠️ 모집단이 다릅니다 — 평균 3개는 한국은행 「2025년 기업경영분석(속보)」의 외부감사대상 비금융 영리법인 34,456곳,</text>
+  <text x="360" y="388" text-anchor="middle" font-size="11" fill="#9aa0aa">맨 왼쪽은 상장사 한 곳의 연결 기준 값입니다. 우열 비교가 아니라 기준선의 폭을 보는 그래프입니다.</text>
+</svg>
