@@ -1,37 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
-  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
-  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">한도는 1,800만원인데, 실제 평균 납입액은 161만원</text>
-  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">넣을 수 있는 한도와 세금을 깎아주는 한도는 다른 숫자입니다</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="318" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">연 1,800만원을 다 채워도, 깎아주는 구간은 앞의 900만원뿐</text>
+  <text x="360" y="55" text-anchor="middle" font-size="12" fill="#6b7280">가로 길이는 금액에 비례합니다 · 전체 = 납입한도 1,800만원</text>
 
-  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
-  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
-  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+  <!-- 상단 구간 표시 -->
+  <path d="M60 96 V88 H360 V96" fill="none" stroke="#1f5fa8" stroke-width="1.5"/>
+  <text x="210" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1f5fa8">세액공제 900만원</text>
+  <path d="M360 96 V88 H660 V96" fill="none" stroke="#9aa0aa" stroke-width="1.5"/>
+  <text x="510" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6b7280">세액공제 없음 900만원</text>
 
-  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
-  <!-- 납입한도 : 1,800만원 -->
-  <path d="M99 300 V93 A3 3 0 0 1 102 90 H186 A3 3 0 0 1 189 93 V300 Z" fill="#7ea6d4"/>
-  <text x="144" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1,800만원</text>
-  <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">납입한도</text>
-  <text x="144" y="342" text-anchor="middle" font-size="11" fill="#6b7280">연금저축＋IRP 합산</text>
+  <!-- 막대: 600 / 300 / 900 만원 -->
+  <path d="M64 110 A4 4 0 0 1 68 106 H260 V166 H68 A4 4 0 0 1 64 162 Z" fill="#1f5fa8"/>
+  <rect x="260" y="106" width="100" height="60" fill="#7ea6d4"/>
+  <path d="M360 106 H652 A4 4 0 0 1 656 110 V162 A4 4 0 0 1 652 166 H360 Z" fill="#d7dfe9"/>
+  <rect x="259.25" y="106" width="1.5" height="60" fill="#f7f8fa"/>
+  <rect x="359.25" y="106" width="1.5" height="60" fill="#f7f8fa"/>
 
-  <!-- 세액공제 한도(합산) : 900만원 -->
-  <path d="M246 300 V198 A3 3 0 0 1 249 195 H333 A3 3 0 0 1 336 198 V300 Z" fill="#1f5fa8"/>
-  <text x="291" y="180" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">900만원</text>
-  <text x="291" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">세액공제 한도</text>
-  <text x="291" y="342" text-anchor="middle" font-size="11" fill="#1f5fa8">연금저축＋IRP 합산</text>
+  <text x="162" y="143" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">600만원</text>
+  <text x="310" y="143" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">300만원</text>
+  <text x="510" y="143" text-anchor="middle" font-size="16" font-weight="700" fill="#48505c">900만원</text>
 
-  <!-- 세액공제 한도(연금저축 몫) : 600만원 -->
-  <path d="M394 300 V233 A3 3 0 0 1 397 230 H481 A3 3 0 0 1 484 233 V300 Z" fill="#7ea6d4"/>
-  <text x="439" y="215" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">600만원</text>
-  <text x="439" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">세액공제 한도</text>
-  <text x="439" y="342" text-anchor="middle" font-size="11" fill="#6b7280">연금저축 몫</text>
+  <text x="162" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">연금저축 몫</text>
+  <text x="162" y="209" text-anchor="middle" font-size="11.5" fill="#1f5fa8">세액공제 ○</text>
+  <text x="310" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">IRP 몫</text>
+  <text x="310" y="209" text-anchor="middle" font-size="11.5" fill="#1f5fa8">세액공제 ○</text>
+  <text x="510" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">공제 없이 넣는 구간</text>
+  <text x="510" y="209" text-anchor="middle" font-size="11.5" fill="#6b7280">과세이연만 받는다</text>
 
-  <!-- 실제 평균 납입액 : 161만원 -->
-  <path d="M541 300 V284 A3 3 0 0 1 544 281 H628 A3 3 0 0 1 631 284 V300 Z" fill="#a9b3bf"/>
-  <text x="586" y="266" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">161만원</text>
-  <text x="586" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">실제 평균</text>
-  <text x="586" y="342" text-anchor="middle" font-size="11" fill="#6b7280">연금저축 가입자 1인당</text>
+  <text x="360" y="248" text-anchor="middle" font-size="12.5" fill="#48505c">연금저축만으로는 600만원까지, 900만원을 채우려면 IRP·퇴직연금이 필요합니다</text>
 
-  <text x="360" y="372" text-anchor="middle" font-size="11" fill="#6b7280">단위: 만원 · 한도는 2026년 9월 기준 소득세법·같은 법 시행령</text>
-  <text x="360" y="388" text-anchor="middle" font-size="11" fill="#6b7280">평균은 2025년 말 연금저축 납입액 13조 5,000억원 ÷ 가입자 840만 3,000명(금융위·금감원 2026-06-18, 직접 계산)</text>
+  <text x="360" y="286" text-anchor="middle" font-size="11" fill="#6b7280">단위: 만원 · 2026년 9월 기준</text>
+  <text x="360" y="302" text-anchor="middle" font-size="11" fill="#6b7280">근거: 「소득세법」 제59조의3 제1항, 「소득세법 시행령」 제40조의2 제2항 제1호 가목</text>
 </svg>
