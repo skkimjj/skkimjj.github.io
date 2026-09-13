@@ -244,7 +244,7 @@ seriesOrder: 5
 
 ## 다음 편에서는
 
-**재무제표 3장만 보기 — 손익계산서·재무상태표·현금흐름표**를 다룹니다. 초보가 실제로 확인할 항목은 몇 개 되지 않습니다. 매출과 영업이익, 자산과 부채비율, 그리고 영업활동 현금흐름이 이익과 왜 다른지까지, 전자공시시스템 DART(Data Analysis, Retrieval and Transfer System)에서 찾는 경로와 함께 읽는 순서를 정리하겠습니다.
+[**재무제표 보는 법 — DART에서 3장만, 이 순서로**](/learn/financial-statements-basics/)를 다룹니다. 초보가 실제로 확인할 항목은 몇 개 되지 않습니다. 매출과 영업이익, 자산과 부채비율, 그리고 영업활동 현금흐름이 이익과 왜 다른지까지, 전자공시시스템 DART(Data Analysis, Retrieval and Transfer System)에서 찾는 경로와 함께 읽는 순서를 정리하겠습니다.
 
 ---
 
