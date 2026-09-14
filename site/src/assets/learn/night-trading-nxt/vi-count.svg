@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">같은 날 VI 발동 횟수 — 저녁 4시간이 낮보다 네 배 많았습니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 9월 14일 · 거래가 적은 종목일수록 작은 주문에도 가격이 크게 튑니다</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 정규장 : 약 400회 -->
+  <path d="M160 300 V254 A3 3 0 0 1 163 251 H317 A3 3 0 0 1 320 254 V300 Z" fill="#7ea6d4"/>
+  <text x="240" y="239" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">약 400회</text>
+  <text x="240" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">정규장</text>
+  <text x="240" y="342" text-anchor="middle" font-size="10" fill="#6b7280">09:00~15:30 (6시간 30분)</text>
+
+  <!-- 애프터마켓 : 1,637회 -->
+  <path d="M400 300 V103 A3 3 0 0 1 403 100 H557 A3 3 0 0 1 560 103 V300 Z" fill="#1f5fa8"/>
+  <text x="480" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">1,637회</text>
+  <text x="480" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">애프터마켓</text>
+  <text x="480" y="342" text-anchor="middle" font-size="10" fill="#1f5fa8">16:00~20:00 (4시간)</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">막대 값 = 2026년 9월 14일 VI(변동성완화장치) 발동 횟수 · 언론 보도 인용</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">정규장 수치는 보도의 어림 표기('약 400회')를 그대로 옮긴 것입니다</text>
+</svg>

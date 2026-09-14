@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">2026년 9월 14일 저녁 거래대금 — 두 시장이 반씩 나눴습니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">KRX 애프터마켓 개장 첫날 · 거래대금 차이는 281억원(0.8%)</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 막대는 위쪽만 둥글게(r=3), 하단은 직각으로 기준선에 딱 맞춘다 -->
+  <!-- KRX 애프터마켓 : 1조8,177억원 -->
+  <path d="M105 300 V202 A3 3 0 0 1 108 199 H242 A3 3 0 0 1 245 202 V300 Z" fill="#7ea6d4"/>
+  <text x="175" y="187" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1조 8,177억원</text>
+  <text x="175" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">KRX 애프터마켓</text>
+  <text x="175" y="342" text-anchor="middle" font-size="10" fill="#6b7280">16:00~20:00</text>
+
+  <!-- NXT 애프터마켓 : 1조7,896억원 -->
+  <path d="M290 300 V204 A3 3 0 0 1 293 201 H427 A3 3 0 0 1 430 204 V300 Z" fill="#7ea6d4"/>
+  <text x="360" y="189" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">1조 7,896억원</text>
+  <text x="360" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">NXT 애프터마켓</text>
+  <text x="360" y="342" text-anchor="middle" font-size="10" fill="#6b7280">15:40~20:00</text>
+
+  <!-- 합계 : 3조6,073억원 -->
+  <path d="M475 300 V103 A3 3 0 0 1 478 100 H612 A3 3 0 0 1 615 103 V300 Z" fill="#1f5fa8"/>
+  <text x="545" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">3조 6,073억원</text>
+  <text x="545" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">저녁 시장 합계</text>
+  <text x="545" y="342" text-anchor="middle" font-size="10" fill="#1f5fa8">두 거래소</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">막대 값 = 2026년 9월 14일 거래대금 · 한국거래소 정보데이터시스템 집계를 인용한 언론 보도</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">같은 날 KRX 정규장 거래대금은 25조 8,082억원 · 시행 첫날 1거래일 관측</text>
+</svg>
