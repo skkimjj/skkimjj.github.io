@@ -162,7 +162,7 @@ date: 2026-09-15
 
 누가 거래했는지가 특히 눈에 띕니다.
 
-![애프터마켓 첫날 참여 비중 — 개인 93.0%, 외국인 3.9%, 기관 2.1%](../../../assets/learn/night-trading-nxt/investor-share.svg)
+![애프터마켓 첫날 참여 비중 — 개인 93.0%, 외국인 3.9%, 기관 2.1%](../../assets/learn/night-trading-nxt/investor-share.svg)
 
 주문을 넣은 도구는 **MTS**(Mobile Trading System, 모바일 거래 시스템) 73%, **HTS**(Home Trading System, PC 거래 시스템) 21%였어요. <mark>저녁 주문 열 건 중 일곱 건이 휴대폰에서 나왔다</mark>는 뜻이고, 개인이 93.0%였던 참여비중과 같은 방향입니다.
 
