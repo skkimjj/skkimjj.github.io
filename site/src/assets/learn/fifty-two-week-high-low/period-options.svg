@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">신고가·신저가 화면의 기간 선택지 — 거래일로 환산하면</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">미래에셋증권 [0188] 화면 도움말 기준 · 2026년 9월 확인 · 단위: 거래일</text>
+
+  <!-- 기준선 — 막대 아래에만 놓는다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 2026년 연간 개장일 244일 참고선 -->
+  <line x1="52" y1="95" x2="668" y2="95" stroke="#c0392b" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="668" y="88" text-anchor="end" font-size="11" fill="#c0392b">2026년 연간 개장일 244거래일</text>
+
+  <!-- 막대는 기준선에서 위로 자라고, 위쪽만 둥글게(r=3) 한다 -->
+  <!-- 20일 -->
+  <path d="M103 300 V286 A3 3 0 0 1 106 283 H190 A3 3 0 0 1 193 286 V300 Z" fill="#1f5faa" fill-opacity="0.4"/>
+  <text x="148" y="273" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">20거래일</text>
+  <text x="148" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">20일</text>
+
+  <!-- 60일 -->
+  <path d="M244 300 V253 A3 3 0 0 1 247 250 H331 A3 3 0 0 1 334 253 V300 Z" fill="#1f5faa" fill-opacity="0.4"/>
+  <text x="289" y="240" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">60거래일</text>
+  <text x="289" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">60일</text>
+
+  <!-- 연중 174일 -->
+  <path d="M385 300 V157 A3 3 0 0 1 388 154 H472 A3 3 0 0 1 475 157 V300 Z" fill="#1f5faa" fill-opacity="0.4"/>
+  <text x="430" y="144" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">174거래일</text>
+  <text x="430" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">연중</text>
+  <text x="430" y="340" text-anchor="middle" font-size="12" fill="#6b7280">(1/1~9/16)</text>
+
+  <!-- 250일 -->
+  <path d="M526 300 V93 A3 3 0 0 1 529 90 H613 A3 3 0 0 1 616 93 V300 Z" fill="#1f5faa"/>
+  <text x="571" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5faa">250거래일</text>
+  <text x="571" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">250일</text>
+
+  <text x="360" y="370" text-anchor="middle" font-size="12" fill="#6b7280">250거래일은 연간 개장일 244일보다 길고, '연중'은 오늘이 몇 월이냐에 따라 길이가 변합니다</text>
+  <text x="360" y="388" text-anchor="middle" font-size="11" fill="#9aa0aa">개장일 수는 2026년 KRX 휴장일 목록을 적용한 자체 계산 · 선택지 구성은 증권사 정책에 따라 바뀔 수 있습니다</text>
+</svg>
