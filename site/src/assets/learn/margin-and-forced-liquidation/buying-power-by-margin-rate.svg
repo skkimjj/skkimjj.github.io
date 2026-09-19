@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">현금 100만원으로 매수 가능한 금액 — 증거금률이 낮을수록 커집니다</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">대용증권 없이 현금만 있는 계좌 기준 · 막대 아래는 결제일까지 채워야 할 미수금</text>
+
+  <!-- baseline (0) — 막대 아래쪽에만 놓아 막대 하단을 침범하지 않게 한다 -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+
+  <!-- 증거금률 20% : 500만원 -->
+  <path d="M75 300 V103 A3 3 0 0 1 78 100 H182 A3 3 0 0 1 185 103 V300 Z" fill="#1f5fa8"/>
+  <text x="130" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">500만원</text>
+  <text x="130" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">증거금률 20%</text>
+  <text x="130" y="342" text-anchor="middle" font-size="10" fill="#1f5fa8">미수금 400만원</text>
+
+  <!-- 증거금률 30% : 333만원 -->
+  <path d="M230 300 V170 A3 3 0 0 1 233 167 H337 A3 3 0 0 1 340 170 V300 Z" fill="#7ea6d4"/>
+  <text x="285" y="155" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">333만원</text>
+  <text x="285" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">증거금률 30%</text>
+  <text x="285" y="342" text-anchor="middle" font-size="10" fill="#6b7280">미수금 233만원</text>
+
+  <!-- 증거금률 40% : 250만원 -->
+  <path d="M385 300 V203 A3 3 0 0 1 388 200 H492 A3 3 0 0 1 495 203 V300 Z" fill="#7ea6d4"/>
+  <text x="440" y="188" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">250만원</text>
+  <text x="440" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">증거금률 40%</text>
+  <text x="440" y="342" text-anchor="middle" font-size="10" fill="#6b7280">미수금 150만원</text>
+
+  <!-- 증거금률 100% : 100만원 -->
+  <path d="M540 300 V263 A3 3 0 0 1 543 260 H647 A3 3 0 0 1 650 263 V300 Z" fill="#7ea6d4"/>
+  <text x="595" y="248" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">100만원</text>
+  <text x="595" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">증거금률 100%</text>
+  <text x="595" y="342" text-anchor="middle" font-size="10" fill="#6b7280">미수금 0원</text>
+
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">막대 값 = 현금 100만원 ÷ 증거금률로 계산한 최대 매수금액(원) · 자체 계산</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">증거금률 구분은 한국투자증권 2026년 9월 안내 예시 · 증권사와 종목마다 다릅니다</text>
+</svg>
