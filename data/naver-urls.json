@@ -259,6 +259,13 @@
       "seriesOrder": 8,
       "naver_url": "https://blog.naver.com/hdglace/224417557515",
       "published": "2026-09-20"
+    },
+    "kospi-adr-ratio": {
+      "title": "코스피 ADR(등락비율) 읽는 법 — 계산식이 두 가지라 값도 다릅니다",
+      "series": "시장 읽기",
+      "seriesOrder": 4,
+      "naver_url": "https://blog.naver.com/hdglace/224419630335",
+      "published": "2026-09-22"
     }
   }
 }
