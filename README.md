@@ -2,6 +2,8 @@
 
 개장 전 한국 증시 브리핑 블로그 (Astro → GitHub Pages).
 
+**사이트: [gaejang.com](https://gaejang.com)** — 매일 아침 개장 전 브리핑과 [투자 공부방](https://gaejang.com/learn/).
+
 이 레포는 **사이트만** 보유한다. 브리핑을 생성하는 파이프라인(리서치·검증·발행)은
 비공개 레포에서 동작하며, 매일 아침 이곳에 콘텐츠를 푸시한다. 푸시되면
 `.github/workflows/deploy-site.yml`이 Pages를 자동 배포한다.
