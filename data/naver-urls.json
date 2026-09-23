@@ -43,7 +43,7 @@
       "naver_url": "https://blog.naver.com/hdglace/224362500752",
       "published": "2026-07-30"
     },
-    "reading-order-book": {
+    "reading-bid-ask-quotes": {
       "title": "호가창 보는 법 — 매수·매도 잔량과 호가 단위가 뜻하는 것",
       "series": "실전 도구",
       "seriesOrder": 1,
@@ -155,7 +155,7 @@
       "naver_url": "https://blog.naver.com/hdglace/224389308601",
       "published": "2026-08-25"
     },
-    "order-types": {
+    "limit-vs-market-price": {
       "title": "지정가·시장가 차이 — 주문 유형 5가지와 주문 실수 막는 법",
       "series": "실전 도구",
       "seriesOrder": 8,
@@ -204,7 +204,7 @@
       "naver_url": "https://blog.naver.com/hdglace/224403259248",
       "published": "2026-09-07"
     },
-    "krx-data-download": {
+    "krx-historical-price-data": {
       "title": "과거 주가 데이터 받는 법 — KRX 엑셀·CSV 다운로드와 Open API",
       "series": "실전 도구",
       "seriesOrder": 6,

@@ -88,6 +88,18 @@ export default defineConfig({
   // 리다이렉트였다 — 본문에서 목록을 가리킬 때 `/briefing/`을 쓰는 실수가 반복돼
   // 404를 막으려던 임시방편). 이제 진짜 목록이 있으므로 리다이렉트를 걷어냈고,
   // 그런 링크들은 의도한 곳에 정확히 닿는다.
+  //
+  // 공부방 3편 주소 변경(2026-09-23). 색인 요청을 해도 3~6주째 크롤조차 안 된
+  // 글이 정확히 주소에 order·download가 든 3편뿐이었다(요청한 나머지 36편은 전부
+  // 크롤됨). 쇼핑몰 「주문·다운로드」 같은 동작용 주소로 보여 구글이 미룬다는 가설을
+  // 시험하려고 주소를 바꿨다. 옛 주소는 새 주소로 넘겨 준다 — GitHub Pages는 서버
+  // 301을 못 하므로 Astro가 즉시 이동(meta refresh 0)+canonical 페이지를 만든다.
+  // ⚠️ 새 글 주소에 order·download·cart 같은 단어를 쓰지 말 것.
+  redirects: {
+    '/learn/reading-order-book/': '/learn/reading-bid-ask-quotes/',
+    '/learn/order-types/': '/learn/limit-vs-market-price/',
+    '/learn/krx-data-download/': '/learn/krx-historical-price-data/',
+  },
   integrations: [
     sitemap({
       // 네이버 복붙용 비밀 페이지·발행 전 초안은 사이트맵에서 제외 (검색 노출 방지).
