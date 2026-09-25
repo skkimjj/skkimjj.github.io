@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">100만원어치 사서 같은 가격에 팔 때 빠지는 돈</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">온라인 주문이면 2,300원 중 2,000원이 세금입니다</text>
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="11" fill="#9aa0aa">0</text>
+  <!-- 주식 수수료 0원 이벤트 : 2,072원 -->
+  <path d="M99 300 V265 A3 3 0 0 1 102 262 H186 A3 3 0 0 1 189 265 V300 Z" fill="#7ea6d4"/>
+  <text x="144" y="252" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2,072원</text>
+  <text x="144" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">주식</text>
+  <text x="144" y="342" text-anchor="middle" font-size="11" fill="#6b7280">수수료 0원 이벤트</text>
+  <!-- 주식 온라인 0.015% : 2,300원 -->
+  <path d="M247 300 V261 A3 3 0 0 1 250 258 H334 A3 3 0 0 1 337 261 V300 Z" fill="#7ea6d4"/>
+  <text x="292" y="248" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2,300원</text>
+  <text x="292" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">주식</text>
+  <text x="292" y="342" text-anchor="middle" font-size="11" fill="#6b7280">온라인 0.015%</text>
+  <!-- 주식 오프라인 0.5% : 12,000원 -->
+  <path d="M395 300 V83 A3 3 0 0 1 398 80 H482 A3 3 0 0 1 485 83 V300 Z" fill="#1f5fa8"/>
+  <text x="440" y="70" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">12,000원</text>
+  <text x="440" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">주식</text>
+  <text x="440" y="342" text-anchor="middle" font-size="11" fill="#6b7280">오프라인 0.5%</text>
+  <!-- 국내 ETF 온라인 0.015% : 300원 -->
+  <path d="M543 300 V297 A3 3 0 0 1 546 294 H630 A3 3 0 0 1 633 297 V300 Z" fill="#7ea6d4"/>
+  <text x="588" y="284" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">300원</text>
+  <text x="588" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">국내 ETF</text>
+  <text x="588" y="342" text-anchor="middle" font-size="11" fill="#6b7280">온라인 0.015%</text>
+  <text x="360" y="368" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 원 · 코스피 주식, 매수·매도 가격이 같다고 가정한 자체 계산 · 증권거래세·농어촌특별세는 2026년 1월 1일 시행 세율</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">유관기관 제비용은 2026년 9월 확인 요율 · 호가 스프레드 제외 · 특정 증권사의 우열을 뜻하지 않습니다</text>
+</svg>
