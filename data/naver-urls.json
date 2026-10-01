@@ -301,6 +301,13 @@
       "seriesOrder": 9,
       "naver_url": "https://blog.naver.com/hdglace/224425710598",
       "published": "2026-09-29"
+    },
+    "kospi-vs-kosdaq": {
+      "title": "코스피와 코스닥 차이 — 상장 요건부터 지수 성격까지",
+      "series": "시장 읽기",
+      "seriesOrder": 5,
+      "naver_url": "https://blog.naver.com/hdglace/224428005766",
+      "published": "2026-10-01"
     }
   }
 }
