@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">시가총액 상위 종목이 시장 전체에서 차지하는 비중</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2026년 9월 30일 종가 기준 · 우선주 포함 주식 시가총액 합계 대비 · 네이버 금융 목록으로 집계</text>
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <path d="M67.3 300 V223.6 A3 3 0 0 1 70.3 220.6 H136.3 A3 3 0 0 1 139.3 223.6 V300 Z" fill="#0f4bd8"/>
+  <text x="103.3" y="212.6" text-anchor="middle" font-size="15" font-weight="700" fill="#0f4bd8">27.8%</text>
+  <text x="103.3" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피</text>
+  <text x="103.3" y="340" text-anchor="middle" font-size="12" fill="#6b7280">1위</text>
+  <path d="M170.0 300 V157.9 A3 3 0 0 1 173.0 154.9 H239.0 A3 3 0 0 1 242.0 157.9 V300 Z" fill="#0f4bd8"/>
+  <text x="206.0" y="146.9" text-anchor="middle" font-size="15" font-weight="700" fill="#0f4bd8">50.8%</text>
+  <text x="206.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피</text>
+  <text x="206.0" y="340" text-anchor="middle" font-size="12" fill="#6b7280">상위 2</text>
+  <path d="M272.7 300 V119.6 A3 3 0 0 1 275.7 116.6 H341.7 A3 3 0 0 1 344.7 119.6 V300 Z" fill="#0f4bd8"/>
+  <text x="308.7" y="108.6" text-anchor="middle" font-size="15" font-weight="700" fill="#0f4bd8">64.2%</text>
+  <text x="308.7" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스피</text>
+  <text x="308.7" y="340" text-anchor="middle" font-size="12" fill="#6b7280">상위 10</text>
+  <path d="M375.3 300 V292.4 A3 3 0 0 1 378.3 289.4 H444.3 A3 3 0 0 1 447.3 292.4 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="411.3" y="281.4" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">3.7%</text>
+  <text x="411.3" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스닥</text>
+  <text x="411.3" y="340" text-anchor="middle" font-size="12" fill="#6b7280">1위</text>
+  <path d="M478.0 300 V286.1 A3 3 0 0 1 481.0 283.1 H547.0 A3 3 0 0 1 550.0 286.1 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="514.0" y="275.1" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">5.9%</text>
+  <text x="514.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스닥</text>
+  <text x="514.0" y="340" text-anchor="middle" font-size="12" fill="#6b7280">상위 2</text>
+  <path d="M580.7 300 V250.7 A3 3 0 0 1 583.7 247.7 H649.7 A3 3 0 0 1 652.7 250.7 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="616.7" y="239.7" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">18.3%</text>
+  <text x="616.7" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">코스닥</text>
+  <text x="616.7" y="340" text-anchor="middle" font-size="12" fill="#6b7280">상위 10</text>
+</svg>
