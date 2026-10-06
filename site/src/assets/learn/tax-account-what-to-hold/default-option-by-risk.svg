@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">디폴트옵션 위험 등급별 적립금 — 2026년 2분기 말</text>
+
+  <!-- baseline (막대 아래에만 놓이는 rect) -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+
+  <!-- 초저위험: 46.1조원 (h=200) -->
+  <path d="M110 300 V103 A3 3 0 0 1 113 100 H171 A3 3 0 0 1 174 103 V300 Z" fill="#0f4bd8"/>
+  <text x="142" y="93" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">46.1조원</text>
+  <text x="142" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">초저위험</text>
+  <text x="142" y="338" text-anchor="middle" font-size="11" fill="#6b7280">42개</text>
+
+  <!-- 저위험: 4.6조원 (h=20) -->
+  <path d="M260 300 V283 A3 3 0 0 1 263 280 H321 A3 3 0 0 1 324 283 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="292" y="273" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">4.6조원</text>
+  <text x="292" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">저위험</text>
+  <text x="292" y="338" text-anchor="middle" font-size="11" fill="#6b7280">96개</text>
+
+  <!-- 중위험: 3.16조원 (h=14) -->
+  <path d="M410 300 V289 A3 3 0 0 1 413 286 H471 A3 3 0 0 1 474 289 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="442" y="279" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3.16조원</text>
+  <text x="442" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">중위험</text>
+  <text x="442" y="338" text-anchor="middle" font-size="11" fill="#6b7280">97개</text>
+
+  <!-- 고위험: 2.01조원 (h=9) -->
+  <path d="M560 300 V294 A3 3 0 0 1 563 291 H621 A3 3 0 0 1 624 294 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="592" y="284" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2.01조원</text>
+  <text x="592" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">고위험</text>
+  <text x="592" y="338" text-anchor="middle" font-size="11" fill="#6b7280">94개</text>
+
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#6b7280">DC·IRP 적립금 합계(조원)·상품 수 · 자료: 금융감독원 통합연금포털 디폴트옵션 비교공시, 본 공부방 합산</text>
+</svg>
