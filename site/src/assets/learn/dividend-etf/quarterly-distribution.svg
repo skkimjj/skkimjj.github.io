@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">TIGER 코스피고배당 회차별 분배금 — 최근 4회</text>
+
+  <!-- baseline (막대 아래에만 놓이는 rect) -->
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+
+  <!-- 2025년 10월: 70원 (h=19) -->
+  <path d="M110 300 V284 A3 3 0 0 1 113 281 H171 A3 3 0 0 1 174 284 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="142" y="274" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">70원</text>
+  <text x="142" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">2025년 10월</text>
+
+  <!-- 2026년 1월: 47원 (h=13) -->
+  <path d="M260 300 V290 A3 3 0 0 1 263 287 H321 A3 3 0 0 1 324 290 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="292" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">47원</text>
+  <text x="292" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">2026년 1월</text>
+
+  <!-- 2026년 4월: 742원 (h=200) -->
+  <path d="M410 300 V103 A3 3 0 0 1 413 100 H471 A3 3 0 0 1 474 103 V300 Z" fill="#0f4bd8"/>
+  <text x="442" y="93" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">742원</text>
+  <text x="442" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">2026년 4월</text>
+  <text x="442" y="338" text-anchor="middle" font-size="11" fill="#6b7280">1년 치의 67.5%</text>
+
+  <!-- 2026년 7월: 241원 (h=65) -->
+  <path d="M560 300 V238 A3 3 0 0 1 563 235 H621 A3 3 0 0 1 624 238 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="592" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">241원</text>
+  <text x="592" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">2026년 7월</text>
+
+  <text x="360" y="366" text-anchor="middle" font-size="11" fill="#6b7280">1주당 분배금(원) · 지급기준일 기준 · 자료: 한국거래소 KIND 「ETF이익금분배신고」 공시</text>
+</svg>
