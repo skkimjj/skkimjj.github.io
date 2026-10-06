@@ -197,7 +197,7 @@ seriesOrder: 8
 
 ## 다음 편에서는
 
-다음 공부방 글에서는 **절세 계좌에 무엇을 담을 수 있나**를 다룹니다. 연금저축·IRP(Individual Retirement Pension, 개인형 퇴직연금)·ISA(Individual Savings Account, 개인종합자산관리계좌)에 담을 수 있는 상품과 담을 수 없는 상품, 국내 상장 해외지수 ETF(Exchange Traded Fund, 상장지수펀드)가 절세 계좌에서 유리해지는 이유, IRP의 위험자산 70% 한도와 퇴직연금 디폴트옵션(사전지정운용제도)을 정리하겠습니다.
+다음 공부방 글에서는 [**절세 계좌에 담을 수 있는 상품**](/learn/tax-account-what-to-hold/)을 다룹니다. 연금저축·IRP(Individual Retirement Pension, 개인형 퇴직연금)·ISA(Individual Savings Account, 개인종합자산관리계좌)에 담을 수 있는 상품과 담을 수 없는 상품, 국내 상장 해외지수 ETF(Exchange Traded Fund, 상장지수펀드)가 절세 계좌에서 유리해지는 이유, IRP의 위험자산 70% 한도와 퇴직연금 디폴트옵션(사전지정운용제도)을 정리하겠습니다.
 
 ---
 
