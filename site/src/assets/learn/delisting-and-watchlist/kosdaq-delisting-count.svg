@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">코스닥시장 상장폐지 결정 건수 (2021~2025년)</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">2025년 38건 — 전년(20건)의 약 1.9배</text>
+
+  <!-- 눈금선. y=290이 0건, y=90이 40건 -->
+  <rect x="92" y="90" width="576" height="1" fill="#e5e7eb"/>
+  <rect x="92" y="190" width="576" height="1" fill="#e5e7eb"/>
+  <rect x="92" y="290" width="576" height="1" fill="#c9ced6"/>
+  <text x="84" y="94" text-anchor="end" font-size="12" fill="#9aa0aa">40건</text>
+  <text x="84" y="194" text-anchor="end" font-size="12" fill="#9aa0aa">20건</text>
+  <text x="84" y="294" text-anchor="end" font-size="12" fill="#9aa0aa">0건</text>
+
+  <!-- 22 / 16 / 8 / 20 / 38 -->
+  <polyline points="112,180 251,210 390,250 529,190 668,100" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <circle cx="112" cy="180" r="6" fill="#1f5fa8"/>
+  <text x="112" y="161" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">22건</text>
+  <text x="112" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2021년</text>
+
+  <circle cx="251" cy="210" r="6" fill="#1f5fa8"/>
+  <text x="251" y="191" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">16건</text>
+  <text x="251" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2022년</text>
+
+  <circle cx="390" cy="250" r="6" fill="#1f5fa8"/>
+  <text x="390" y="231" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">8건</text>
+  <text x="390" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2023년</text>
+
+  <circle cx="529" cy="190" r="6" fill="#1f5fa8"/>
+  <text x="529" y="171" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">20건</text>
+  <text x="529" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2024년</text>
+
+  <circle cx="668" cy="100" r="7" fill="#f7f8fa" stroke="#1f5fa8" stroke-width="3"/>
+  <text x="668" y="81" text-anchor="middle" font-size="16" font-weight="700" fill="#1f5fa8">38건</text>
+  <text x="668" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1f5fa8">2025년</text>
+  <text x="668" y="339" text-anchor="middle" font-size="11" fill="#1f5fa8">형식 15·실질 23</text>
+
+  <text x="360" y="372" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: 건 · 금융위원회 「상장폐지 개혁방안」(2026년 2월 12일), 한국거래소 자료 인용 보도(2025년 12월 28일)</text>
+</svg>
