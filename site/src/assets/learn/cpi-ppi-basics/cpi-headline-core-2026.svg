@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">미국 CPI 전년동월비 — 헤드라인과 근원(2026년 2~8월)</text>
+  <rect x="214" y="50" width="22" height="3" fill="#1f5fa8"/><text x="242" y="56" font-size="12" fill="#1a1d24">헤드라인 CPI</text>
+  <rect x="350" y="50" width="22" height="3" fill="#9aa0aa"/><text x="378" y="56" font-size="12" fill="#6b7280">근원 CPI(식품·에너지 제외)</text>
+  <rect x="92" y="130" width="596" height="1" fill="#e5e7eb"/><text x="84" y="134" text-anchor="end" font-size="12" fill="#9aa0aa">4.0%</text>
+  <rect x="92" y="210" width="596" height="1" fill="#e5e7eb"/><text x="84" y="214" text-anchor="end" font-size="12" fill="#9aa0aa">3.0%</text>
+  <rect x="92" y="290" width="596" height="1" fill="#e5e7eb"/><text x="84" y="294" text-anchor="end" font-size="12" fill="#9aa0aa">2.0%</text>
+  <polyline points="112,250 205,242 297,226 390,218 483,242 575,250 668,258" fill="none" stroke="#9aa0aa" stroke-width="2.5" stroke-linejoin="round"/>
+  <polyline points="112,258 205,186 297,146 390,114 483,170 575,178 668,178" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="112" cy="250" r="4.5" fill="#9aa0aa"/><text x="112" y="238" text-anchor="middle" font-size="13" fill="#6b7280">2.5%</text>
+  <circle cx="112" cy="258" r="6" fill="#1f5fa8"/><text x="112" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">2.4%</text>
+  <text x="112" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2월</text>
+  <circle cx="205" cy="242" r="4.5" fill="#9aa0aa"/><text x="205" y="264" text-anchor="middle" font-size="13" fill="#6b7280">2.6%</text>
+  <circle cx="205" cy="186" r="6" fill="#1f5fa8"/><text x="205" y="172" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.3%</text>
+  <text x="205" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3월</text>
+  <circle cx="297" cy="226" r="4.5" fill="#9aa0aa"/><text x="297" y="248" text-anchor="middle" font-size="13" fill="#6b7280">2.8%</text>
+  <circle cx="297" cy="146" r="6" fill="#1f5fa8"/><text x="297" y="132" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.8%</text>
+  <text x="297" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">4월</text>
+  <circle cx="390" cy="218" r="4.5" fill="#9aa0aa"/><text x="390" y="240" text-anchor="middle" font-size="13" fill="#6b7280">2.9%</text>
+  <circle cx="390" cy="114" r="6" fill="#1f5fa8"/><text x="390" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">4.2%</text>
+  <text x="390" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5월</text>
+  <circle cx="483" cy="242" r="4.5" fill="#9aa0aa"/><text x="483" y="264" text-anchor="middle" font-size="13" fill="#6b7280">2.6%</text>
+  <circle cx="483" cy="170" r="6" fill="#1f5fa8"/><text x="483" y="156" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.5%</text>
+  <text x="483" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">6월</text>
+  <circle cx="575" cy="250" r="4.5" fill="#9aa0aa"/><text x="575" y="272" text-anchor="middle" font-size="13" fill="#6b7280">2.5%</text>
+  <circle cx="575" cy="178" r="6" fill="#1f5fa8"/><text x="575" y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.4%</text>
+  <text x="575" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">7월</text>
+  <circle cx="668" cy="258" r="4.5" fill="#9aa0aa"/><text x="668" y="280" text-anchor="middle" font-size="13" fill="#6b7280">2.4%</text>
+  <circle cx="668" cy="178" r="6" fill="#1f5fa8"/><text x="668" y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1d24">3.4%</text>
+  <text x="668" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">8월</text>
+  <text x="360" y="362" text-anchor="middle" font-size="11" fill="#9aa0aa">CPI-U 전년동월비(계절조정 전) · 미국 노동통계국 월별 CPI 보도자료(2026년 3~9월 발표) 기준</text>
+  <text x="360" y="380" text-anchor="middle" font-size="11" fill="#9aa0aa">세로축을 2.0~4.5% 구간만 잘라 그렸습니다</text>
+</svg>
