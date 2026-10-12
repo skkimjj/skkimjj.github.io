@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">미국 국채 수익률곡선 — 2026년 10월 9일과 1년 전</text>
+  <text x="360" y="54" text-anchor="middle" font-size="12" fill="#6b7280">1년 사이 전 구간 금리가 올랐고, 3개월물이 1~2년물보다 높던 곡선이 우상향 곡선으로 바뀌었다</text>
+  <!-- 세로축은 3.5~5.75% 구간만 그린다(y=90이 5.75%, y=290이 3.5%). -->
+  <rect x="92" y="112.2" width="600" height="1" fill="#e5e7eb"/>
+  <text x="84" y="116.2" text-anchor="end" font-size="12" fill="#9aa0aa">5.5%</text>
+  <rect x="92" y="156.7" width="600" height="1" fill="#e5e7eb"/>
+  <text x="84" y="160.7" text-anchor="end" font-size="12" fill="#9aa0aa">5.0%</text>
+  <rect x="92" y="201.1" width="600" height="1" fill="#e5e7eb"/>
+  <text x="84" y="205.1" text-anchor="end" font-size="12" fill="#9aa0aa">4.5%</text>
+  <rect x="92" y="245.6" width="600" height="1" fill="#e5e7eb"/>
+  <text x="84" y="249.6" text-anchor="end" font-size="12" fill="#9aa0aa">4.0%</text>
+  <rect x="92" y="290.0" width="600" height="1" fill="#e5e7eb"/>
+  <text x="84" y="294.0" text-anchor="end" font-size="12" fill="#9aa0aa">3.5%</text>
+  <!-- 2025년 10월 9일(회색 점선) -->
+  <polyline points="112.0,242.9 223.2,275.8 334.4,281.1 445.6,268.7 556.8,233.1 668.0,181.6" fill="none" stroke="#9aa0aa" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+  <circle cx="112.0" cy="242.9" r="5" fill="#9aa0aa"/><text x="112.0" y="263.9" text-anchor="middle" font-size="13" fill="#6b7280">4.03%</text>
+  <circle cx="223.2" cy="275.8" r="5" fill="#9aa0aa"/><text x="223.2" y="296.8" text-anchor="middle" font-size="13" fill="#6b7280">3.66%</text>
+  <circle cx="334.4" cy="281.1" r="5" fill="#9aa0aa"/><text x="334.4" y="302.1" text-anchor="middle" font-size="13" fill="#6b7280">3.60%</text>
+  <circle cx="445.6" cy="268.7" r="5" fill="#9aa0aa"/><text x="445.6" y="289.7" text-anchor="middle" font-size="13" fill="#6b7280">3.74%</text>
+  <circle cx="556.8" cy="233.1" r="5" fill="#9aa0aa"/><text x="556.8" y="254.1" text-anchor="middle" font-size="13" fill="#6b7280">4.14%</text>
+  <circle cx="668.0" cy="181.6" r="5" fill="#9aa0aa"/><text x="668.0" y="202.6" text-anchor="middle" font-size="13" fill="#6b7280">4.72%</text>
+  <!-- 2026년 10월 9일(파란 실선) -->
+  <polyline points="112.0,223.3 223.2,203.8 334.4,174.4 445.6,154.9 556.8,135.3 668.0,103.3" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="112.0" cy="223.3" r="6" fill="#1f5fa8"/><text x="112.0" y="210.3" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">4.25%</text>
+  <circle cx="223.2" cy="203.8" r="6" fill="#1f5fa8"/><text x="223.2" y="190.8" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">4.47%</text>
+  <circle cx="334.4" cy="174.4" r="6" fill="#1f5fa8"/><text x="334.4" y="161.4" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">4.80%</text>
+  <circle cx="445.6" cy="154.9" r="6" fill="#1f5fa8"/><text x="445.6" y="141.9" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">5.02%</text>
+  <circle cx="556.8" cy="135.3" r="6" fill="#1f5fa8"/><text x="556.8" y="122.30000000000001" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">5.24%</text>
+  <circle cx="668.0" cy="103.3" r="6" fill="#1f5fa8"/><text x="668.0" y="90.3" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">5.60%</text>
+  <text x="112.0" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3개월</text>
+  <text x="223.2" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1년</text>
+  <text x="334.4" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2년</text>
+  <text x="445.6" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5년</text>
+  <text x="556.8" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">10년</text>
+  <text x="668.0" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">30년</text>
+  <rect x="200" y="330" width="30" height="3" fill="#1f5fa8"/><text x="238" y="336" font-size="12" font-weight="700" fill="#1f5fa8">2026년 10월 9일</text>
+  <rect x="400" y="330" width="9" height="3" fill="#9aa0aa"/><rect x="414" y="330" width="9" height="3" fill="#9aa0aa"/><text x="431" y="336" font-size="12" fill="#6b7280">2025년 10월 9일</text>
+  <text x="360" y="364" text-anchor="middle" font-size="11" fill="#9aa0aa">단위: % · 미국 재무부 Daily Treasury Par Yield Curve Rates · 가로축은 만기 순서만 나타내며 실제 기간 간격과 다릅니다</text>
+  <text x="360" y="382" text-anchor="middle" font-size="11" fill="#9aa0aa">세로축은 3.5~5.75% 구간만 그렸습니다 · 금리 방향 전망이 아니라 두 시점의 수준 비교입니다</text>
+</svg>
