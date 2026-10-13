@@ -357,6 +357,13 @@
       "seriesOrder": 10,
       "naver_url": "https://blog.naver.com/hdglace/224438801049",
       "published": "2026-10-12"
+    },
+    "us-treasury-yields": {
+      "title": "미국 국채금리 보는 법 — 2년물·10년물과 장단기 금리차",
+      "series": "시장 읽기",
+      "seriesOrder": 9,
+      "naver_url": "https://blog.naver.com/hdglace/224439966975",
+      "published": "2026-10-13"
     }
   }
 }
