@@ -364,6 +364,13 @@
       "seriesOrder": 9,
       "naver_url": "https://blog.naver.com/hdglace/224439966975",
       "published": "2026-10-13"
+    },
+    "candlestick-chart": {
+      "title": "캔들차트 보는 법 — 시가·고가·저가·종가와 양봉·음봉",
+      "series": "실전 도구",
+      "seriesOrder": 14,
+      "naver_url": "https://blog.naver.com/hdglace/224441041356",
+      "published": "2026-10-14"
     }
   }
 }
