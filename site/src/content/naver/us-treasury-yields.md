@@ -73,7 +73,7 @@ date: 2026-10-13
 
 만기를 가로축, 금리를 세로축에 놓고 각 만기의 금리를 연결한 선을 **수익률곡선**(yield curve)이라고 합니다. 2026년 10월 9일과 1년 전의 수익률곡선을 비교하면 다음과 같습니다.
 
-![미국 국채 수익률곡선 — 2026년 10월 9일과 1년 전](../../../assets/learn/us-treasury-yields/yield-curve.svg)
+![미국 국채 수익률곡선 — 2026년 10월 9일과 1년 전](../../assets/learn/us-treasury-yields/yield-curve.svg)
 
 두 시점을 비교하면 두 가지가 보입니다.
 
