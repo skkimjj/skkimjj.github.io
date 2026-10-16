@@ -23,11 +23,10 @@
   <circle cx="229.9" cy="103.1" r="5" fill="#8a8f98" stroke="#f7f8fa" stroke-width="2"/><text x="229.9" y="93.1" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">지수 고점 6/22</text>
   <circle cx="249.4" cy="141.7" r="5" fill="#2a78d6" stroke="#f7f8fa" stroke-width="2"/><text x="255.4" y="159.7" text-anchor="start" font-size="12" font-weight="700" fill="#1a1d24">20일선 고점 6/26</text>
   <circle cx="346.9" cy="183.4" r="5" fill="#eb6834" stroke="#f7f8fa" stroke-width="2"/><text x="346.9" y="207.4" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">60일선 고점 7/27</text>
-  <circle cx="458.9" cy="235.4" r="5" fill="#1baf7a" stroke="#f7f8fa" stroke-width="2"/><text x="458.9" y="223.4" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">120일선 고점 8/28</text>
+  <circle cx="595.4" cy="218.0" r="5" fill="#1baf7a" stroke="#f7f8fa" stroke-width="2"/><text x="589.4" y="206.0" text-anchor="end" font-size="12" font-weight="700" fill="#1a1d24">120일선 고점 10/13</text>
   <text x="74.0" y="372" text-anchor="middle" font-size="12" fill="#6b7280">5/4</text>
   <text x="229.9" y="372" text-anchor="middle" font-size="12" fill="#6b7280">6/22</text>
   <text x="346.9" y="372" text-anchor="middle" font-size="12" fill="#6b7280">7/27</text>
-  <text x="458.9" y="372" text-anchor="middle" font-size="12" fill="#6b7280">8/28</text>
   <text x="610.0" y="372" text-anchor="middle" font-size="12" fill="#6b7280">10/16</text>
   <text x="360" y="414" text-anchor="middle" font-size="11" fill="#9aa0aa">가로축 = 거래일 · 코스피 종가(한국거래소 지수, 네이버 증권 일별 시세) · 이동평균은 본 사이트 계산 · 2026년 10월 16일 기준</text>
 </svg>
