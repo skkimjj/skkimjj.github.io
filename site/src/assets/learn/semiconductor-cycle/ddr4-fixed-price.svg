@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">PC용 D램(DDR4 8Gb) 고정거래가격 — 2023년 6월~2026년 9월</text>
+  <rect x="90" y="310.0" width="610" height="1" fill="#e5e7eb"/><text x="82" y="314.0" text-anchor="end" font-size="12" fill="#9aa0aa">$0</text>
+  <rect x="90" y="230.0" width="610" height="1" fill="#e5e7eb"/><text x="82" y="234.0" text-anchor="end" font-size="12" fill="#9aa0aa">$10</text>
+  <rect x="90" y="150.0" width="610" height="1" fill="#e5e7eb"/><text x="82" y="154.0" text-anchor="end" font-size="12" fill="#9aa0aa">$20</text>
+  <rect x="90" y="70.0" width="610" height="1" fill="#e5e7eb"/><text x="82" y="74.0" text-anchor="end" font-size="12" fill="#9aa0aa">$30</text>
+  <polyline points="110.0,299.1 153.8,299.6 197.7,296.8 241.5,295.6 285.4,293.2 329.2,296.4 373.1,299.2 416.9,299.2 460.8,289.2 504.6,259.6 548.5,235.6 592.3,206.0 636.2,142.0 680.0,102.0" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="110.0" cy="299.1" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="110.0" y="332" text-anchor="middle" font-size="12" fill="#6b7280">6월</text>
+  <circle cx="153.8" cy="299.6" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="153.8" y="286.6" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$1.30</text>
+  <text x="153.8" y="332" text-anchor="middle" font-size="12" fill="#6b7280">9월</text>
+  <circle cx="197.7" cy="296.8" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="197.7" y="332" text-anchor="middle" font-size="12" fill="#6b7280">12월</text>
+  <circle cx="241.5" cy="295.6" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="241.5" y="332" text-anchor="middle" font-size="12" fill="#6b7280">3월</text>
+  <circle cx="285.4" cy="293.2" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="285.4" y="280.2" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$2.10</text>
+  <text x="285.4" y="332" text-anchor="middle" font-size="12" fill="#6b7280">6월</text>
+  <circle cx="329.2" cy="296.4" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="329.2" y="332" text-anchor="middle" font-size="12" fill="#6b7280">9월</text>
+  <circle cx="373.1" cy="299.2" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="373.1" y="332" text-anchor="middle" font-size="12" fill="#6b7280">12월</text>
+  <circle cx="416.9" cy="299.2" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="416.9" y="286.2" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$1.35</text>
+  <text x="416.9" y="332" text-anchor="middle" font-size="12" fill="#6b7280">3월</text>
+  <circle cx="460.8" cy="289.2" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="460.8" y="332" text-anchor="middle" font-size="12" fill="#6b7280">6월</text>
+  <circle cx="504.6" cy="259.6" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="488.6" y="246.60000000000002" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$6.30</text>
+  <text x="504.6" y="332" text-anchor="middle" font-size="12" fill="#6b7280">9월</text>
+  <circle cx="548.5" cy="235.6" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="532.5" y="222.6" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$9.30</text>
+  <text x="548.5" y="332" text-anchor="middle" font-size="12" fill="#6b7280">12월</text>
+  <circle cx="592.3" cy="206.0" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="576.3" y="193.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$13.00</text>
+  <text x="592.3" y="332" text-anchor="middle" font-size="12" fill="#6b7280">3월</text>
+  <circle cx="636.2" cy="142.0" r="4.5" fill="#1f5fa8" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="620.2" y="129.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$21.00</text>
+  <text x="636.2" y="332" text-anchor="middle" font-size="12" fill="#6b7280">6월</text>
+  <circle cx="680.0" cy="102.0" r="6" fill="#ffffff" stroke="#1f5fa8" stroke-width="2.5"/>
+  <text x="664.0" y="89.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">$26.00</text>
+  <text x="680.0" y="332" text-anchor="middle" font-size="12" fill="#6b7280">9월</text>
+  <text x="153.8" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2023년</text>
+  <text x="307.3" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2024년</text>
+  <text x="482.7" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2025년</text>
+  <text x="636.1" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">2026년</text>
+  <text x="360" y="388" text-anchor="middle" font-size="11" fill="#9aa0aa">월평균 고정거래가격(달러), 분기 마지막 달 기준 · 디램익스체인지 집계(국내 언론 월말 보도 인용)</text>
+</svg>
