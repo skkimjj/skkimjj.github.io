@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">상승 구간 분배금 포함 수익률</text>
+  <text x="360" y="58" text-anchor="middle" font-size="12" fill="#6b7280">2024년 12월 30일~2026년 6월 30일 · 커버드콜 2개 상품(진한 색)은 기초지수 ETF보다 낮았다</text>
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <!-- KODEX 200 : +334.9% (h=200) -->
+  <path d="M99 300 V103 A3 3 0 0 1 102 100 H186 A3 3 0 0 1 189 103 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="144" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">+334.9%</text>
+  <text x="144" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">KODEX 200</text>
+  <!-- KODEX 200 타겟위클리커버드콜: +214.9% (h=128) -->
+  <path d="M249 300 V175 A3 3 0 0 1 252 172 H336 A3 3 0 0 1 339 175 V300 Z" fill="#0f4bd8"/>
+  <text x="294" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">+214.9%</text>
+  <text x="294" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">KODEX 200</text>
+  <text x="294" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">타겟위클리커버드콜</text>
+  <!-- TIGER 미국나스닥100: +46.2% (h=28) -->
+  <path d="M399 300 V275 A3 3 0 0 1 402 272 H486 A3 3 0 0 1 489 275 V300 Z" fill="#0f4bd8" fill-opacity="0.4"/>
+  <text x="444" y="264" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">+46.2%</text>
+  <text x="444" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">TIGER</text>
+  <text x="444" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">미국나스닥100</text>
+  <!-- TIGER 미국나스닥100 타겟데일리커버드콜: +36.8% (h=22) -->
+  <path d="M549 300 V281 A3 3 0 0 1 552 278 H636 A3 3 0 0 1 639 281 V300 Z" fill="#0f4bd8"/>
+  <text x="594" y="270" text-anchor="middle" font-size="13" font-weight="700" fill="#0f4bd8">+36.8%</text>
+  <text x="594" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">TIGER 미국나스닥100</text>
+  <text x="594" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#0f4bd8">타겟데일리커버드콜</text>
+  <text x="360" y="372" text-anchor="middle" font-size="11" fill="#6b7280">단위: % · NAV 기준, 분배금 단순 합산(재투자 가정 없음)</text>
+  <text x="360" y="388" text-anchor="middle" font-size="11" fill="#6b7280">FunETF 기준가 이력과 한국거래소 KIND 분배금 공시를 바탕으로 한 본 공부방 계산</text>
+</svg>
