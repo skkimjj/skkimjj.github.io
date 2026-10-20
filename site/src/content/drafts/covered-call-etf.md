@@ -102,30 +102,30 @@ KODEX 200타겟위클리커버드콜의 신탁계약서 제39조의2는 "분배�
   <rect x="52" y="320" width="616" height="1" style='fill:var(--line)'/>
   <text x="46" y="324" text-anchor="end" font-size="12" style='fill:var(--muted)'>0</text>
   <!-- KODEX 200 : +334.9% / −34.6% -->
-  <path d="M99 320 V125.0 A3 3 0 0 1 102 122.0 H186 A3 3 0 0 1 189 125.0 V320 Z" style='fill:var(--strong);opacity:.35'/>
+  <path d="M99 320 V125.0 A3 3 0 0 1 102 122.0 H186 A3 3 0 0 1 189 125.0 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="144" y="114.0" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+334.9%</text>
-  <path d="M99 321 V338.5 A3 3 0 0 0 102 341.5 H186 A3 3 0 0 0 189 338.5 V321 Z" style='fill:var(--accent);opacity:.3'/>
+  <path d="M99 321 V338.5 A3 3 0 0 0 102 341.5 H186 A3 3 0 0 0 189 338.5 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="144" y="357.5" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−34.6%</text>
   <text x="144" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>KODEX 200</text>
   <!-- KODEX 200 타겟위클리커버드콜: +214.9% / −33.4% -->
-  <path d="M249 320 V195.9 A3 3 0 0 1 252 192.9 H336 A3 3 0 0 1 339 195.9 V320 Z" style='fill:var(--strong)'/>
-  <text x="294" y="184.9" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--strong)'>+214.9%</text>
-  <path d="M249 321 V337.7 A3 3 0 0 0 252 340.7 H336 A3 3 0 0 0 339 337.7 V321 Z" style='fill:var(--accent)'/>
-  <text x="294" y="356.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>−33.4%</text>
+  <path d="M249 320 V195.9 A3 3 0 0 1 252 192.9 H336 A3 3 0 0 1 339 195.9 V320 Z" style='fill:var(--accent)'/>
+  <text x="294" y="184.9" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>+214.9%</text>
+  <path d="M249 321 V337.7 A3 3 0 0 0 252 340.7 H336 A3 3 0 0 0 339 337.7 V321 Z" style='fill:var(--strong)'/>
+  <text x="294" y="356.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--strong)'>−33.4%</text>
   <text x="294" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>KODEX 200</text>
   <text x="294" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟위클리커버드콜</text>
   <!-- TIGER 미국나스닥100: +46.2% / −15.8% -->
-  <path d="M399 320 V295.7 A3 3 0 0 1 402 292.7 H486 A3 3 0 0 1 489 295.7 V320 Z" style='fill:var(--strong);opacity:.35'/>
+  <path d="M399 320 V295.7 A3 3 0 0 1 402 292.7 H486 A3 3 0 0 1 489 295.7 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="444" y="284.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+46.2%</text>
-  <path d="M399 321 V327.3 A3 3 0 0 0 402 330.3 H486 A3 3 0 0 0 489 327.3 V321 Z" style='fill:var(--accent);opacity:.3'/>
+  <path d="M399 321 V327.3 A3 3 0 0 0 402 330.3 H486 A3 3 0 0 0 489 327.3 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="444" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−15.8%</text>
   <text x="444" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>TIGER</text>
   <text x="444" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>미국나스닥100</text>
   <!-- TIGER 미국나스닥100 타겟데일리커버드콜: +36.8% / −15.8% -->
-  <path d="M549 320 V301.2 A3 3 0 0 1 552 298.2 H636 A3 3 0 0 1 639 301.2 V320 Z" style='fill:var(--strong)'/>
-  <text x="594" y="290.2" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--strong)'>+36.8%</text>
-  <path d="M549 321 V327.3 A3 3 0 0 0 552 330.3 H636 A3 3 0 0 0 639 327.3 V321 Z" style='fill:var(--accent)'/>
-  <text x="594" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>−15.8%</text>
+  <path d="M549 320 V301.2 A3 3 0 0 1 552 298.2 H636 A3 3 0 0 1 639 301.2 V320 Z" style='fill:var(--accent)'/>
+  <text x="594" y="290.2" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>+36.8%</text>
+  <path d="M549 321 V327.3 A3 3 0 0 0 552 330.3 H636 A3 3 0 0 0 639 327.3 V321 Z" style='fill:var(--strong)'/>
+  <text x="594" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--strong)'>−15.8%</text>
   <text x="594" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>TIGER 미국나스닥100</text>
   <text x="594" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟데일리커버드콜</text>
   </svg>
