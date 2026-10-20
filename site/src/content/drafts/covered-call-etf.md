@@ -96,25 +96,40 @@ KODEX 200타겟위클리커버드콜의 신탁계약서 제39조의2는 "분배�
 2025년부터 2026년 10월까지 코스피200은 큰 폭으로 오른 뒤 하락했습니다. 이 기간을 상승 구간과 하락 구간으로 나누면 커버드콜의 비대칭 구조가 실제 수치로 나타납니다.
 
 <figure class="chart">
-  <figcaption>상승 구간 분배금 포함 수익률 — 2024년 12월 30일~2026년 6월 30일</figcaption>
-  <div class="bars">
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">+334.9%</span></div></div><span class="bar-label">KODEX 200</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:57.8%"><span class="bar-val">+214.9%</span></div></div><span class="bar-label">KODEX 200<br>타겟위클리커버드콜</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:12.4%"><span class="bar-val">+46.2%</span></div></div><span class="bar-label">TIGER<br>미국나스닥100</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:9.9%"><span class="bar-val">+36.8%</span></div></div><span class="bar-label">TIGER 미국나스닥100<br>타겟데일리커버드콜</span></div>
-  </div>
-  <small>단위: % · NAV 기준, 분배금 단순 합산(재투자 가정 없음) · FunETF 기준가 이력과 한국거래소 KIND 분배금 공시를 바탕으로 한 본 공부방 계산</small>
-</figure>
-
-<figure class="chart down">
-  <figcaption>하락 구간 분배금 포함 수익률 — 2026년 6월 30일~10월 19일</figcaption>
-  <div class="bars">
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:90%"><span class="bar-val">−34.6%</span></div></div><span class="bar-label">KODEX 200</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:86.9%"><span class="bar-val">−33.4%</span></div></div><span class="bar-label">KODEX 200<br>타겟위클리커버드콜</span></div>
-    <div class="bar-col"><div class="bar-track"><div class="bar" style="height:41.1%"><span class="bar-val">−15.8%</span></div></div><span class="bar-label">TIGER<br>미국나스닥100</span></div>
-    <div class="bar-col hi"><div class="bar-track"><div class="bar" style="height:41.1%"><span class="bar-val">−15.8%</span></div></div><span class="bar-label">TIGER 미국나스닥100<br>타겟데일리커버드콜</span></div>
-  </div>
-  <small>단위: % · NAV 기준, 분배금 단순 합산(재투자 가정 없음) · TIGER 미국나스닥100 −15.79%, 커버드콜 상품 −15.78% · 본 공부방 계산</small>
+  <figcaption>상승·하락 구간 분배금 포함 수익률 — 같은 눈금에 함께 그렸다</figcaption>
+  <svg class="linechart" viewBox="0 68 720 342" role="img" aria-label="상승·하락 구간 분배금 포함 수익률(같은 눈금) — 상승 구간: KODEX 200 +334.9%, KODEX 200타겟위클리커버드콜 +214.9%, TIGER 미국나스닥100 +46.2%, TIGER 미국나스닥100타겟데일리커버드콜 +36.8% · 하락 구간: KODEX 200 −34.6%, KODEX 200타겟위클리커버드콜 −33.4%, TIGER 미국나스닥100 −15.8%, TIGER 미국나스닥100타겟데일리커버드콜 −15.8%">
+  <text x="360" y="84" text-anchor="middle" font-size="12" style='fill:var(--muted)'>위 = 상승 구간(2024년 12월 30일~2026년 6월 30일, 18개월) · 아래 = 하락 구간(2026년 6월 30일~10월 19일, 3개월 반) · 같은 눈금</text>
+  <rect x="52" y="320" width="616" height="1" style='fill:var(--line)'/>
+  <text x="46" y="324" text-anchor="end" font-size="12" style='fill:var(--muted)'>0</text>
+  <!-- KODEX 200 : +334.9% / −34.6% -->
+  <path d="M99 320 V125.0 A3 3 0 0 1 102 122.0 H186 A3 3 0 0 1 189 125.0 V320 Z" style='fill:var(--accent);opacity:.3'/>
+  <text x="144" y="114.0" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+334.9%</text>
+  <path d="M99 321 V338.5 A3 3 0 0 0 102 341.5 H186 A3 3 0 0 0 189 338.5 V321 Z" style='fill:var(--accent);opacity:.3'/>
+  <text x="144" y="357.5" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−34.6%</text>
+  <text x="144" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>KODEX 200</text>
+  <!-- KODEX 200 타겟위클리커버드콜: +214.9% / −33.4% -->
+  <path d="M249 320 V195.9 A3 3 0 0 1 252 192.9 H336 A3 3 0 0 1 339 195.9 V320 Z" style='fill:var(--accent)'/>
+  <text x="294" y="184.9" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>+214.9%</text>
+  <path d="M249 321 V337.7 A3 3 0 0 0 252 340.7 H336 A3 3 0 0 0 339 337.7 V321 Z" style='fill:var(--accent)'/>
+  <text x="294" y="356.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>−33.4%</text>
+  <text x="294" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>KODEX 200</text>
+  <text x="294" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟위클리커버드콜</text>
+  <!-- TIGER 미국나스닥100: +46.2% / −15.8% -->
+  <path d="M399 320 V295.7 A3 3 0 0 1 402 292.7 H486 A3 3 0 0 1 489 295.7 V320 Z" style='fill:var(--accent);opacity:.3'/>
+  <text x="444" y="284.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+46.2%</text>
+  <path d="M399 321 V327.3 A3 3 0 0 0 402 330.3 H486 A3 3 0 0 0 489 327.3 V321 Z" style='fill:var(--accent);opacity:.3'/>
+  <text x="444" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−15.8%</text>
+  <text x="444" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>TIGER</text>
+  <text x="444" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>미국나스닥100</text>
+  <!-- TIGER 미국나스닥100 타겟데일리커버드콜: +36.8% / −15.8% -->
+  <path d="M549 320 V301.2 A3 3 0 0 1 552 298.2 H636 A3 3 0 0 1 639 301.2 V320 Z" style='fill:var(--accent)'/>
+  <text x="594" y="290.2" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>+36.8%</text>
+  <path d="M549 321 V327.3 A3 3 0 0 0 552 330.3 H636 A3 3 0 0 0 639 327.3 V321 Z" style='fill:var(--accent)'/>
+  <text x="594" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--accent)'>−15.8%</text>
+  <text x="594" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>TIGER 미국나스닥100</text>
+  <text x="594" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟데일리커버드콜</text>
+  </svg>
+  <small>단위: % · NAV 기준, 분배금 단순 합산(재투자 가정 없음) · 두 구간은 길이가 다르다(18개월 vs 3개월 반) · TIGER 미국나스닥100 −15.79%, 커버드콜 상품 −15.78% · FunETF 기준가 이력과 한국거래소 KIND 분배금 공시를 바탕으로 한 본 공부방 계산</small>
 </figure>
 
 상승 구간에서 KODEX 200타겟위클리커버드콜은 분배금 3,623원을 포함해 +214.9%를 기록했지만, KODEX 200(+334.9%)보다 120%포인트 낮았습니다. 하락 구간에서는 분배금 1,174원을 받고도 −33.4%로, KODEX 200(−34.6%)과 차이가 1.2%포인트에 그쳤습니다. 나스닥100 상품도 상승 구간에서는 9.4%포인트 뒤졌지만 하락 구간의 손실은 같은 수준이었습니다.
