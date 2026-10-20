@@ -102,29 +102,29 @@ KODEX 200타겟위클리커버드콜의 신탁계약서 제39조의2는 "분배�
   <rect x="52" y="320" width="616" height="1" style='fill:var(--line)'/>
   <text x="46" y="324" text-anchor="end" font-size="12" style='fill:var(--muted)'>0</text>
   <!-- KODEX 200 : +334.9% / −34.6% -->
-  <path d="M80 320 V125.0 A3 3 0 0 1 83 122.0 H167 A3 3 0 0 1 170 125.0 V320 Z" style='fill:var(--accent)'/>
+  <path d="M80 320 V125.0 A3 3 0 0 1 83 122.0 H167 A3 3 0 0 1 170 125.0 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="125" y="114.0" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+334.9%</text>
-  <path d="M80 321 V338.5 A3 3 0 0 0 83 341.5 H167 A3 3 0 0 0 170 338.5 V321 Z" style='fill:var(--strong)'/>
+  <path d="M80 321 V338.5 A3 3 0 0 0 83 341.5 H167 A3 3 0 0 0 170 338.5 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="125" y="357.5" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−34.6%</text>
   <text x="125" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>KODEX 200</text>
   <!-- KODEX 200 타겟위클리커버드콜: +214.9% / −33.4% -->
-  <path d="M182 320 V195.9 A3 3 0 0 1 185 192.9 H269 A3 3 0 0 1 272 195.9 V320 Z" style='fill:var(--accent)'/>
+  <path d="M182 320 V195.9 A3 3 0 0 1 185 192.9 H269 A3 3 0 0 1 272 195.9 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="227" y="184.9" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+214.9%</text>
-  <path d="M182 321 V337.7 A3 3 0 0 0 185 340.7 H269 A3 3 0 0 0 272 337.7 V321 Z" style='fill:var(--strong)'/>
+  <path d="M182 321 V337.7 A3 3 0 0 0 185 340.7 H269 A3 3 0 0 0 272 337.7 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="227" y="356.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−33.4%</text>
   <text x="227" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>KODEX 200</text>
   <text x="227" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟위클리커버드콜</text>
   <!-- TIGER 미국나스닥100: +46.2% / −15.8% -->
-  <path d="M448 320 V295.7 A3 3 0 0 1 451 292.7 H535 A3 3 0 0 1 538 295.7 V320 Z" style='fill:var(--accent)'/>
+  <path d="M448 320 V295.7 A3 3 0 0 1 451 292.7 H535 A3 3 0 0 1 538 295.7 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="493" y="284.7" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+46.2%</text>
-  <path d="M448 321 V327.3 A3 3 0 0 0 451 330.3 H535 A3 3 0 0 0 538 327.3 V321 Z" style='fill:var(--strong)'/>
+  <path d="M448 321 V327.3 A3 3 0 0 0 451 330.3 H535 A3 3 0 0 0 538 327.3 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="493" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−15.8%</text>
   <text x="493" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>TIGER</text>
   <text x="493" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--text)'>미국나스닥100</text>
   <!-- TIGER 미국나스닥100 타겟데일리커버드콜: +36.8% / −15.8% -->
-  <path d="M550 320 V301.2 A3 3 0 0 1 553 298.2 H637 A3 3 0 0 1 640 301.2 V320 Z" style='fill:var(--accent)'/>
+  <path d="M550 320 V301.2 A3 3 0 0 1 553 298.2 H637 A3 3 0 0 1 640 301.2 V320 Z" style='fill:var(--accent);opacity:.3'/>
   <text x="595" y="290.2" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>+36.8%</text>
-  <path d="M550 321 V327.3 A3 3 0 0 0 553 330.3 H637 A3 3 0 0 0 640 327.3 V321 Z" style='fill:var(--strong)'/>
+  <path d="M550 321 V327.3 A3 3 0 0 0 553 330.3 H637 A3 3 0 0 0 640 327.3 V321 Z" style='fill:var(--strong);opacity:.35'/>
   <text x="595" y="346.3" text-anchor="middle" font-size="13" font-weight="700" style='fill:var(--text)'>−15.8%</text>
   <text x="595" y="386" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>TIGER 미국나스닥100</text>
   <text x="595" y="402" text-anchor="middle" font-size="12" font-weight="700" style='fill:var(--accent)'>타겟데일리커버드콜</text>
