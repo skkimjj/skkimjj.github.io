@@ -193,7 +193,7 @@ ICE 산출 방법서는 이 비중이 1973년 당시 미국의 6대 교역 상�
 
 【다음 편에서는】
 
-다음 공부방 글에서는 **CME FedWatch 보는 법**을 다룹니다. CME(Chicago Mercantile Exchange, 시카고상업거래소)가 제공하는 기준금리 확률 화면입니다. FedWatch 화면에서 FOMC(Federal Open Market Committee, 연방공개시장위원회) 회의별 금리 목표범위 확률을 읽는 법과 그 확률이 연방기금금리 선물 가격에서 계산되는 원리, 확률이 하루 만에 크게 바뀌는 이유를 10월 27~28일 FOMC 직전의 실제 값으로 정리하겠습니다.
+다음 공부방 글에서는 [**CME FedWatch 보는 법**](https://blog.naver.com/hdglace/224452083307)을 다룹니다. CME(Chicago Mercantile Exchange, 시카고상업거래소)가 제공하는 기준금리 확률 화면입니다. FedWatch 화면에서 FOMC(Federal Open Market Committee, 연방공개시장위원회) 회의별 금리 목표범위 확률을 읽는 법과 그 확률이 연방기금금리 선물 가격에서 계산되는 원리, 확률이 하루 만에 크게 바뀌는 이유를 10월 27~28일 FOMC 직전의 실제 값으로 정리하겠습니다.
 
 
 
