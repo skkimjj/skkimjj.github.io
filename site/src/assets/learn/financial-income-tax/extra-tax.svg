@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">이자 3,000만원일 때 다른 소득 수준별 추가 세금</text>
+  <text x="360" y="58" text-anchor="middle" font-size="12" fill="#6b7280">원천징수 14% 외에 종합소득세 신고 때 추가로 납부하는 세금</text>
+  <text x="360" y="76" text-anchor="middle" font-size="12" fill="#6b7280">가로축 = 금융소득을 제외한 종합소득 과세표준</text>
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <text x="46" y="304" text-anchor="end" font-size="12" fill="#6b7280">0</text>
+  <!-- 다른 소득 없음 : 0원 -->
+  <text x="103.3" y="292.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">0원</text>
+  <text x="103.3" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">다른 소득</text>
+  <text x="103.3" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">없음</text>
+  <!-- 1,400만원 : 10만원 -->
+  <path d="M171.0 300 V295.3 A3 3 0 0 1 174.0 292.3 H238.0 A3 3 0 0 1 241.0 295.3 V300 Z" fill="#0f4bd8" fill-opacity="0.3"/>
+  <text x="206.0" y="284.3" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">10만원</text>
+  <text x="206.0" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1,400만원</text>
+  <!-- 5,000만원 : 100만원 -->
+  <path d="M273.7 300 V226.1 A3 3 0 0 1 276.7 223.1 H340.7 A3 3 0 0 1 343.7 226.1 V300 Z" fill="#0f4bd8" fill-opacity="0.3"/>
+  <text x="308.7" y="215.1" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">100만원</text>
+  <text x="308.7" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">5,000만원</text>
+  <!-- 8,800만원 : 210만원 -->
+  <path d="M376.3 300 V141.5 A3 3 0 0 1 379.3 138.5 H443.3 A3 3 0 0 1 446.3 141.5 V300 Z" fill="#0f4bd8" fill-opacity="0.3"/>
+  <text x="411.3" y="130.5" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">210만원</text>
+  <text x="411.3" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">8,800만원</text>
+  <!-- 1억 5,000만원 : 240만원 -->
+  <path d="M479.0 300 V118.4 A3 3 0 0 1 482.0 115.4 H546.0 A3 3 0 0 1 549.0 118.4 V300 Z" fill="#0f4bd8" fill-opacity="0.3"/>
+  <text x="514.0" y="107.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">240만원</text>
+  <text x="514.0" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">1억 5,000만원</text>
+  <!-- 3억원 : 260만원 -->
+  <path d="M581.7 300 V103.0 A3 3 0 0 1 584.7 100.0 H648.7 A3 3 0 0 1 651.7 103.0 V300 Z" fill="#0f4bd8" fill-opacity="0.3"/>
+  <text x="616.7" y="92.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1d24">260만원</text>
+  <text x="616.7" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">3억원</text>
+  <text x="360" y="370" text-anchor="middle" font-size="11" fill="#9aa0aa">추가 세금 = 비교과세 산출세액 − (이자 원천징수 420만원 + 다른 소득에 대한 세액)</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#9aa0aa">2026년 기본세율로 본 공부방 계산 · 종합소득공제·지방소득세·배당가산액 미반영</text>
+</svg>
