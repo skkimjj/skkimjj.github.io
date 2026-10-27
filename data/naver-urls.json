@@ -420,6 +420,13 @@
       "seriesOrder": 9,
       "naver_url": "https://blog.naver.com/hdglace/224453294090",
       "published": "2026-10-25"
+    },
+    "bond-etf": {
+      "title": "채권 ETF 초보 가이드 — 금리가 오르면 왜 채권 가격이 떨어지나",
+      "series": "ETF 완전정복",
+      "seriesOrder": 13,
+      "naver_url": "https://blog.naver.com/hdglace/224455185116",
+      "published": "2026-10-27"
     }
   }
 }
