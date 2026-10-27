@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
   <rect x="1" y="1" width="718" height="498" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
   <text x="360" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">국내 채권 ETF 최근 1년 수익률</text>
-  <text x="360" y="58" text-anchor="middle" font-size="12" fill="#6b7280">듀레이션이 짧은 상품부터 · 듀레이션이 길수록 금리 상승기의 손실이 컸다</text>
+  <text x="360" y="58" text-anchor="middle" font-size="12" fill="#6b7280">듀레이션이 짧은 상품부터 · 듀레이션이 길수록 금리 상승기의 수익률이 낮았다</text>
   <text x="360" y="86" text-anchor="middle" font-size="12" fill="#6b7280">최근 1년(2026년 10월 26일 기준) · 국고채 30년물 금리는 2025년 10월 27일 2.85% → 2026년 10월 26일 4.171%</text>
   <rect x="52" y="132" width="616" height="1" fill="#c9ced6"/>
   <text x="46" y="136" text-anchor="end" font-size="12" fill="#6b7280">0</text>
@@ -17,31 +17,31 @@
   <text x="184" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">KODEX</text>
   <text x="184" y="413" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">국고채3년</text>
   <text x="184" y="430" text-anchor="middle" font-size="11" fill="#6b7280">듀레이션 2.67년</text>
-  <!-- KODEX 종합채권 (AA-이상)액티브: -4.33% -->
+  <!-- KODEX 종합채권(AA-이상)액티브: -4.33% -->
   <path d="M240 133 V160.3 A3 3 0 0 0 243 163.3 H301 A3 3 0 0 0 304 160.3 V133 Z" fill="#b43c3c" fill-opacity="0.45"/>
   <text x="272" y="180.3" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−4.33%</text>
   <text x="272" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">KODEX 종합채권</text>
   <text x="272" y="413" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">(AA-이상)액티브</text>
   <text x="272" y="430" text-anchor="middle" font-size="11" fill="#6b7280">듀레이션 4.99년</text>
-  <!-- KODEX 국고채 10년액티브: -5.34% -->
+  <!-- KODEX 국고채10년액티브: -5.34% -->
   <path d="M328 133 V167.4 A3 3 0 0 0 331 170.4 H389 A3 3 0 0 0 392 167.4 V133 Z" fill="#b43c3c" fill-opacity="0.45"/>
   <text x="360" y="187.4" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−5.34%</text>
   <text x="360" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">KODEX 국고채</text>
   <text x="360" y="413" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">10년액티브</text>
   <text x="360" y="430" text-anchor="middle" font-size="11" fill="#6b7280">듀레이션 7.72년</text>
-  <!-- KODEX 국고채 30년액티브: -20.62% -->
+  <!-- KODEX 국고채30년액티브: -20.62% -->
   <path d="M416 133 V274.3 A3 3 0 0 0 419 277.3 H477 A3 3 0 0 0 480 274.3 V133 Z" fill="#b43c3c" fill-opacity="0.45"/>
   <text x="448" y="294.3" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−20.62%</text>
   <text x="448" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">KODEX 국고채</text>
   <text x="448" y="413" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">30년액티브</text>
   <text x="448" y="430" text-anchor="middle" font-size="11" fill="#6b7280">듀레이션 18.44년</text>
-  <!-- RISE KIS국고채 30년Enhanced: -26.77% -->
+  <!-- RISE KIS국고채30년Enhanced: -26.77% -->
   <path d="M504 133 V317.4 A3 3 0 0 0 507 320.4 H565 A3 3 0 0 0 568 317.4 V133 Z" fill="#b43c3c" fill-opacity="0.45"/>
   <text x="536" y="337.4" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−26.77%</text>
   <text x="536" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">RISE KIS국고채</text>
   <text x="536" y="413" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">30년Enhanced</text>
   <text x="536" y="430" text-anchor="middle" font-size="11" fill="#6b7280">듀레이션 21.90년</text>
-  <!-- TIGER 국고채30년 스트립액티브: -32.10% -->
+  <!-- TIGER 국고채30년스트립액티브: -32.10% -->
   <path d="M592 133 V354.7 A3 3 0 0 0 595 357.7 H653 A3 3 0 0 0 656 354.7 V133 Z" fill="#b43c3c" fill-opacity="0.45"/>
   <text x="624" y="374.7" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1d24">−32.10%</text>
   <text x="624" y="398" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">TIGER 국고채30년</text>
