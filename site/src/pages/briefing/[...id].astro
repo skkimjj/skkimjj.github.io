@@ -40,7 +40,7 @@ const jsonLd = JSON.stringify({
 });
 ---
 
-<Base title={post.data.title} description={post.data.description}>
+<Base googleNoindex title={post.data.title} description={post.data.description}>
   <script type="application/ld+json" set:html={jsonLd} />
   <article>
     <h1>{post.data.title}</h1>

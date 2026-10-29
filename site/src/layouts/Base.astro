@@ -6,8 +6,14 @@ interface Props {
   /** 본문 폭을 1040px로 넓힌다. 홈의 2단 배치처럼 720px로는 좁은 화면에만 쓴다.
       머리띠·푸터 안쪽 정렬도 함께 넓어져 본문과 어긋나지 않는다. */
   wide?: boolean;
+  /** 구글 검색에서만 뺀다(`googlebot` noindex, follow). `noindex`와 달리 GA4·광고·푸터는
+      그대로 두고 다음·네이버·빙 색인도 건드리지 않는다. 2026-10-29 브리핑에 적용 —
+      9월 스팸 업데이트(09-24~10-07) 기간에 공부방 색인이 빠지면서, 매일 같은 형식으로
+      자동 생성되는 브리핑(색인 가능 URL의 과반, 3개월 구글 노출 ≈130)이 사이트 전체
+      평가를 끌어내린다고 판단했다. 다음이 사이트 실유입 1위라 전 엔진 noindex는 쓰지 않는다. */
+  googleNoindex?: boolean;
 }
-const { title, description, noindex = false, wide = false } = Astro.props;
+const { title, description, noindex = false, wide = false, googleNoindex = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
 const site = Astro.site ?? new URL('http://localhost:4321');
 const ogImage = new URL(`${home}og-default.png`, site).href;
@@ -63,6 +69,7 @@ const section = path.startsWith(`${home}learn`)
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {!noindex && googleNoindex && <meta name="googlebot" content="noindex, follow" />}
     {!noindex && <link rel="canonical" href={canonical} />}
     <link
       rel="alternate"
