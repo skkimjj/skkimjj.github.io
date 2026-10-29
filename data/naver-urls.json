@@ -427,6 +427,13 @@
       "seriesOrder": 13,
       "naver_url": "https://blog.naver.com/hdglace/224455185116",
       "published": "2026-10-27"
+    },
+    "trading-volume": {
+      "title": "거래량·거래대금 보는 법 — 주가와 함께 읽어야 하는 이유",
+      "series": "실전 도구",
+      "seriesOrder": 17,
+      "naver_url": "https://blog.naver.com/hdglace/224457486754",
+      "published": "2026-10-29"
     }
   }
 }
