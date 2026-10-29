@@ -56,7 +56,9 @@ const jsonLd = JSON.stringify({
   url: canonical,
   image,
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-  author: { '@type': 'Organization', name: '개장 전 브리핑' },
+  // 작성자를 사이트 이름이 아니라 사람으로 밝힌다(2026-10-29). 투자 글은 구글이 '누가 썼나'를
+  // 특히 엄격하게 보는 주제라, Organization만 있던 것이 사이트 평가 후보 원인 중 하나였다.
+  author: { '@type': 'Person', name: '캠퍼케이(Camper K)', url: new URL(`${import.meta.env.BASE_URL}about/`, site).href },
   publisher: {
     '@type': 'Organization',
     name: '개장 전 브리핑',
@@ -72,6 +74,10 @@ const jsonLd = JSON.stringify({
       📚 투자 공부방{post.data.series && ` · ${post.data.series}`}
     </p>
     <h1>{post.data.title}</h1>
+    <p class="byline">
+      글·검수 <strong>캠퍼케이(Camper K)</strong> · 대기업·창업·스타트업을 거친 40대 개인 투자자 ·
+      <a href={`${import.meta.env.BASE_URL}about/`}>소개 보기</a>
+    </p>
     <div class="post-meta">
       <time datetime={post.data.date.toISOString()}>
         {fmt.format(post.data.date)}
@@ -118,6 +124,14 @@ const jsonLd = JSON.stringify({
     font-weight: 700;
     letter-spacing: 0.03em;
     margin: 0 0 0.4rem;
+  }
+  .byline {
+    margin: 0 0 0.4rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .byline strong {
+    color: var(--text);
   }
   .post-meta {
     margin-bottom: 2rem;
