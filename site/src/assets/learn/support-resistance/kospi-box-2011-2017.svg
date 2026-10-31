@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" width="720" height="430" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="428" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">코스피 월말 종가 (2011~2017년)</text>
+  <text x="360" y="56" text-anchor="middle" font-size="12" fill="#6b7280">2012~2016년 월말 종가는 모두 1,800~2,200 사이였다</text>
+  <rect x="84" y="234.4" width="556" height="86.7" fill="#0f4bd8" opacity="0.08"/>
+  <rect x="84" y="321.1" width="556" height="1" fill="#e5e7eb"/>
+  <text x="76" y="325.1" text-anchor="end" font-size="12" fill="#9aa0aa">1,800</text>
+  <rect x="84" y="263.3" width="556" height="1" fill="#e5e7eb"/>
+  <text x="76" y="267.3" text-anchor="end" font-size="12" fill="#9aa0aa">2,000</text>
+  <rect x="84" y="205.6" width="556" height="1" fill="#e5e7eb"/>
+  <text x="76" y="209.6" text-anchor="end" font-size="12" fill="#9aa0aa">2,200</text>
+  <rect x="84" y="147.8" width="556" height="1" fill="#e5e7eb"/>
+  <text x="76" y="151.8" text-anchor="end" font-size="12" fill="#9aa0aa">2,400</text>
+  <rect x="84" y="90.0" width="556" height="1" fill="#e5e7eb"/>
+  <text x="76" y="94.0" text-anchor="end" font-size="12" fill="#9aa0aa">2,600</text>
+  <line x1="84" y1="197.2" x2="640" y2="197.2" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.7"/>
+  <polyline fill="none" stroke="#0f4bd8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="84.0,243.2 90.7,280.9 97.4,232.5 104.1,207.8 110.8,222.2 117.5,234.2 124.2,224.9 130.9,298.0 137.6,329.9 144.3,289.6 151.0,307.4 157.7,313.7 164.4,276.1 171.1,254.6 177.8,259.3 184.5,268.5 191.2,308.6 197.9,305.5 204.6,297.4 211.3,290.7 218.0,264.4 224.7,288.7 231.4,282.7 238.1,264.2 244.8,274.3 251.5,255.7 258.2,261.9 264.9,273.7 271.6,263.0 278.3,302.8 285.0,288.2 291.7,284.6 298.4,264.2 305.1,254.6 311.8,250.4 318.5,260.1 325.2,280.3 331.9,269.1 338.6,267.5 345.3,274.4 352.0,264.8 358.7,262.7 365.3,241.3 372.0,243.5 378.7,257.5 385.4,273.6 392.1,268.9 398.8,287.7 405.5,278.0 412.2,267.4 418.9,251.5 425.6,226.6 432.3,230.2 439.0,241.9 445.7,254.6 452.4,280.2 459.1,274.1 465.8,254.8 472.5,265.7 479.2,274.5 485.9,288.7 492.6,287.4 499.3,264.5 506.0,265.0 512.7,268.1 519.4,271.9 526.1,258.7 532.8,253.3 539.5,250.7 546.2,261.0 552.9,268.1 559.6,255.7 566.3,243.8 573.0,236.9 579.7,217.0 586.4,204.0 593.1,163.0 599.8,150.1 606.5,147.0 613.2,158.4 619.9,149.4 626.6,112.1 633.3,125.7 640.0,128.3"/>
+  <text x="90.0" y="189.2" text-anchor="start" font-size="12" fill="#4b5160">2011년 5월 2일 종가 2,228.96</text>
+  <text x="362.0" y="337.0" text-anchor="middle" font-size="12" fill="#4b5160">2012~2016년: 1,800~2,100 구간</text>
+  <circle cx="587.5" cy="197.2" r="5" fill="#0f4bd8" stroke="#f7f8fa" stroke-width="2"/>
+  <text x="579.5" y="183.2" text-anchor="end" font-size="12" font-weight="700" fill="#1a1d24">2017년 5월 4일 2,241.24로 돌파</text>
+  <text x="84.0" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2011</text>
+  <text x="164.4" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2012</text>
+  <text x="244.8" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2013</text>
+  <text x="325.2" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2014</text>
+  <text x="405.5" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2015</text>
+  <text x="485.9" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2016</text>
+  <text x="566.3" y="372" text-anchor="middle" font-size="12" fill="#6b7280">2017</text>
+  <text x="360" y="410" text-anchor="middle" font-size="11" fill="#9aa0aa">월말 종가 · 점선 = 2011년 5월 2일 종가(당시 사상 최고치) · 음영 = 1,800~2,100 · 한국거래소 지수(네이버 증권 일별 시세)</text>
+</svg>
