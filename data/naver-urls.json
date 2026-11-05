@@ -455,6 +455,13 @@
       "seriesOrder": 13,
       "naver_url": "https://blog.naver.com/hdglace/224463142232",
       "published": "2026-11-03"
+    },
+    "futures-options-expiry": {
+      "title": "선물·옵션 만기일이란 — 만기일에 종가가 흔들리는 이유",
+      "series": "개념 한 조각",
+      "seriesOrder": 12,
+      "naver_url": "https://blog.naver.com/hdglace/224465575112",
+      "published": "2026-11-05"
     }
   }
 }
