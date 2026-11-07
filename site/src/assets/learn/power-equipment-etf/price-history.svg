@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">KODEX AI전력핵심설비 종가 추이</text>
+  <text x="360" y="56" text-anchor="middle" font-size="12" fill="#6b7280">상장일(2024년 7월 9일)부터 2026년 11월 6일까지 · 단위: 원 · 가로축은 실제 날짜 간격</text>
+  <rect x="92" y="141" width="596" height="1" fill="#e5e7eb"/><text x="84" y="145" text-anchor="end" font-size="12" fill="#9aa0aa">6만</text>
+  <rect x="92" y="204" width="596" height="1" fill="#e5e7eb"/><text x="84" y="208" text-anchor="end" font-size="12" fill="#9aa0aa">4만</text>
+  <rect x="92" y="267" width="596" height="1" fill="#e5e7eb"/><text x="84" y="271" text-anchor="end" font-size="12" fill="#9aa0aa">2만</text>
+  <rect x="92" y="330" width="596" height="1" fill="#e5e7eb"/><text x="84" y="334" text-anchor="end" font-size="12" fill="#9aa0aa">0</text>
+  <polyline points="112,297 226,301 345,281 465,258 549,130 604,234 668,266" fill="none" stroke="#1f5fa8" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="112" cy="297" r="6" fill="#1f5fa8"/>
+  <text x="112" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">10,395</text>
+  <text x="112" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">24.7.9</text>
+  <circle cx="226" cy="301" r="6" fill="#1f5fa8"/>
+  <text x="226" y="287" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">9,240</text>
+  <text x="226" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">24.12.30</text>
+  <circle cx="345" cy="281" r="6" fill="#1f5fa8"/>
+  <text x="345" y="267" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">15,575</text>
+  <text x="345" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">25.6.30</text>
+  <circle cx="465" cy="258" r="6" fill="#1f5fa8"/>
+  <text x="465" y="244" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">22,900</text>
+  <text x="465" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">25.12.30</text>
+  <circle cx="549" cy="130" r="6" fill="#1f5fa8"/>
+  <text x="549" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">63,685</text>
+  <text x="549" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">26.5.8</text>
+  <circle cx="604" cy="234" r="6" fill="#1f5fa8"/>
+  <text x="604" y="220" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">30,720</text>
+  <text x="604" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">26.7.31</text>
+  <circle cx="668" cy="266" r="7" fill="#f7f8fa" stroke="#1f5fa8" stroke-width="3"/>
+  <text x="668" y="252" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5fa8">20,490</text>
+  <text x="668" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1f5fa8">26.11.6</text>
+  <text x="360" y="386" text-anchor="middle" font-size="11" fill="#6b7280">네이버페이 증권 일별 시세(분배금 수정 전 종가) · 2026년 5월 8일이 상장 이후 최고 종가</text>
+</svg>
