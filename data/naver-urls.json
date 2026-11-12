@@ -483,6 +483,13 @@
       "seriesOrder": 19,
       "naver_url": "https://blog.naver.com/hdglace/224471268140",
       "published": "2026-11-10"
+    },
+    "stock-price-in-excel-google-sheets": {
+      "title": "엑셀·구글 시트로 주가 불러오기 — GOOGLEFINANCE·STOCKHISTORY 국내주식",
+      "series": "실전 도구",
+      "seriesOrder": 21,
+      "naver_url": "https://blog.naver.com/hdglace/224473980418",
+      "published": "2026-11-12"
     }
   }
 }
