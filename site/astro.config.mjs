@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import { unified } from '@astrojs/markdown-remark';
 import remarkGfm from 'remark-gfm';
 import remarkRescueBold from './src/remark/rescue-bold.mjs';
+import remarkRescueAutolink from './src/remark/rescue-autolink.mjs';
 import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
@@ -19,7 +20,8 @@ function frontmatterDate(path) {
   const parts = readFileSync(path, 'utf8').split(/^---\s*$/m);
   if (parts.length < 3) return null;
   const fm = parts[1];
-  const raw = (fm.match(/^updated:\s*(\S+)/m) ?? fm.match(/^date:\s*(\S+)/m))?.[1];
+  // `\s*`는 개행을 넘어 다음 줄의 `date:`를 잡는다(빈 `updated:`) → 같은 줄 공백만(2026-11-12)
+  const raw = (fm.match(/^updated:[ \t]*(\S+)/m) ?? fm.match(/^date:[ \t]*(\S+)/m))?.[1];
   if (!raw) return null;
   const d = new Date(raw.replace(/^['"]|['"]$/g, ''));
   return Number.isNaN(d.getTime()) ? null : d;
@@ -53,7 +55,7 @@ const learnDates = collectDates('./src/content/learn/', '/learn/');
 const newest = (dates) =>
   dates.length ? new Date(Math.max(...dates.map((d) => d.getTime()))) : null;
 for (const [route, dates] of [
-  ['/', briefingDates],
+  ['/', [...briefingDates, ...learnDates]], // 홈은 08-14부터 공부방도 싣는다
   ['/briefing/', briefingDates],
   ['/learn/', learnDates],
 ]) {
@@ -81,7 +83,8 @@ export default defineConfig({
     // GFM(표) 다음에 둬야 표 셀 안의 본문까지 함께 복구된다.
     processor: unified({
       gfm: false,
-      remarkPlugins: [[remarkGfm, { singleTilde: false }], remarkRescueBold],
+      // remark-rescue-autolink: 괄호 속 생 URL 뒤 조사가 링크에 삼켜지는 함정(2026-11-12).
+      remarkPlugins: [[remarkGfm, { singleTilde: false }], remarkRescueBold, remarkRescueAutolink],
     }),
   },
   // `/briefing/`은 2026-08-14부터 실제 아카이브 페이지다(그전에는 홈으로 보내는

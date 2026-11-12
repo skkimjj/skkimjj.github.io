@@ -34,7 +34,9 @@ let checked = 0;
 
 for (const page of pages) {
   const html = readFileSync(page, 'utf-8');
-  for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
+  for (let [, href] of html.matchAll(/href="([^"]+)"/g)) {
+    // 절대 자기 URL(네이버판은 규칙상 절대 URL만 쓴다)도 내부 링크로 본다(2026-11-12)
+    href = href.replace(/^https?:\/\/(www\.)?gaejang\.com(?=\/|$)/, '') || '/';
     // 사이트 내부 절대경로만 검사(외부 URL·앵커·mailto는 대상 아님)
     if (!href.startsWith('/')) continue;
     const path = href.split('#')[0].split('?')[0];

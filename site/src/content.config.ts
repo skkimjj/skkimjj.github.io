@@ -10,7 +10,8 @@ const briefings = defineCollection({
     date: z.coerce.date(),
     // 발행 후 정정·보강한 날짜. 있으면 사이트맵 lastmod와 구조화 데이터
     // dateModified에 이 값이 쓰인다(없으면 date). 없어도 무해하다.
-    updated: z.coerce.date().optional(),
+    // `updated:`를 값 없이 두면 YAML null → coerce가 1970-01-01로 통과시킨다 → null은 없는 것으로(2026-11-12)
+    updated: z.preprocess((v) => v ?? undefined, z.coerce.date().optional()),
     tags: z.array(z.string()).default([]),
     description: z.string().optional(),
   }),
@@ -27,12 +28,14 @@ const naver = defineCollection({
 
 // 투자 공부방 — 화·목·토·일 발행 교육 콘텐츠 (상록수 SEO). 태그로 갈래 구분.
 const learn = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/learn' }),
+  // 최상위 파일만 — 하위 폴더(예: 실수로 옮긴 naver/)가 색인·광고 달린 공개 글이 되지 않게(2026-11-12)
+  loader: glob({ pattern: '[^_]*.md', base: './src/content/learn' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
     // 발행 후 정정·보강한 날짜(사이트맵 lastmod·dateModified에 사용).
-    updated: z.coerce.date().optional(),
+    // `updated:`를 값 없이 두면 YAML null → coerce가 1970-01-01로 통과시킨다 → null은 없는 것으로(2026-11-12)
+    updated: z.preprocess((v) => v ?? undefined, z.coerce.date().optional()),
     description: z.string().optional(),
     tags: z.array(z.string()).default([]),
     series: z.string().optional(), // 예: "ETF 완전정복" — 이전/다음 링크 묶음
@@ -48,7 +51,8 @@ const drafts = defineCollection({
     title: z.string(),
     date: z.coerce.date(),
     // 발행 후 정정·보강한 날짜(사이트맵 lastmod·dateModified에 사용).
-    updated: z.coerce.date().optional(),
+    // `updated:`를 값 없이 두면 YAML null → coerce가 1970-01-01로 통과시킨다 → null은 없는 것으로(2026-11-12)
+    updated: z.preprocess((v) => v ?? undefined, z.coerce.date().optional()),
     description: z.string().optional(),
     tags: z.array(z.string()).default([]),
     series: z.string().optional(),
