@@ -490,6 +490,13 @@
       "seriesOrder": 21,
       "naver_url": "https://blog.naver.com/hdglace/224473980418",
       "published": "2026-11-12"
+    },
+    "naver-finance-guide": {
+      "title": "네이버 증권 활용법 — 분봉·일별 시세·외국인 매매·공매도 현황 보는 법",
+      "series": "실전 도구",
+      "seriesOrder": 22,
+      "naver_url": "https://blog.naver.com/hdglace/224476600504",
+      "published": "2026-11-14"
     }
   }
 }
