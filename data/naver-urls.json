@@ -497,6 +497,13 @@
       "seriesOrder": 22,
       "naver_url": "https://blog.naver.com/hdglace/224476600504",
       "published": "2026-11-14"
+    },
+    "adr-disparity-followthrough": {
+      "title": "SK하이닉스 ADR 괴리율 실측 — 괴리율이 벌어진 다음 날 본주는 어떻게 움직였나",
+      "series": "시장 읽기",
+      "seriesOrder": 13,
+      "naver_url": "https://blog.naver.com/hdglace/224477685557",
+      "published": "2026-11-15"
     }
   }
 }
