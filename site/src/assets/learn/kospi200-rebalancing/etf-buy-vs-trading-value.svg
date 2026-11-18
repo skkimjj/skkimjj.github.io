@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="378" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1d24">편입 종목의 예상 ETF 매수 금액 — 일평균 거래대금 대비</text>
+  <rect x="52" y="300" width="616" height="1" fill="#c9ced6"/>
+  <!-- 한국쉘석유: 842.1% (h=200.0) -->
+  <path d="M64.2 300 V103.0 A3 3 0 0 1 67.2 100.0 H105.2 A3 3 0 0 1 108.2 103.0 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="86.2" y="93.0" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">842.1%</text>
+  <text x="86.2" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">한국쉘석유</text>
+  <!-- PI첨단소재: 479.4% (h=113.9) -->
+  <path d="M132.7 300 V189.1 A3 3 0 0 1 135.7 186.1 H173.7 A3 3 0 0 1 176.7 189.1 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="154.7" y="179.1" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">479.4%</text>
+  <text x="154.7" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">PI첨단소재</text>
+  <!-- SK네트웍스: 230.8% (h=54.8) -->
+  <path d="M201.1 300 V248.2 A3 3 0 0 1 204.1 245.2 H242.1 A3 3 0 0 1 245.1 248.2 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="223.1" y="238.2" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">230.8%</text>
+  <text x="223.1" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">SK네트웍스</text>
+  <!-- 현대지에프홀딩스: 176.8% (h=42.0) -->
+  <path d="M269.6 300 V261.0 A3 3 0 0 1 272.6 258.0 H310.6 A3 3 0 0 1 313.6 261.0 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="291.6" y="251.0" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">176.8%</text>
+  <text x="291.6" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">현대지에프</text>
+  <text x="291.6" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">홀딩스</text>
+  <!-- 두산퓨얼셀: 106.1% (h=25.2) -->
+  <path d="M338.0 300 V277.8 A3 3 0 0 1 341.0 274.8 H379.0 A3 3 0 0 1 382.0 277.8 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="360.0" y="267.8" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">106.1%</text>
+  <text x="360.0" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">두산퓨얼셀</text>
+  <!-- 일진전기: 84.7% (h=20.1) -->
+  <path d="M406.4 300 V282.9 A3 3 0 0 1 409.4 279.9 H447.4 A3 3 0 0 1 450.4 282.9 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="428.4" y="272.9" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">84.7%</text>
+  <text x="428.4" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">일진전기</text>
+  <!-- 삼아알미늄: 76.7% (h=18.2) -->
+  <path d="M474.9 300 V284.8 A3 3 0 0 1 477.9 281.8 H515.9 A3 3 0 0 1 518.9 284.8 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="496.9" y="274.8" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">76.7%</text>
+  <text x="496.9" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">삼아알미늄</text>
+  <!-- 대덕전자: 51.0% (h=12.1) -->
+  <path d="M543.3 300 V290.9 A3 3 0 0 1 546.3 287.9 H584.3 A3 3 0 0 1 587.3 290.9 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="565.3" y="280.9" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">51.0%</text>
+  <text x="565.3" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">대덕전자</text>
+  <!-- 가온전선: 47.4% (h=11.3) -->
+  <path d="M611.8 300 V291.7 A3 3 0 0 1 614.8 288.7 H652.8 A3 3 0 0 1 655.8 291.7 V300 Z" fill="#0f4bd8" fill-opacity="0.35"/>
+  <text x="633.8" y="281.7" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">47.4%</text>
+  <text x="633.8" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1d24">가온전선</text>
+  <text x="360" y="356" text-anchor="middle" font-size="10.5" fill="#6b7280">예상 매수 금액 ÷ 최근 20거래일 일평균 거래대금(%) · 코스피200 추종 ETF 잔고, 2026년 10월 23일 종가 기준 추정</text>
+  <text x="360" y="371" text-anchor="middle" font-size="10.5" fill="#6b7280">효성·서울보증보험은 추정치 없음 · 자료: 미래에셋증권(2026년 10월 27일)</text>
+</svg>
