@@ -511,6 +511,13 @@
       "seriesOrder": 2,
       "naver_url": "https://blog.naver.com/hdglace/224480344433",
       "published": "2026-11-17"
+    },
+    "kospi200-rebalancing": {
+      "title": "코스피200 정기변경 — 편입·편출 종목은 어떻게 정해지나",
+      "series": "시장 읽기",
+      "seriesOrder": 10,
+      "naver_url": "https://blog.naver.com/hdglace/224483080552",
+      "published": "2026-11-19"
     }
   }
 }
