@@ -26,6 +26,42 @@ const { selector = '.naver-body' } = Astro.props;
       el.style.backgroundColor = '#fff3a6';
       el.style.color = 'inherit';
     });
+    // ── 문단 안 줄바꿈 → 문단 나누기 (2026-11-21) ──
+    // 마크다운은 빈 줄 없이 이어 쓴 줄을 한 문단으로 묶고 줄바꿈을 띄어쓰기로 보여 준다.
+    // 네이버판 원고는 「▶ 항목」(267곳)·브리핑 「· 항목」(64곳)처럼 원고의 한 줄을 한 줄로 쓰는데,
+    // 그대로 붙이면 네이버에서도 한 문단으로 붙어 들어갔다(사용자 확인). 그래서 문단 바로 아래
+    // 글자 속의 줄바꿈마다 문단을 나눈다. 강조·형광펜 같은 꾸밈 안에 줄바꿈이 걸친 경우는
+    // 발행본 전수 0건이라(11-21 확인) 다루지 않는다. 클래스가 붙은 문단(초안 페이지의
+    // 시리즈 표시 등 템플릿 요소)과 목록·표·코드 안은 건드리지 않는다.
+    try {
+      body.querySelectorAll('p').forEach((p) => {
+        if (p.className || p.closest('li, table, pre')) return;
+        const kids = Array.from(p.childNodes);
+        if (!kids.some((n) => n.nodeType === 3 && n.nodeValue.includes('\n'))) return;
+        const segs = [[]];
+        kids.forEach((n) => {
+          if (n.nodeType === 3 && n.nodeValue.includes('\n')) {
+            n.nodeValue.split('\n').forEach((part, k) => {
+              if (k > 0) segs.push([]);
+              const piece = k > 0 ? part.replace(/^\s+/, '') : part;
+              if (piece) segs[segs.length - 1].push(document.createTextNode(piece));
+            });
+          } else {
+            segs[segs.length - 1].push(n);
+          }
+        });
+        const lines = segs.filter((s) => s.some((n) => n.nodeType !== 3 || n.nodeValue.trim()));
+        if (lines.length < 2) return;
+        lines.forEach((s) => {
+          const np = p.cloneNode(false);
+          s.forEach((n) => np.appendChild(n));
+          p.before(np);
+        });
+        p.remove();
+      });
+    } catch (err) {
+      console.error('[NaverPasteFix] 문단 나누기 실패', err);
+    }
     // ⚠️ 굵게가 아닌 부분에도 굵기를 '명시'해 둔다 (2026-08-23).
     // 굵은 부분에만 font-weight:700을 박으면 나머지 텍스트에는 굵기 정보가 없다.
     // 네이버 편집기는 그런 조각을 붙여넣을 때 **커서가 있던 자리의 서식을 상속**시킨다 —
