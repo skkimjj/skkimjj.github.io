@@ -518,6 +518,13 @@
       "seriesOrder": 10,
       "naver_url": "https://blog.naver.com/hdglace/224483080552",
       "published": "2026-11-19"
+    },
+    "kofia-freesis-api": {
+      "title": "금융투자협회 API 신청 방법 — FreeSIS 통계를 공공데이터포털에서 받는 법",
+      "series": "실전 도구",
+      "seriesOrder": 20,
+      "naver_url": "https://blog.naver.com/hdglace/224485745718",
+      "published": "2026-11-21"
     }
   }
 }
