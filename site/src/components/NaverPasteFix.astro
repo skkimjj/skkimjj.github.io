@@ -38,5 +38,79 @@ const { selector = '.naver-body' } = Astro.props;
         const w = window.getComputedStyle(el).fontWeight;
         el.style.fontWeight = Number(w) >= 600 ? '700' : '400';
       });
+
+    // ── 코드 블록 (2026-11-21, kofia-freesis-api — 여러 줄 파이썬 코드가 든 첫 글) ──
+    // 사이트의 코드 상자는 검은 배경 <pre> 하나인데, 네이버 편집기는 붙여 넣을 때 이를
+    // 줄마다 문단으로 쪼개고 배경색을 각 줄의 글자 뒤에만 칠한다 → 줄 사이·줄 끝이 흰
+    // 줄무늬로 남는다. 그래서 (1) 복붙 본문의 코드는 배경·글자색 없는 일반 글자로 바꾸고,
+    // (2) 본문 밖(복사 범위 밖)에 「코드 복사」 버튼을 둬, 네이버 「소스코드」 상자에 코드만
+    // 따로 붙여 넣을 수 있게 한다. 웹 본문(/learn/)의 검은 상자는 건드리지 않는다.
+    // 위의 강조·굵기 처리와 분리해 두었다 — 여기서 오류가 나도 그쪽은 이미 끝나 있다.
+    try {
+      const pres = Array.from(body.querySelectorAll('pre'));
+      if (pres.length) {
+        const bar = document.createElement('div');
+        bar.className = 'naver-code-bar';
+        bar.setAttribute(
+          'style',
+          'background:#eef4ff;border:1px solid #c9d8f5;border-radius:8px;padding:0.75rem 1rem;' +
+            'font-size:0.85rem;color:#1f3b73;margin:0 0 1.5rem;user-select:none;',
+        );
+        const msg = document.createElement('p');
+        msg.style.margin = '0 0 0.5rem';
+        msg.textContent =
+          `이 글에는 코드 블록이 ${pres.length}개 있습니다. 본문에는 코드가 배경 없는 일반 글자로 ` +
+          '들어갑니다. 코드 상자로 보이게 하려면 그 자리에 네이버 편집기의 「소스코드」를 넣고, ' +
+          '아래 버튼으로 복사한 코드를 붙여 넣으세요.';
+        bar.appendChild(msg);
+        pres.forEach((pre, i) => {
+          const text = pre.textContent.replace(/\n+$/, '');
+          const lines = text.split('\n').length;
+          // (1) 붙여넣기용 본문: 토큰별 색 <span>을 걷어내고 배경 없는 일반 글자로
+          const code = document.createElement('code');
+          code.textContent = text;
+          pre.replaceChildren(code);
+          pre.removeAttribute('class');
+          pre.setAttribute('style', 'background:transparent;color:#333333;font-weight:400;white-space:pre-wrap;');
+          // (2) 코드만 복사하는 버튼
+          const label = `코드 ${i + 1} 복사 (${lines}줄)`;
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = label;
+          btn.setAttribute(
+            'style',
+            'margin:0.25rem 0.5rem 0 0;padding:0.35rem 0.8rem;border:1px solid #9db4e0;border-radius:6px;' +
+              'background:#ffffff;color:#1f3b73;cursor:pointer;font-size:0.85rem;',
+          );
+          btn.addEventListener('click', async () => {
+            let ok = false;
+            try {
+              await navigator.clipboard.writeText(text);
+              ok = true;
+            } catch (e) {
+              // 클립보드 API가 막힌 환경용 대체 경로
+              const ta = document.createElement('textarea');
+              ta.value = text;
+              ta.style.position = 'fixed';
+              ta.style.opacity = '0';
+              document.body.appendChild(ta);
+              ta.select();
+              try {
+                ok = document.execCommand('copy');
+              } catch (e2) {}
+              ta.remove();
+            }
+            btn.textContent = ok ? `코드 ${i + 1} 복사됨 ✓` : '복사 실패 — 코드를 직접 드래그해 주세요';
+            setTimeout(() => {
+              btn.textContent = label;
+            }, 2000);
+          });
+          bar.appendChild(btn);
+        });
+        body.parentNode.insertBefore(bar, body);
+      }
+    } catch (err) {
+      console.error('[NaverPasteFix] 코드 블록 처리 실패', err);
+    }
   }
 </script>
