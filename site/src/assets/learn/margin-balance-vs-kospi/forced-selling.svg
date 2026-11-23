@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <rect x="1" y="1" width="718" height="398" rx="10" fill="#f7f8fa" stroke="#e5e7eb"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1d24">위탁매매 미수금 반대매매 금액(일별)</text>
+  <text x="360" y="56" text-anchor="middle" font-size="12" fill="#6b7280">2026년 9월 1일 ~ 11월 20일 · 단위: 억원 · 가로축은 실제 날짜 간격</text>
+  <rect x="92" y="330" width="596" height="1" fill="#e5e7eb"/><text x="84" y="334" text-anchor="end" font-size="12" fill="#9aa0aa">0억</text>
+  <rect x="92" y="275" width="596" height="1" fill="#e5e7eb"/><text x="84" y="279" text-anchor="end" font-size="12" fill="#9aa0aa">250억</text>
+  <rect x="92" y="220" width="596" height="1" fill="#e5e7eb"/><text x="84" y="224" text-anchor="end" font-size="12" fill="#9aa0aa">500억</text>
+  <rect x="92" y="165" width="596" height="1" fill="#e5e7eb"/><text x="84" y="169" text-anchor="end" font-size="12" fill="#9aa0aa">750억</text>
+  <rect x="92" y="110" width="596" height="1" fill="#e5e7eb"/><text x="84" y="114" text-anchor="end" font-size="12" fill="#9aa0aa">1,000억</text>
+  <polyline points="102,310 109,297 116,307 124,273 145,310 152,323 160,325 167,317 174,308 196,306 203,290 210,292 217,276 224,320 246,322 253,322 260,325 296,319 304,297 311,280 318,270 325,311 354,294 361,288 368,316 397,270 404,199 412,133 419,153 426,204 448,211 455,280 462,301 469,307 476,314 498,306 505,287 512,319 520,322 527,323 548,305 556,309 563,321 570,311 577,315 599,247 606,191 613,304 620,297 628,318 649,323 656,292 664,267 671,304 678,318" fill="none" stroke="#1f5fa8" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="412" cy="133" r="6" fill="#1f5fa8"/>
+  <text x="412" y="121" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">893억</text>
+  <text x="412" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">10.14</text>
+  <circle cx="606" cy="191" r="6" fill="#1f5fa8"/>
+  <text x="606" y="179" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">630억</text>
+  <text x="606" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">11.10</text>
+  <circle cx="124" cy="273" r="6" fill="#1f5fa8"/>
+  <text x="124" y="261" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">261억</text>
+  <text x="124" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">9.4</text>
+  <circle cx="678" cy="318" r="6" fill="#1f5fa8"/>
+  <text x="678" y="306" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1d24">53억</text>
+  <text x="678" y="356" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1d24">11.20</text>
+</svg>
